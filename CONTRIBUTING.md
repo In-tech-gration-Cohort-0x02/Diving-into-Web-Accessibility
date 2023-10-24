@@ -11,6 +11,7 @@ for contribution to our project
 * Make sure you are in your
 `<section></section>`  
 * for sub slides you can add new `<section></section>` but only under your section
+* inside a folder *assets* place images which you are going to use, and use path for image like <img src="assets/*name-of-your-aria-attribute*.jpg">
 
 ### CSS
 
