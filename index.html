@@ -13,6 +13,26 @@
 
 	<!-- Theme used for syntax highlighted code -->
 	<link rel="stylesheet" href="plugin/highlight/monokai.css">
+	<style>
+		.aria-label-heading {
+			color: #c2c1c1 !important;
+		}
+		.aria-label-underline {
+			text-decoration: underline;
+		}
+		.aria-label-list {
+			margin: 0; 
+            padding: 0;
+		}
+		.aria-label-list li {
+			font-size: 35px; 
+    		margin: 5px 0;
+		}
+		.aria-label-highlighted {
+			color: #edd714;
+   			font-weight: bold;
+		}
+	</style>
 </head>
 
 <body>
@@ -31,7 +51,61 @@
 			<!--End Jason's Section-->
 
 			<!-- Anna's Section aria-label -->
-			<section>Slide 3</section>
+			<section>
+				<section data-background-gradient="linear-gradient(to bottom, #1f1e1d, #A9A9A9)">
+					<h1 class="aria-label-heading">aria-label</h1>
+					<p>The <mark>aria-label</mark> should be used to provide a text alternative to an element that has no visible text on the screen.</p>
+					<p><img src="assets/aria-label-image1.png" alt="prism-code language html"></p>
+				</section>
+				<section data-background-gradient="linear-gradient(to bottom, #1f1e1d, #A9A9A9)">
+					<h4 class="aria-label-heading">How to use</h4>
+						<p3>You can make use of aria-label by adding it to certain HTML elements.
+						<br><img src="assets/aria-label-image2.png" alt="prism-code language html"> 
+						<br> VoiceOver on OSX will read this button as "menu, button", as shown in the image below.
+						<br><img src="assets/aria-label-image3.png" alt="prism-code language html">
+						</p3>
+				</section>
+				<section data-background-gradient="linear-gradient(to bottom, #1f1e1d, #A9A9A9)">
+					<h4 class="aria-label-heading">WHAT ELEMENTS CAN BE USED WITH ARIA-LABEL</h4>
+					<ul class="aria-label-list">						
+						<li>
+							<strong>interactive elements</strong>: such as <span class="aria-label-highlighted">a</span> (when <span class="aria-label-highlighted">href</span>
+							 attribute is present),
+							<span class="aria-label-highlighted">audio</span> and <span class="aria-label-highlighted">video</span>
+							(when controls attribute is present), <span class="aria-label-highlighted">input</span>, <span class="aria-label-highlighted">select</span>, 
+							<span class="aria-label-highlighted">button</span>, <span class="aria-label-highlighted">textarea</span>.
+						</li>
+						<li>
+							<strong>implicit landmark elements</strong>: such as <span class="aria-label-highlighted">header</span>, <span class="aria-label-highlighted">footer</span>,
+							<span class="aria-label-highlighted">nav</span>, <span class="aria-label-highlighted">main</span>, <span class="aria-label-highlighted">aside</span>,
+							<span class="aria-label-highlighted">section</span>, and <span class="aria-label-highlighted">form</span>.
+						</li>
+					</ul> 
+				</section>
+				<section data-background-gradient="linear-gradient(to bottom, #1f1e1d, #A9A9A9)">
+					<h4 class="aria-label-heading">WHEN TO USE</h4>
+					<p>You should use it when you have non-textual indication of an element's purpose, but still need to provide text alternates for users who use assistive technology,
+						 such as screen readers.
+						<br> <img src="assets/aria-label-image4.png" alt="prism-code language html">
+					</p>
+				</section>
+				<section data-background-gradient="linear-gradient(to bottom, #1f1e1d, #A9A9A9)">
+					<h4 class="aria-label-heading">EXAMPLES</h4>
+					<div class="r-stack">
+						<img class="fragment fade-out" data-fragment-index="0" src="assets/aria-label-example1.png" alt="code-example1">
+						<img class="fragment current-visible" data-fragment-index="0" src="assets/aria-label-example2.png" alt="code-example2">
+						<img class="fragment" src="assets/aria-label-example3.png" alt="code-example3">
+					</div>
+				    <p>	Take 3 mins and see
+						<a href="https://www.youtube.com/watch?v=dnhnSoMEv6Q">
+						<span class = "aria-label-underline aria-label-highlighted">
+						why to use?
+						</span>
+					    </a> 
+				    </p> 
+				</section>
+				
+			</section>
 			<!--End Anna's Section-->
 
 			<!-- Alex's Section aria-details -->
