@@ -1,15 +1,107 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
+
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Group Presentation</title>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+
+	<title>reveal.js</title>
+
+	<link rel="stylesheet" href="dist/reset.css">
+	<link rel="stylesheet" href="dist/reveal.css">
+	<link rel="stylesheet" href="dist/theme/black.css">
+
+	<!-- Theme used for syntax highlighted code -->
+	<link rel="stylesheet" href="plugin/highlight/monokai.css">
 </head>
+
 <body>
-  <!-- Anna Section -->
-  <section>
-    <h2>Anna Section</h2>
-  </section>
-  <!-- Anna Section -->
+	<div class="reveal">
+		<div class="slides">
+			<!--title-->
+			<section>
+				<h1>ARIA LABELS &AMP; A11y</h1>
+			</section>
+			<!-- Leon's Section aria-keyshortcuts -->
+			<section>Slide 1</section>
+			<!--End Leo's Section-->
+
+			<!--Jason Section aria-colindex -->
+			<section>Slide 2</section>
+			<!--End Jason's Section-->
+
+			<!-- Anna's Section aria-label -->
+			<section>Slide 3</section>
+			<!--End Anna's Section-->
+
+			<!-- Alex's Section aria-details -->
+			<section>
+				<section>
+					<h1>aria-details</h1>
+					<p><mark>Aria-details</mark> provides a set of information and data in a hierarchical and organized manner.</p>
+					<p>Such information may include illustrations, external links, or any form of extended information.</p>
+				</section>
+				<section>
+					<p>extended information that describes</p>
+					<p>the illustration from the artworks presented</p>
+					<pre>
+						<code data-line-numbers="1-2|3,7|4-6">
+							<script type="text/template"><img src="ledemoiselles.jpg"
+alt="​​Les Demoiselles dAvignon" aria-details="det">
+<details id="det">
+<p>The Les Demoiselles dAvignon is a modern art painting by
+Pablo Picasso that diverts from traditional techniques of 
+painting.</p>
+</details>
+							</script>
+						</code>
+					</pre>
+				</section>
+			</section>
+			<!--End Alex's Section-->
+
+			<!-- Meredith's Section aria-autocomplete -->
+			<section>slide 5</section>
+			<!--End Meredith's Section-->
+
+			<!-- Solo's Section-->
+			<section>slide 6</section>
+			<!--End solo's Section-->
+
+			<!-- Mawu's Section-->
+			<section>slide 7</section>
+			<!--End Mawu's Section-->
+
+			<!-- Mary's Section aria-errormessage-->
+			<section>slide 8</section>
+			<!--End Mary's Section-->
+
+			<!-- Vangelis' Section aria-valuetext-->
+			<section>slide 9</section>
+			<!--End Vangelis' Section aria-valuetext--->
+
+			<!--useful resources-->
+			<section>
+				<h2>Useful resources</h2>
+			</section>
+		</div>
+	</div>
+
+	<script src="dist/reveal.js"></script>
+	<script src="plugin/notes/notes.js"></script>
+	<script src="plugin/markdown/markdown.js"></script>
+	<script src="plugin/highlight/highlight.js"></script>
+	<script>
+		// More info about initialization & config:
+		// - https://revealjs.com/initialization/
+		// - https://revealjs.com/config/
+		Reveal.initialize({
+			hash: true,
+
+			// Learn about plugins: https://revealjs.com/plugins/
+			plugins: [RevealMarkdown, RevealHighlight, RevealNotes]
+		});
+	</script>
 </body>
+
 </html>
