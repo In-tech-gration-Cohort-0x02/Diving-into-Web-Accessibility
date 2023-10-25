@@ -26,21 +26,52 @@
 			</section>
 			<!-- Leon's Section aria-keyshortcuts -->
 			<section id="aria-keyshortcuts">
-				<section id="aria-keyshortcuts-01" data-keyshortcuts-01="1">
-					<h2>aria-keyshortcuts property</h2>
+				<section id="aria-keyshortcuts-01" data-keyshortcuts="1">
+					<h2>Aria-keyshortcuts</h2>
 					<div class="gradient-border gradient-border-left">
-						<p class="gradient-border-01">Defines keyboard shortcuts that an author has implemented to activate or give focus to an element.</p>
+						<h3 class="gradient-border gradient-border-01"><mark>aria-keyshortcuts property</mark> defines keyboard shortcuts that an author has implemented to activate or give focus to an element.</h3>
 					</div>
 				</section>
-				<section id="aria-keyshortcuts-02" data-keyshortcuts-01="2">
-					<h3>The value of the aria-keyshortcuts attribute</h3>
+				<section id="aria-keyshortcuts-02" data-keyshortcuts="2">
+					<h2>The value of the aria-keyshortcuts attribute</h2>
 					<div class="gradient-border gradient-border-left">
-						<p class="gradient-border-02">It is a space-separated list of keyboard shortcuts that can be pressed to activate a command or textbox widget.<br /><br />
+						<p class="gradient-border gradient-border-02">It is a space-separated list of keyboard shortcuts that can be pressed to activate a command or textbox widget.<br /><br />
 						The keys defined in the shortcuts represent the physical keys pressed and not the actual characters generated.<br /><br />
-						Each keyboard shortcut consists of one or more tokens delimited by the plus sign ("+") representing zero or more modifier keys and exactly one non-modifier key that must be pressed simultaneously to activate the given shortcut.
-					</p> 
+						Each keyboard shortcut consists of one or more tokens delimited by <mark>the plus sign ("+")</mark> representing zero or more modifier keys and exactly one non-modifier key that must be pressed simultaneously to activate the given shortcut.
+					    </p> 
 					</div>
 				</section>
+				<section id="aria-keyshortcuts-03" data-keyshortcuts="3">
+					<h2>Authors MUST specify modifier keys exactly according to the UI Events KeyboardEvent key Values spec [uievents-key]</h2>
+					<div class="gradient-border gradient-border-left">
+						<p class="gradient-border gradient-border-03">For example, 
+						<mark>"Alt", "Control", "Shift", "Meta", or "AltGraph".</mark><br />
+						On Apple computers, meta corresponds to the Command key, and Alt to the Option key
+						The valid names for non-modifier keys are any printable character.
+						<mark>"A", "B", "1", "2", "$", "Plus"</mark> for a plus sign,"Space" for the spacebar, 
+						or the names of any other non-modifier key specified in the UI Events KeyboardEvent key Values spec [uievents-key]
+						For example, <mark>"Enter", "Tab", "ArrowRight", "PageDown", "Escape", or "F1".</mark>
+						The use of "Space" for the spacebar is an exception to the UI Events KeyboardEvent key Values spec <mark>[uievents-key]</mark> as the space or spacebar key is encoded as <mark>' '</mark> and would be treated as a whitespace character.	
+						</p> 
+					</div>
+				</section>
+				<section id="aria-keyshortcuts-04" data-keyshortcuts="4">
+					<h2>Authors MUST ensure</h2>
+					<div class="gradient-border gradient-border-left">
+						<span class="gradient-border gradient-border-04">
+							<p class="specialunderline">Modifier keys come first when they are part of a keyboard shortcut.</p>
+							<p>that required non-modifier keys come last when they are part of a shortcut.
+							   The order of the modifier keys is not otherwise significant.
+							   <mark>"Alt+Shift+T" = "Shift+Alt+T"</mark> 
+							</p>
+							<div class="specialunderline">Not valid</div>
+							<p>
+								<mark>"T+Shift+Alt"</mark> is not valid because all of the modifier keys don't come first.
+								<mark>"Alt"</mark> is not valid because it doesn't include at least one non-modifier key. 
+							</p>
+						</span>
+					</div>
+				</section>				
 			</section>
 			<!--End Leo's Section-->
 
@@ -146,6 +177,13 @@ painting.</p>
 
 			<!-- Meredith's Section aria-autocomplete -->
 			<section>slide 5</section>
+				<section>
+					<h1> Aria-autocomplete</h1>
+						<p><strong>The aria-autocomplete</strong> attribute indicates whether inputting text could trigger display of one or more predictions of the user's intended value for a combobox, searchbox, or textbox and specifies how predictions will be presented if they are made.</p>
+						
+						<p>The aria-autocomplete property only describes the type of predictive behavior for an input element for assistive technologies; it doesn't provide the functionality. The actual autocompletion should be provided using HTML attributes or JavaScript.
+						</p>
+				</section>
 			<!--End Meredith's Section-->
 
 			<!-- Solo's Section-->
