@@ -52,7 +52,7 @@ background: blue;
 ***Note** Make sure you include your style in the file like this 
 * /* ------------------------------ Start of [Contributor's mame] CSS ------------------------------------ */ *
 
-        :arrow_right: :arrow_right: :arrow_right: Your styles here
+    :arrow_right: :arrow_right: :arrow_right: Your styles here
 
 * /* ------------------------------ End of [Contributor's mame] CSS ------------------------------------ */ *
 
