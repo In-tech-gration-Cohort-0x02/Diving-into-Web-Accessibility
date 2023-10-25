@@ -11,10 +11,35 @@
 	<link rel="stylesheet" href="dist/reveal.css">
 	<link rel="stylesheet" href="dist/theme/black.css">
 	<link rel="stylesheet" type="text/css"  href="css/style.css">
+	<!-- prism for code styling -->
+	<link rel="stylesheet" type="text/css"  href="css/prism.css">
 
 	<!-- Theme used for syntax highlighted code -->
 	<link rel="stylesheet" href="plugin/highlight/monokai.css">
+	<style>
+		.aria-label-heading {
+			color: #c2c1c1 !important;
+		}
 
+		.aria-label-underline {
+			text-decoration: underline;
+		}
+
+		.aria-label-list {
+			margin: 0;
+			padding: 0;
+		}
+
+		.aria-label-list li {
+			font-size: 35px;
+			margin: 5px 0;
+		}
+
+		.aria-label-highlighted {
+			color: #edd714;
+			font-weight: bold;
+		}
+	</style>
 </head>
 
 <body>
@@ -71,7 +96,20 @@
 							</p>
 						</span>
 					</div>
-				</section>				
+				</section>
+				<section id="aria-keyshortcuts-05" data-keyshortcuts="5">
+					<h2>Examples of valid keyboard shortcuts include:</h2>
+					<pre class="codestyle">
+						<code class="language-markup">
+						    &lt;p&gt;"A"&lt;/p&gt;
+							&lt;p&gt;"Shift+Space"&lt;/p&gt;
+							&lt;p&gt;"Control+Alt+."&lt;/p&gt;
+							&lt;p&gt;"Control+Shift+&#39;"&lt;/p&gt;
+							&lt;p&gt;"Alt+Shift+P Control+F"&lt;/p&gt;
+							&lt;p&gt;"Meta+C Meta+Shift+C"&lt;/p&gt;
+						</code>
+					</pre>
+				</section>								
 			</section>
 			<!--End Leo's Section-->
 
@@ -228,6 +266,10 @@ painting.</p>
 	<script src="plugin/notes/notes.js"></script>
 	<script src="plugin/markdown/markdown.js"></script>
 	<script src="plugin/highlight/highlight.js"></script>
+	<!-- prism for code styling -->
+	<script src="js/prism.js"></script> 
+
+
 	<script>
 		// More info about initialization & config:
 		// - https://revealjs.com/initialization/
