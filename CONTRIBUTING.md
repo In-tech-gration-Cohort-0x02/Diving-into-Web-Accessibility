@@ -48,6 +48,15 @@ background: blue;
 * also you can format your file by right clicking on any file ==> `Format Document`  
 ***Note** you are free to use external css file or any other approach you like*  
 
+* Added style.css to css folder so every contributor can write each own css styles inside
+***Note** Make sure you include your style in the file like this 
+* /* ------------------------------ Start of [Contributor's name] CSS ------------------------------------ */ *
+
+    :arrow_right: :arrow_right: :arrow_right: Your styles here
+
+* /* ------------------------------ End of [Contributor's name] CSS ------------------------------------ */ *
+
+
 ### Uploading your changes to github  
 
 **Note** since we are all working in one single file `index.html`  
