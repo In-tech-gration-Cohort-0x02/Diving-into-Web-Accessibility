@@ -57,7 +57,7 @@
 			<!-- Anna's Section aria-label -->
 			<section>
 				<section data-background-gradient="linear-gradient(to bottom, #1f1e1d, #A9A9A9)">
-					<h1 class="aria-label-heading">aria-label</h1>
+					<h2 class="aria-label-heading">aria-label</h2>
 					<p>The <mark>aria-label</mark> should be used to provide a text alternative to an element that has
 						no visible text on the screen.</p>
 					<p><img src="assets/aria-label-image1.png" alt="prism-code language html"></p>
@@ -128,11 +128,9 @@
 			<!-- Alex's Section aria-details -->
 			<section>
 				<section>
-					<h1>aria-details</h1>
-					<p><mark>Aria-details</mark> provides a set of information and data in a hierarchical and organized
-						manner.</p>
-					<p>Such information may include illustrations, external links, or any form of extended information.
-					</p>
+					<h2>aria-details</h2>
+					<p><mark>Aria-details</mark> provides a set of information and data in a hierarchical and organized manner.</p>
+					<p>Such information may include illustrations, external links, or any form of extended information.</p>
 				</section>
 				<section>
 					<p>extended information that describes</p>
@@ -170,7 +168,28 @@ painting.</p>
 			<!--End Mary's Section-->
 
 			<!-- Vangelis' Section aria-valuetext-->
-			<section>slide 9</section>
+			<section>
+				<section> <h2>aria-valuetext</h2>
+							<p>The <mark>aria-valuetext</mark> attribute defines the human-readable text alternative of aria-valuenow for a range widget. 
+								Numbers — even percentages — aren't always user-friendly. Assistive technologies present <span class="aria-label-highlighted">aria-valuenow</span> as numeric values. </p>
+				</section>
+				<section> <p>If a progress bar is at 8%, what does that mean? <span class="aria-label-highlighted">aria-valuetext</span> 
+					provides a way of presenting the current value in a more user-friendly, 
+					human-understandable way. For example, a battery meter value might be conveyed as 
+					<span class="aria-label-highlighted">aria-valuetext="8% (34 minutes) remaining"</span>.</p>
+				</section>
+				<section> <p>The <span class="aria-label-highlighted">aria-valuetext</span> attribute is used with the 
+					<span class="aria-label-highlighted">aria-valuenow</span> attribute, not instead of it, unless that value is not known.
+					<span class="aria-label-highlighted">aria-valuetext</span> is only needed when the numeric value of 
+					<span class="aria-label-highlighted">aria-valuenow</span> is not meaningful. For example, a range's values are numeric 
+					but may be used for non-numeric values, such as college class level. </p>
+				</section>
+				<section> <p>The values of <span class="aria-label-highlighted">aria-valuenow</span> for a 4-year college could range 
+					from 1 through 4, which indicate the position of each value in the value space. In this case, the 
+					<a href="https://developer.mozilla.org/en-US/docs/Web/Accessibility/ARIA/Attributes/aria-valuetext" target="_blank">aria-valuetext</a> 
+					could be one of the strings: "first year", "sophomore", "junior", and "senior".</p>
+				</section>
+			</section>
 			<!--End Vangelis' Section aria-valuetext--->
 
 			<!--useful resources-->
