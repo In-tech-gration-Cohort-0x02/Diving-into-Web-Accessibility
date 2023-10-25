@@ -20,6 +20,16 @@
     color: white;
 }
 
+#aria-keyshortcuts-05 h2 {
+    color: #f7f7ff;
+}
+#aria-keyshortcuts-05 code{
+    color: #357ae8;
+    font-size: 0.8em;
+    padding: 14px;
+    margin: 3px;
+}
+
 #aria-keyshortcuts, #aria-keyshortcuts > section {
     min-height: 90% !important;
     top: auto !important;
@@ -64,6 +74,11 @@
 #aria-keyshortcuts [data-keyshortcuts="4" ]{
     background: rgb(2,0,36);
     background:linear-gradient(306deg, rgba(2,0,36,1) 0%, rgba(255,174,3) 55%, rgba(255,255,255,1) 100%);
+}
+
+#aria-keyshortcuts [data-keyshortcuts="5" ]{
+    background: rgb(2,0,36);
+    background:linear-gradient(306deg, rgba(2,0,36,1) 0%, rgba(2,24,43,100) 55%, rgba(255,255,255,1) 100%);
 }
 
 #aria-keyshortcuts h2, #aria-keyshortcuts h3, #aria-keyshortcuts p{
@@ -159,6 +174,16 @@
     left: -1px;
     border-radius: 20% 25% 20% 24%;
     padding: 10px 3px 3px 10px;
+}
+
+.codestyle{
+    margin: 22px!important; 
+    border: 0.3em solid #333!important;
+    white-space: pre!important;
+}
+
+.codestyle code.language-markup{
+    white-space: pre-line!important;
 }
 
 /* ------------------------------ End of Leon's CSS ------------------------------------ */
