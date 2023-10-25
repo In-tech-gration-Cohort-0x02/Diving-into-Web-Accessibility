@@ -13,13 +13,17 @@ for contribution to our project
 
 * you can use `live server` in `index.html` file or click `GoLive` button on status bar
 
-### HTML
+### HTML  
+
+Source: `index.html`
 
 * Make sure you are in your
 `<section></section>`  
 * for sub slides you can add new `<section></section>` but only under your section
 
 ### Images
+
+Source: ***assets*** 📂
 
 * if you decided to use images you can add them in ***assets*** 📂
 * give them a name related to your *aria*
@@ -28,11 +32,23 @@ for contribution to our project
 ### CSS
 
 for styling  
+Source: ```css/style.css```
+
+* We decided to work with external style.css which can be found in  css folder so every contributor can write  own css styles inside
+***Note** Make sure you include your style in the file like this
+
+```css
+/*---------------------- Start of [Contributor's name] CSS -------------------------*/ *
+
+   >>>>>>  Your styles here
+
+ /*------------------- End of [Contributor's name] CSS --------------------------*/ 
+```
 
 * make sure to use only ```class``` and  ```id```  
 * avoid tag name like ```main``` or ```section``` or ```h1``` or ```p``` this can mix your styles with other styling or you can also use inline styling in your elements  
 * while using ```class``` or ```id``` try to use descriptive name like name with your  ***aria*** attribute are highly recommended  
-* also document your styles in ```<style></style>``` tag like ⬇️  
+<!-- * also document your styles in like ⬇️  
 
 ```CSS
 /* aria-errormessage styles */ 
@@ -42,20 +58,19 @@ background: blue;
 }
 /* aria-errormessage styles end here*/
 
-```  
+```   -->
 
 * you can also use your `aria` attribute to style your html  
 * also you can format your file by right clicking on any file ==> `Format Document`  
 ***Note** you are free to use external css file or any other approach you like*  
 
-* Added style.css to css folder so every contributor can write each own css styles inside
-***Note** Make sure you include your style in the file like this 
-* /* ------------------------------ Start of [Contributor's name] CSS ------------------------------------ */ *
+### Files and Folder we are working with
 
-    :arrow_right: :arrow_right: :arrow_right: Your styles here
-
-* /* ------------------------------ End of [Contributor's name] CSS ------------------------------------ */ *
-
+* index.html
+* css/style.css
+* assets 📂
+* CONTRIBUTING.md
+* README.md
 
 ### Uploading your changes to github  
 
