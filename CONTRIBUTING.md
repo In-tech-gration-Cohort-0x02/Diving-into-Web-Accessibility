@@ -1,4 +1,4 @@
-# CONTRIBUTING
+# CONTRIBUTING to ARIA LABELS & A11y
 
 for contribution to our project
 
@@ -18,7 +18,12 @@ for contribution to our project
 * Make sure you are in your
 `<section></section>`  
 * for sub slides you can add new `<section></section>` but only under your section
-* inside a folder *assets* place images which you are going to use, and use path for image like ``<img src="assets/*name-of-your-aria-attribute*.jpg">``
+
+### Images
+
+* if you decided to use images you can add them in ***assets*** 📂
+* give them a name related to your *aria*
+* inside a folder *assets* place images which you are going to use, and use path for image like `<img src="assets/*name-of-your-aria-attribute*.jpg">` (do check *aria-label* section for some inspiration)
 
 ### CSS
 
@@ -42,12 +47,6 @@ background: blue;
 * you can also use your `aria` attribute to style your html  
 * also you can format your file by right clicking on any file ==> `Format Document`  
 ***Note** you are free to use external css file or any other approach you like*  
-
-### Adding Images
-
-* if you decided to use images you can add them in ***assets*** 📂
-* give them a name related to your *aria*
-* path can be something like this `assets/aria-something.jpeg` (do check *aria-label* section for some inspiration)
 
 ### Uploading your changes to github  
 
