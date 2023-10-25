@@ -51,7 +51,9 @@ background: blue;
 * Added style.css to css folder so every contributor can write each own css styles inside
 ***Note** Make sure you include your style in the file like this 
 * /* ------------------------------ Start of [Contributor's mame] CSS ------------------------------------ */ *
+
 :arrow_right: :arrow_right: :arrow_right: Your styles here
+
 * /* ------------------------------ End of [Contributor's mame] CSS ------------------------------------ */ *
 
 
