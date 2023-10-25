@@ -1,0 +1,87 @@
+/* ------------------------------ Start of Leon's CSS ------------------------------------ */
+
+#aria-keyshortcuts{
+    text-align: center;
+    font-size: 0.7em!important;
+    display: flex!important;
+    height: auto;
+    align-items: center;
+    justify-content: center;
+}
+
+#aria-keyshortcuts, #aria-keyshortcuts > section {
+    min-height: 90% !important;
+    top: auto !important;
+    text-align: center;
+    font-size: 0.7em!important;
+    display: flex!important;
+    height: auto!important;
+    align-items: center!important;
+    justify-content: center!important;
+  }
+  
+  #aria-keyshortcuts > section {
+    min-height: 100% !important;
+    top: auto !important;
+  }
+
+#aria-keyshortcuts [data-keyshortcuts-01="1" ]{
+    background: rgb(2,0,36);
+    background:linear-gradient(306deg, rgba(2,0,36,1) 0%, rgba(65,138,219,1) 55%, rgba(0,212,255,1) 100%);
+}
+
+#aria-keyshortcuts [data-keyshortcuts-01="2" ]{
+    background: rgb(2,0,36);
+    background:linear-gradient(306deg, rgba(2,0,36,1) 0%, rgba(246,81,29,1) 55%, rgba(255,255,255,1) 100%);
+}
+
+#aria-keyshortcuts p {
+    margin: var(--r-block-margin) 15px!important;
+    padding: 15px!important;
+    border: 10px solid;
+    border-image-slice: 1;
+    border-width: 5px;
+}
+
+
+.gradient-border {
+    box-sizing: border-box;
+    display: inline-block;
+    margin: 10px;
+    border-style: solid;
+    border-image-slice: 1!important;
+}
+
+#aria-keyshortcuts-01.gradient-border{
+    border-image-source:linear-gradient(0deg, rgba(2,0,36,1) 0%, rgba(65,138,219,1) 55%, rgba(255,255,255,1) 100%);
+}
+
+#aria-keyshortcuts-02.gradient-border{
+    border-image-source:linear-gradient(0deg, rgba(2,0,36,1) 0%, rgba(246,81,29,1) 55%, rgba(255,255,255,1) 100%);
+}
+
+
+
+#aria-keyshortcuts-01 .gradient-border {
+    border-image-source: linear-gradient(306deg, rgba(2,0,36,1) 0%, rgba(65,138,219,1) 55%, rgba(255,255,255,1) 100%);
+}
+  
+#aria-keyshortcuts-02 .gradient-border {
+    border-image-source: linear-gradient(306deg, rgba(2,0,36,1) 0%, rgba(246,81,29,1) 55%, rgba(255,255,255,1) 100%);
+}
+
+
+.gradient-border-top { border-image-width: 35px 0 0 0; }
+.gradient-border-left { border-image-width: 0 0 0 35px; }
+.gradient-border-bottom { border-image-width: 0 0 35px 0; }
+.gradient-border-right { border-image-width: 0 35px 0 0; }
+.gradient-border-all { border-image-width: 35px; }
+
+
+/* ------------------------------ End of Leon's CSS ------------------------------------ */
+
+
+
+
+
+
