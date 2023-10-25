@@ -10,9 +10,11 @@
 	<link rel="stylesheet" href="dist/reset.css">
 	<link rel="stylesheet" href="dist/reveal.css">
 	<link rel="stylesheet" href="dist/theme/black.css">
+	<link rel="stylesheet" type="text/css"  href="css/style.css">
 
 	<!-- Theme used for syntax highlighted code -->
 	<link rel="stylesheet" href="plugin/highlight/monokai.css">
+
 </head>
 
 <body>
@@ -23,7 +25,54 @@
 				<h1>ARIA LABELS &AMP; A11y</h1>
 			</section>
 			<!-- Leon's Section aria-keyshortcuts -->
-			<section>Slide 1</section>
+			<section id="aria-keyshortcuts">
+				<section id="aria-keyshortcuts-01" data-keyshortcuts="1">
+					<h2>Aria-keyshortcuts</h2>
+					<div class="gradient-border gradient-border-left">
+						<h3 class="gradient-border gradient-border-01"><mark>aria-keyshortcuts property</mark> defines keyboard shortcuts that an author has implemented to activate or give focus to an element.</h3>
+					</div>
+				</section>
+				<section id="aria-keyshortcuts-02" data-keyshortcuts="2">
+					<h2>The value of the aria-keyshortcuts attribute</h2>
+					<div class="gradient-border gradient-border-left">
+						<p class="gradient-border gradient-border-02">It is a space-separated list of keyboard shortcuts that can be pressed to activate a command or textbox widget.<br /><br />
+						The keys defined in the shortcuts represent the physical keys pressed and not the actual characters generated.<br /><br />
+						Each keyboard shortcut consists of one or more tokens delimited by <mark>the plus sign ("+")</mark> representing zero or more modifier keys and exactly one non-modifier key that must be pressed simultaneously to activate the given shortcut.
+					    </p> 
+					</div>
+				</section>
+				<section id="aria-keyshortcuts-03" data-keyshortcuts="3">
+					<h2>Authors MUST specify modifier keys exactly according to the UI Events KeyboardEvent key Values spec [uievents-key]</h2>
+					<div class="gradient-border gradient-border-left">
+						<p class="gradient-border gradient-border-03">For example, 
+						<mark>"Alt", "Control", "Shift", "Meta", or "AltGraph".</mark><br />
+						On Apple computers, meta corresponds to the Command key, and Alt to the Option key
+						The valid names for non-modifier keys are any printable character.
+						<mark>"A", "B", "1", "2", "$", "Plus"</mark> for a plus sign,"Space" for the spacebar, 
+						or the names of any other non-modifier key specified in the UI Events KeyboardEvent key Values spec [uievents-key]
+						For example, <mark>"Enter", "Tab", "ArrowRight", "PageDown", "Escape", or "F1".</mark>
+						The use of "Space" for the spacebar is an exception to the UI Events KeyboardEvent key Values spec <mark>[uievents-key]</mark> as the space or spacebar key is encoded as <mark>' '</mark> and would be treated as a whitespace character.	
+						</p> 
+					</div>
+				</section>
+				<section id="aria-keyshortcuts-04" data-keyshortcuts="4">
+					<h2>Authors MUST ensure</h2>
+					<div class="gradient-border gradient-border-left">
+						<span class="gradient-border gradient-border-04">
+							<p class="specialunderline">Modifier keys come first when they are part of a keyboard shortcut.</p>
+							<p>that required non-modifier keys come last when they are part of a shortcut.
+							   The order of the modifier keys is not otherwise significant.
+							   <mark>"Alt+Shift+T" = "Shift+Alt+T"</mark> 
+							</p>
+							<div class="specialunderline">Not valid</div>
+							<p>
+								<mark>"T+Shift+Alt"</mark> is not valid because all of the modifier keys don't come first.
+								<mark>"Alt"</mark> is not valid because it doesn't include at least one non-modifier key. 
+							</p>
+						</span>
+					</div>
+				</section>				
+			</section>
 			<!--End Leo's Section-->
 
 			<!--Jason Section aria-colindex -->
@@ -31,13 +80,80 @@
 			<!--End Jason's Section-->
 
 			<!-- Anna's Section aria-label -->
-			<section>Slide 3</section>
+			<section>
+				<section data-background-gradient="linear-gradient(to bottom, #1f1e1d, #A9A9A9)">
+					<h2 class="aria-label-heading">aria-label</h2>
+					<p>The <mark>aria-label</mark> should be used to provide a text alternative to an element that has
+						no visible text on the screen.</p>
+					<p><img src="assets/aria-label-image1.png" alt="prism-code language html"></p>
+				</section>
+				<section data-background-gradient="linear-gradient(to bottom, #1f1e1d, #A9A9A9)">
+					<h4 class="aria-label-heading">How to use</h4>
+					<p3>You can make use of aria-label by adding it to certain HTML elements.
+						<br><img src="assets/aria-label-image2.png" alt="prism-code language html">
+						<br> VoiceOver on OSX will read this button as "menu, button", as shown in the image below.
+						<br><img src="assets/aria-label-image3.png" alt="prism-code language html">
+					</p3>
+				</section>
+				<section data-background-gradient="linear-gradient(to bottom, #1f1e1d, #A9A9A9)">
+					<h4 class="aria-label-heading">WHAT ELEMENTS CAN BE USED WITH ARIA-LABEL</h4>
+					<ul class="aria-label-list">
+						<li>
+							<strong>interactive elements</strong>: such as <span class="aria-label-highlighted">a</span>
+							(when <span class="aria-label-highlighted">href</span>
+							attribute is present),
+							<span class="aria-label-highlighted">audio</span> and <span
+								class="aria-label-highlighted">video</span>
+							(when controls attribute is present), <span class="aria-label-highlighted">input</span>,
+							<span class="aria-label-highlighted">select</span>,
+							<span class="aria-label-highlighted">button</span>, <span
+								class="aria-label-highlighted">textarea</span>.
+						</li>
+						<li>
+							<strong>implicit landmark elements</strong>: such as <span
+								class="aria-label-highlighted">header</span>, <span
+								class="aria-label-highlighted">footer</span>,
+							<span class="aria-label-highlighted">nav</span>, <span
+								class="aria-label-highlighted">main</span>, <span
+								class="aria-label-highlighted">aside</span>,
+							<span class="aria-label-highlighted">section</span>, and <span
+								class="aria-label-highlighted">form</span>.
+						</li>
+					</ul>
+				</section>
+				<section data-background-gradient="linear-gradient(to bottom, #1f1e1d, #A9A9A9)">
+					<h4 class="aria-label-heading">WHEN TO USE</h4>
+					<p>You should use it when you have non-textual indication of an element's purpose, but still need to
+						provide text alternates for users who use assistive technology,
+						such as screen readers.
+						<br> <img src="assets/aria-label-image4.png" alt="prism-code language html">
+					</p>
+				</section>
+				<section data-background-gradient="linear-gradient(to bottom, #1f1e1d, #A9A9A9)">
+					<h4 class="aria-label-heading">EXAMPLES</h4>
+					<div class="r-stack">
+						<img class="fragment fade-out" data-fragment-index="0" src="assets/aria-label-example1.png"
+							alt="code-example1">
+						<img class="fragment current-visible" data-fragment-index="0"
+							src="assets/aria-label-example2.png" alt="code-example2">
+						<img class="fragment" src="assets/aria-label-example3.png" alt="code-example3">
+					</div>
+					<p> Take 3 mins and see
+						<a href="https://www.youtube.com/watch?v=dnhnSoMEv6Q">
+							<span class="aria-label-underline aria-label-highlighted">
+								why to use?
+							</span>
+						</a>
+					</p>
+				</section>
+
+			</section>
 			<!--End Anna's Section-->
 
 			<!-- Alex's Section aria-details -->
 			<section>
 				<section>
-					<h1>aria-details</h1>
+					<h2>aria-details</h2>
 					<p><mark>Aria-details</mark> provides a set of information and data in a hierarchical and organized manner.</p>
 					<p>Such information may include illustrations, external links, or any form of extended information.</p>
 				</section>
@@ -82,6 +198,31 @@ painting.</p>
 			<!-- Mary's Section aria-errormessage-->
 			<section>slide 8</section>
 			<!--End Mary's Section-->
+
+			<!-- Vangelis' Section aria-valuetext-->
+			<section>
+				<section> <h2>aria-valuetext</h2>
+							<p>The <mark>aria-valuetext</mark> attribute defines the human-readable text alternative of aria-valuenow for a range widget. 
+								Numbers — even percentages — aren't always user-friendly. Assistive technologies present <span class="aria-label-highlighted">aria-valuenow</span> as numeric values. </p>
+				</section>
+				<section> <p>If a progress bar is at 8%, what does that mean? <span class="aria-label-highlighted">aria-valuetext</span> 
+					provides a way of presenting the current value in a more user-friendly, 
+					human-understandable way. For example, a battery meter value might be conveyed as 
+					<span class="aria-label-highlighted">aria-valuetext="8% (34 minutes) remaining"</span>.</p>
+				</section>
+				<section> <p>The <span class="aria-label-highlighted">aria-valuetext</span> attribute is used with the 
+					<span class="aria-label-highlighted">aria-valuenow</span> attribute, not instead of it, unless that value is not known.
+					<span class="aria-label-highlighted">aria-valuetext</span> is only needed when the numeric value of 
+					<span class="aria-label-highlighted">aria-valuenow</span> is not meaningful. For example, a range's values are numeric 
+					but may be used for non-numeric values, such as college class level. </p>
+				</section>
+				<section> <p>The values of <span class="aria-label-highlighted">aria-valuenow</span> for a 4-year college could range 
+					from 1 through 4, which indicate the position of each value in the value space. In this case, the 
+					<a href="https://developer.mozilla.org/en-US/docs/Web/Accessibility/ARIA/Attributes/aria-valuetext" target="_blank">aria-valuetext</a> 
+					could be one of the strings: "first year", "sophomore", "junior", and "senior".</p>
+				</section>
+			</section>
+			<!--End Vangelis' Section aria-valuetext--->
 
 			<!--useful resources-->
 			<section>

@@ -1,0 +1,194 @@
+/* ------------------------------ Start of Leon's CSS ------------------------------------ */
+
+#aria-keyshortcuts{
+    text-align: center;
+    font-size: 0.7em!important;
+    display: flex!important;
+    height: auto;
+    align-items: center;
+    justify-content: center;
+}
+#aria-keyshortcuts h2, #aria-keyshortcuts h3{
+    text-transform: capitalize!important;
+    text-shadow: 0 1px 0 rgba(255, 255, 255, 0.4);
+}
+#aria-keyshortcuts h2{
+    color: #36363e;
+    font-size: 1.2em;
+}
+#aria-keyshortcuts h3{
+    color: white;
+}
+
+#aria-keyshortcuts, #aria-keyshortcuts > section {
+    min-height: 90% !important;
+    top: auto !important;
+    text-align: center;
+    font-size: 0.7em!important;
+    display: flex!important;
+    height: auto!important;
+    align-items: center!important;
+    justify-content: center!important;
+}
+  
+#aria-keyshortcuts > section {
+    min-height: 100% !important;
+    top: auto !important;
+}
+
+#aria-keyshortcuts mark{
+    margin: 8px;
+    padding-right: 6px;
+    padding-left: 6px;
+    padding-top: 2px;
+    padding-bottom: 2px;
+    border-radius: 4px;
+    background-color: #fbfbfb59;
+}
+
+#aria-keyshortcuts [data-keyshortcuts="1" ]{
+    background: rgb(2,0,36);
+    background:linear-gradient(306deg, rgba(2,0,36,1) 0%, rgba(65,138,219,1) 55%, rgba(0,212,255,1) 100%);
+}
+
+#aria-keyshortcuts [data-keyshortcuts="2" ]{
+    background: rgb(2,0,36);
+    background:linear-gradient(306deg, rgba(2,0,36,1) 0%, rgba(246,81,29,1) 55%, rgba(255,255,255,1) 100%);
+}
+
+#aria-keyshortcuts [data-keyshortcuts="3" ]{
+    background: rgb(2,0,36);
+    background:linear-gradient(306deg, rgba(2,0,36,1) 0%, rgba(127,184,0,1) 55%, rgba(255,255,255,1) 100%);
+}
+
+#aria-keyshortcuts [data-keyshortcuts="4" ]{
+    background: rgb(2,0,36);
+    background:linear-gradient(306deg, rgba(2,0,36,1) 0%, rgba(255,174,3) 55%, rgba(255,255,255,1) 100%);
+}
+
+#aria-keyshortcuts h2, #aria-keyshortcuts h3, #aria-keyshortcuts p{
+    margin: var(--r-block-margin) 15px!important;
+    padding: 15px!important;
+    border: 10px solid;
+    border-image-slice: 1;
+    border-width: 5px;
+    line-height: 1.7;
+}
+
+#aria-keyshortcuts-04 p{
+    border:none!important;
+}
+.gradient-border {
+    box-sizing: border-box;
+    display: inline-block;
+    margin: 10px;
+    border-style: solid;
+    border-image-slice: 1!important;
+}
+
+#aria-keyshortcuts-01.gradient-border{
+    border-image-source:linear-gradient(0deg, rgba(2,0,36,1) 0%, rgba(65,138,219,1) 55%, rgba(255,255,255,1) 100%);
+}
+
+#aria-keyshortcuts-02.gradient-border{
+    border-image-source:linear-gradient(0deg, rgba(2,0,36,1) 0%, rgba(246,81,29,1) 55%, rgba(255,255,255,1) 100%);
+}
+
+#aria-keyshortcuts-03.gradient-border{
+    border-image-source:linear-gradient(0deg, rgba(2,0,36,1) 0%, rgba(127,184,0,1) 55%, rgba(255,255,255,1) 100%);
+}
+
+#aria-keyshortcuts-04.gradient-border{
+    border-image-source:linear-gradient(0deg, rgba(2,0,36,1) 0%, rgba(255,174,3) 55%, rgba(255,255,255,1) 100%);
+}
+
+
+#aria-keyshortcuts-01 .gradient-border {
+    border-image-source: linear-gradient(320deg, rgba(2,0,36,1) 0%, rgba(65,138,219,1) 71%, rgba(255,255,255,1) 121%);
+}
+  
+#aria-keyshortcuts-02 .gradient-border {
+    /*border-image-source: linear-gradient(306deg, rgba(2,0,36,1) 0%, rgba(246,81,29,1) 55%, rgba(255,255,255,1) 100%);*/
+    border-image-source: linear-gradient(320deg, rgba(2,0,36,1) 0%, rgba(246,81,29,1) 71%, rgba(255,255,255,1) 121%)
+}
+
+#aria-keyshortcuts-03 .gradient-border {
+    border-image-source: linear-gradient(320deg, rgba(2,0,36,1) 0%, rgba(127,184,0,1) 71%, rgba(255,255,255,1) 121%);
+}
+
+#aria-keyshortcuts-04 .gradient-border-04 {
+    border-width: 5px;
+    border-image-source: linear-gradient(320deg, rgba(2,0,36,1) 0%, rgba(255,174,3) 71%, rgba(255,255,255,1) 121%);
+}
+
+.gradient-border-top { border-image-width: 35px 0 0 0; }
+.gradient-border-left { border-image-width: 0 0 0 35px; }
+.gradient-border-bottom { border-image-width: 0 0 35px 0; }
+.gradient-border-right { border-image-width: 0 35px 0 0; }
+.gradient-border-all { border-image-width: 35px; }
+
+.specialunderline{
+    position: relative;
+    border: none!important;
+}
+.specialunderline::before {
+    background-color: #418ADB;
+    content: "";
+    position: absolute;
+    width: calc(100% + 4px);
+    height: 19%;
+    left: -2px;
+    bottom: 19px;
+    z-index: -1;
+    transform: rotate(359deg);
+    transform: rotate(-2deg);
+    height: 60%;
+    left: -2px;
+    bottom: 0;
+    z-index: -1;
+    transform: rotate(-2deg);
+    content: " ";
+    display: block;
+    height: 90%;
+    width: 100%;
+    margin-left: -3px;
+    margin-right: -3px;
+    position: absolute;
+    transform: rotate(-2deg);
+    top: -1px;
+    left: -1px;
+    border-radius: 20% 25% 20% 24%;
+    padding: 10px 3px 3px 10px;
+}
+
+/* ------------------------------ End of Leon's CSS ------------------------------------ */
+
+/* ------------------------------ Start of Anna's CSS ------------------------------------ */
+.aria-label-heading {
+    color: #c2c1c1 !important;
+}
+
+.aria-label-underline {
+    text-decoration: underline;
+}
+
+.aria-label-list {
+    margin: 0;
+    padding: 0;
+}
+
+.aria-label-list li {
+    font-size: 35px;
+    margin: 5px 0;
+}
+
+.aria-label-highlighted {
+    color: #edd714;
+    font-weight: bold;
+}
+/* ------------------------------ End of Anna's CSS ------------------------------------ */
+
+
+
+
+
