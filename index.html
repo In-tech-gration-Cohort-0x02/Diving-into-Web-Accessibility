@@ -5,7 +5,7 @@
 	<meta charset="utf-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
 
-	<title>reveal.js</title>
+	<title>A11y &amp; ARIA LABELS - presentation</title>
 
 	<link rel="stylesheet" href="dist/reset.css">
 	<link rel="stylesheet" href="dist/reveal.css">
@@ -400,15 +400,16 @@
 					<p>extended information that describes</p>
 					<p>the illustration from the artworks presented</p>
 					<pre>
-						<code data-line-numbers="1-2|3,7|4-6">
-							<script type="text/template"><img src="ledemoiselles.jpg"
-									alt="​​Les Demoiselles dAvignon" aria-details="det">
-									<details id="det">
-									<p>The Les Demoiselles dAvignon is a modern art painting by
-									Pablo Picasso that diverts from traditional techniques of 
-									painting.</p>
-									</details>
-							</script>
+						<code data-line-numbers="1-2|4,8|5-7">
+<script type="text/template"><img src="ledemoiselles.jpg"
+alt="​​Les Demoiselles dAvignon" aria-details="det">
+
+<details id="det">
+	<p>The Les Demoiselles dAvignon is a modern art painting by
+	Pablo Picasso that diverts from traditional techniques of 
+	painting.</p>
+</details>
+</script>
 						</code>
 					</pre>
 				</section>
