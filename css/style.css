@@ -20,6 +20,21 @@
     color: white;
 }
 
+#aria-keyshortcuts-01 h3.gradient-border.gradient-border-01{
+    z-index: -1;
+    position: relative;
+}
+
+#aria-keyshortcuts-10 h2 {
+    color: #f7f7ff;
+}
+#aria-keyshortcuts-10 code{
+    color: #357ae8;
+    font-size: 1.1em;
+    padding: 14px;
+    margin: 3px;
+}
+
 #aria-keyshortcuts, #aria-keyshortcuts > section {
     min-height: 90% !important;
     top: auto !important;
@@ -66,6 +81,39 @@
     background:linear-gradient(306deg, rgba(2,0,36,1) 0%, rgba(255,174,3) 55%, rgba(255,255,255,1) 100%);
 }
 
+#aria-keyshortcuts [data-keyshortcuts="5" ]{
+    background: rgb(2,0,36);
+    background:linear-gradient(306deg, rgba(2,0,36,1) 0%, rgba(206,45,79) 55%, rgba(255,255,255,1) 100%);
+}
+
+#aria-keyshortcuts [data-keyshortcuts="6" ]{
+    background: rgb(2,0,36);
+    background:linear-gradient(306deg, rgba(2,0,36,1) 0%, rgba(155,126,222) 55%, rgba(255,255,255,1) 100%);
+}
+#aria-keyshortcuts [data-keyshortcuts="7" ]{
+    background: rgb(2,0,36);
+    background:linear-gradient(306deg, rgba(2,0,36,1) 0%, rgba(254,147,140) 55%, rgba(255,255,255,1) 100%);
+}
+#aria-keyshortcuts [data-keyshortcuts="8" ]{
+    background: rgb(2,0,36);
+    background:linear-gradient(306deg, rgba(2,0,36,1) 0%, rgba(155,197,61) 55%, rgba(255,255,255,1) 100%);
+}
+
+#aria-keyshortcuts [data-keyshortcuts="9" ]{
+    background: rgb(2,0,36);
+    background:linear-gradient(306deg, rgba(2,0,36,1) 0%, rgba(55, 119, 113) 55%, rgba(255,255,255,1) 100%);  
+}
+
+#aria-keyshortcuts [data-keyshortcuts="10" ]{
+    background: rgb(2,0,36);
+    background:linear-gradient(306deg, rgba(2,0,36,1) 0%, rgba(2,24,43,100) 55%, rgba(255,255,255,1) 100%);
+    
+}
+
+#aria-keyshortcuts-10 > p{
+    word-wrap: break-word;
+}
+
 #aria-keyshortcuts h2, #aria-keyshortcuts h3, #aria-keyshortcuts p{
     margin: var(--r-block-margin) 15px!important;
     padding: 15px!important;
@@ -78,6 +126,7 @@
 #aria-keyshortcuts-04 p{
     border:none!important;
 }
+
 .gradient-border {
     box-sizing: border-box;
     display: inline-block;
@@ -86,29 +135,38 @@
     border-image-slice: 1!important;
 }
 
-#aria-keyshortcuts-01.gradient-border{
+#aria-keyshortcuts-01 .gradient-border{
     border-image-source:linear-gradient(0deg, rgba(2,0,36,1) 0%, rgba(65,138,219,1) 55%, rgba(255,255,255,1) 100%);
 }
 
-#aria-keyshortcuts-02.gradient-border{
+#aria-keyshortcuts-02 .gradient-border{
     border-image-source:linear-gradient(0deg, rgba(2,0,36,1) 0%, rgba(246,81,29,1) 55%, rgba(255,255,255,1) 100%);
 }
 
-#aria-keyshortcuts-03.gradient-border{
+#aria-keyshortcuts-03 .gradient-border{
     border-image-source:linear-gradient(0deg, rgba(2,0,36,1) 0%, rgba(127,184,0,1) 55%, rgba(255,255,255,1) 100%);
 }
 
-#aria-keyshortcuts-04.gradient-border{
-    border-image-source:linear-gradient(0deg, rgba(2,0,36,1) 0%, rgba(255,174,3) 55%, rgba(255,255,255,1) 100%);
+#aria-keyshortcuts-04 .gradient-border{
+    border-image-source: linear-gradient(-16deg, rgba(2,0,36,1) 0%, rgba(255,174,3) 55%, rgba(255,255,255,1) 130%);
 }
 
+#aria-keyshortcuts-05 .gradient-border{
+    border-image-source: linear-gradient(17deg, rgba(2,0,36,1) -100%, rgba(206,45,79) 23%, rgba(255,255,255,1) 197%);
+}
+
+#aria-keyshortcuts-08 > .gradient-border{
+    border-width: 5px;
+    border-image-source: linear-gradient(17deg, rgba(2,0,36,1) -100%, rgba(155,197,61) 23%, rgba(255,255,255,1) 197%);
+    position: relative;
+    z-index: -1;
+}
 
 #aria-keyshortcuts-01 .gradient-border {
     border-image-source: linear-gradient(320deg, rgba(2,0,36,1) 0%, rgba(65,138,219,1) 71%, rgba(255,255,255,1) 121%);
 }
   
 #aria-keyshortcuts-02 .gradient-border {
-    /*border-image-source: linear-gradient(306deg, rgba(2,0,36,1) 0%, rgba(246,81,29,1) 55%, rgba(255,255,255,1) 100%);*/
     border-image-source: linear-gradient(320deg, rgba(2,0,36,1) 0%, rgba(246,81,29,1) 71%, rgba(255,255,255,1) 121%)
 }
 
@@ -116,9 +174,27 @@
     border-image-source: linear-gradient(320deg, rgba(2,0,36,1) 0%, rgba(127,184,0,1) 71%, rgba(255,255,255,1) 121%);
 }
 
+.gradient-border-01, 
+.gradient-border-02,
+.gradient-border-03, 
+.gradient-border-04, 
+.gradient-border-05{
+    position: relative;
+    z-index: -1;
+}
+
 #aria-keyshortcuts-04 .gradient-border-04 {
     border-width: 5px;
     border-image-source: linear-gradient(320deg, rgba(2,0,36,1) 0%, rgba(255,174,3) 71%, rgba(255,255,255,1) 121%);
+    position: relative;
+    z-index: -1;
+}
+
+#aria-keyshortcuts-05 .gradient-border-05 {
+    border-width: 5px;
+    border-image-source: linear-gradient(17deg, rgba(2,0,36,1) -100%, rgba(206,45,79) 23%, rgba(255,255,255,1) 197%);
+    position: relative;
+    z-index: -1;
 }
 
 .gradient-border-top { border-image-width: 35px 0 0 0; }
@@ -160,6 +236,34 @@
     border-radius: 20% 25% 20% 24%;
     padding: 10px 3px 3px 10px;
 }
+
+.codestyle{
+    margin: 22px!important; 
+    border: 0.3em solid #333!important;
+    white-space: pre!important;
+    background: #191919;
+}
+
+.codestyle code.language-markup{
+    white-space: pre-line!important;
+}
+
+#aria-keyshortcuts-05 ol{
+    margin-left: 60px;
+    text-align: left;
+    display: inline-block;
+    text-wrap: balance;
+}
+
+#aria-keyshortcuts-05 h4{
+    margin-left: 15px;
+}
+
+#aria-keyshortcuts-08  h3, #aria-keyshortcuts-08  p{
+    border: none;
+}
+
+
 
 /* ------------------------------ End of Leon's CSS ------------------------------------ */
 
