@@ -10,7 +10,7 @@
 	<link rel="stylesheet" href="dist/reset.css">
 	<link rel="stylesheet" href="dist/reveal.css">
 	<link rel="stylesheet" href="dist/theme/black.css">
-	<link rel="stylesheet" type="text/css"  href="css/style.css">
+	<link rel="stylesheet" type="text/css" href="css/style.css">
 	<!-- prism for code styling -->
 	<!--<link rel="stylesheet" type="text/css"  href="css/prism.css">-->
 
@@ -19,11 +19,119 @@
 </head>
 
 <body>
+
+
 	<div class="reveal">
 		<div class="slides">
 			<!--title-->
 			<section>
-				<h1>ARIA LABELS &AMP; A11y</h1>
+				<h1>A11y &AMP; ARIA LABELS </h1>
+			</section>
+			<section>
+				<section>
+					<h2> A11y</h2>
+					<p>What is A11y </p>
+					<p>A ccessibilit y </p>
+					<p>A 11 y </p>
+				</section>
+				<section>
+					<h2>What is web Accessibility</h2>
+					<p>Its is an idea that technology must be <mark>equally accessible</mark> to people <mark>with and without
+							disabilities</mark></p>
+					<ul>
+						<li>Accessible Navigation or semantic Html</li>
+						<li>Keyboard Accessibility (for screen reader when they use tab key to navigate)</li>
+						<li>Color Contrast (people with low vision could see)</li>
+						<!-- also while using technology  in sunshine -->
+						<li>Headings and Structure</li>
+						<li>Responsive Design</li>
+						<li>Testing and Validation</li>
+						<li>Descriptive Links</li>
+					</ul>
+				</section>
+			</section>
+
+			<section>
+				<section>
+					<h2>As Developer How can make our website accessible</h2>
+				</section>
+
+				<section>
+					<p>we know browser create a DOM tree when we load a website</p>
+					<p>
+
+						also a <mark>Accessibility Tree</mark>
+					</p>
+					<!-- need to be animated -->
+					<p>It's designed to convey the meaning and context of web content to assistive technologies, enabling them
+						to
+						provide
+						information to users with disabilities.</p>
+				</section>
+				<section>
+					<ul>
+						<li>Heading levels (h1 h2 .... h6) heading structure is (hierarchy) really important for screen readers it
+							helps someone to
+							understand importance of different sections of page</li>
+						<li> <em> best practice is to have only 1 h1 on the page and use hierarchy (heading levels should only
+								increase
+								by
+								one level)</em></li>
+						<li> main tag for main content</li>
+						<li>add roles to button</li>
+						<li>Use alt attribute for images</li>
+						<li>and avoid using non-semantic tags like div and span but </li>
+						<li>If you 'fake' these with div and ARIA, you must ensure your content are keyboard accessible. </li>
+						<li> use ARIA attribute <mark>here comes the ARIA attribute</mark></li>
+					</ul>
+
+				</section>
+			</section>
+			<section>
+				<h2>Html</h2>
+				<section>
+					<h2> Roles </h2>
+					<p>almost all html Built-in elements Have implicit roles</p>
+					<p>what does all mean here (all semantic elements like <mark>section</mark> <mark>main</mark>
+						<mark>h1</mark>
+						<mark>p</mark> )
+					</p>
+				</section>
+				<section>
+					<h2>semantic elements</h2>
+					<p> when we use something like <mark>
+							&lt;p&gt; </mark> Accessibility tree knows that it is paragraph tag and text will go inside it</p>
+					<p>inputs (since we have many inputs ) the `type` check box browser implicitly knows what is the purpose of
+						it
+						like its a
+						checkbox or email</p>
+
+				</section>
+				<section>
+					<h2>Non-semantic elements</h2>
+					<p><mark>div</mark> and <mark>span</mark> (mostly used)
+						are not semantic tags and are not attractive elements </p>
+					<mark>br</mark> , <mark>i</mark> tags use for styling purposes
+					<p>keyboard doesn't recognize content inside these
+						elements</p>
+				</section>
+			</section>
+			<section>
+
+				<section>
+					<h2>AIRA</h2>
+					<p>
+						ARIA — short for Accessible Rich Internet Applications — is a set of roles, states, and properties which
+						can
+						be added to
+						HTML to describe the meaning and purpose of common user interface elements that don’t have semantic tags
+						in
+						HTML
+					</p>
+					<p>ARIA can be used to enhance an HTML document by providing additional accessibility information about web
+						pages or other
+						parts of a webpage It provides</p>
+				</section>
 			</section>
 			<!-- Leon's Section aria-keyshortcuts -->
 			<section id="aria-keyshortcuts" class="aria-keyshortcuts"> 
@@ -43,24 +151,32 @@
 				<section id="aria-keyshortcuts-02" data-keyshortcuts="2">
 					<h2>The value of the aria-keyshortcuts attribute</h2>
 					<div class="gradient-border gradient-border-left">
-						<p class="gradient-border gradient-border-02">It is a space-separated list of keyboard shortcuts that can be pressed to activate a command or textbox widget.<br /><br />
-						The keys defined in the shortcuts represent the physical keys pressed and not the actual characters generated.<br /><br />
-						Each keyboard shortcut consists of one or more tokens delimited by <mark>the plus sign ("+")</mark> representing zero or more modifier keys and exactly one non-modifier key that must be pressed simultaneously to activate the given shortcut.
-					    </p> 
+						<p class="gradient-border gradient-border-02">It is a space-separated list of keyboard shortcuts that can be
+							pressed to activate a command or textbox widget.<br /><br />
+							The keys defined in the shortcuts represent the physical keys pressed and not the actual characters
+							generated.<br /><br />
+							Each keyboard shortcut consists of one or more tokens delimited by <mark>the plus sign ("+")</mark>
+							representing zero or more modifier keys and exactly one non-modifier key that must be pressed
+							simultaneously to activate the given shortcut.
+						</p>
 					</div>
 				</section>
 				<section id="aria-keyshortcuts-03" data-keyshortcuts="3">
-					<h2>Authors MUST specify modifier keys exactly according to the UI Events KeyboardEvent key Values spec [uievents-key]</h2>
+					<h2>Authors MUST specify modifier keys exactly according to the UI Events KeyboardEvent key Values spec
+						[uievents-key]</h2>
 					<div class="gradient-border gradient-border-left">
-						<p class="gradient-border gradient-border-03">For example, 
-						<mark>"Alt", "Control", "Shift", "Meta", or "AltGraph".</mark><br />
-						On Apple computers, meta corresponds to the Command key, and Alt to the Option key
-						The valid names for non-modifier keys are any printable character.
-						<mark>"A", "B", "1", "2", "$", "Plus"</mark> for a plus sign,"Space" for the spacebar, 
-						or the names of any other non-modifier key specified in the UI Events KeyboardEvent key Values spec [uievents-key]
-						For example, <mark>"Enter", "Tab", "ArrowRight", "PageDown", "Escape", or "F1".</mark>
-						The use of "Space" for the spacebar is an exception to the UI Events KeyboardEvent key Values spec <mark>[uievents-key]</mark> as the space or spacebar key is encoded as <mark>' '</mark> and would be treated as a whitespace character.	
-						</p> 
+						<p class="gradient-border gradient-border-03">For example,
+							<mark>"Alt", "Control", "Shift", "Meta", or "AltGraph".</mark><br />
+							On Apple computers, meta corresponds to the Command key, and Alt to the Option key
+							The valid names for non-modifier keys are any printable character.
+							<mark>"A", "B", "1", "2", "$", "Plus"</mark> for a plus sign,"Space" for the spacebar,
+							or the names of any other non-modifier key specified in the UI Events KeyboardEvent key Values spec
+							[uievents-key]
+							For example, <mark>"Enter", "Tab", "ArrowRight", "PageDown", "Escape", or "F1".</mark>
+							The use of "Space" for the spacebar is an exception to the UI Events KeyboardEvent key Values spec
+							<mark>[uievents-key]</mark> as the space or spacebar key is encoded as <mark>' '</mark> and would be
+							treated as a whitespace character.
+						</p>
 					</div>
 				</section>
 				<section id="aria-keyshortcuts-04" data-keyshortcuts="4">
@@ -69,54 +185,73 @@
 						<span class="gradient-border gradient-border-04">
 							<p class="specialunderline">Modifier keys come first when they are part of a keyboard shortcut.</p>
 							<p>that required non-modifier keys come last when they are part of a shortcut.
-							   The order of the modifier keys is not otherwise significant.
-							   <mark>"Alt+Shift+T" = "Shift+Alt+T"</mark> 
+								The order of the modifier keys is not otherwise significant.
+								<mark>"Alt+Shift+T" = "Shift+Alt+T"</mark>
 							</p>
 							<h2>Not valid</h2>
 							<p>
 								<mark>"T+Shift+Alt"</mark> is not valid because all of the modifier keys don't come first.
-								<mark>"Alt"</mark> is not valid because it doesn't include at least one non-modifier key. 
+								<mark>"Alt"</mark> is not valid because it doesn't include at least one non-modifier key.
 							</p>
 						</span>
 					</div>
 				</section>
 				<section id="aria-keyshortcuts-05" data-keyshortcuts="5">
-					<h2>When specifying an alphabetic key, both the uppercase and lowercase variants are considered equivalent: <mark>"a" and "A"</mark> are the same.</h2>
+					<h2>When specifying an alphabetic key, both the uppercase and lowercase variants are considered equivalent:
+						<mark>"a" and "A"</mark> are the same.
+					</h2>
 					<div class="gradient-border gradient-border-left">
-							<p class="gradient-border gradient-border-05">When implementing keyboard shortcuts authors should consider the keyboards they intend to support to avoid unintended results. 
+						<p class="gradient-border gradient-border-05">When implementing keyboard shortcuts authors should consider
+							the keyboards they intend to support to avoid unintended results.
 							Keyboard designs vary significantly based on the device used and the languages supported. </p>
-							<h4><bold>For example, many modifier keys are used in conjunction with other keys to: </bold></h4>
-							<ol>
-								<li>create common punctuation symbols</li>
-								<li>create number characters</li>
-								<li>swap keyboard sides on bilingual keyboards to switch languages</li>
-								<li>perform a number of other functions</li>
-							</ol>
+						<h4>
+							<bold>For example, many modifier keys are used in conjunction with other keys to: </bold>
+						</h4>
+						<ol>
+							<li>create common punctuation symbols</li>
+							<li>create number characters</li>
+							<li>swap keyboard sides on bilingual keyboards to switch languages</li>
+							<li>perform a number of other functions</li>
+						</ol>
 					</div>
-				</section>		
+				</section>
 				<section id="aria-keyshortcuts-06" data-keyshortcuts="6">
-					<h2>For many supported keyboards, authors can prevent conflicts by avoiding keys other than ASCII letters, as number characters and common punctuation often require modifiers. </h2>
+					<h2>For many supported keyboards, authors can prevent conflicts by avoiding keys other than ASCII letters, as
+						number characters and common punctuation often require modifiers. </h2>
 					<div class="gradient-border gradient-border-left">
-						<h3 class="gradient-border gradient-border-06">Here, the keyboard shortcut entered does not equate to the key generated. </h3>
-						<p>For example, in French keyboard layouts, the number characters are not available until you press the <mark>Control key</mark>, so a keyboard shortcut defined as <mark>"Control+2"</mark> would be ambiguous as this is how one would type the <mark>"2"</mark>character on a French keyboard.</p>
-					</div>
-				</section>			
-				<section id="aria-keyshortcuts-07" data-keyshortcuts="7">
-					<h2>If the character used is determined by a modifier key, the author <mark>MUST</mark> specify the actual key used to generate the character, that is generated by the key, and not the resulting character.</h2>
-					<div class="gradient-border gradient-border-left">
-						<h3 class="gradient-border gradient-border-07">This convention enables the assistive technology to accurately convey what keys must be used to generate the shortcut. </h3>
-						<p>For example, on most U.S. English keyboards, the percent sign <mark>"%"</mark> can be input by pressing <mark>Shift+5.</mark> 
-						   The correct way to specify this shortcut is <mark>"Shift+5"</mark>. It is incorrect to specify <mark>"%" or "Shift+%"</mark>. 
-						   However, note that on some international keyboards the percent sign might be an unmodified key, in which case <mark>"%" and "Shift+%"</mark> could be correct on those keyboards.
+						<h3 class="gradient-border gradient-border-06">Here, the keyboard shortcut entered does not equate to the
+							key generated. </h3>
+						<p>For example, in French keyboard layouts, the number characters are not available until you press the
+							<mark>Control key</mark>, so a keyboard shortcut defined as <mark>"Control+2"</mark> would be ambiguous as
+							this is how one would type the <mark>"2"</mark>character on a French keyboard.
 						</p>
 					</div>
-				</section>	
-				<section id="aria-keyshortcuts-08" data-keyshortcuts="8">
-					<h2>If the key that needs to be specified is illegal in the host language or would cause a string to be terminated, authors <mark>MUST</mark>use the string escaping sequence of the host language to specify it.</h2>
-					<div class="gradient-border">
-						<h3 class="gradient-border gradient-border-08">For example, the single-quote character can be encoded as <mark>"&amp;#39;"</mark> in HTML.</h3>				
+				</section>
+				<section id="aria-keyshortcuts-07" data-keyshortcuts="7">
+					<h2>If the character used is determined by a modifier key, the author <mark>MUST</mark> specify the actual key
+						used to generate the character, that is generated by the key, and not the resulting character.</h2>
+					<div class="gradient-border gradient-border-left">
+						<h3 class="gradient-border gradient-border-07">This convention enables the assistive technology to
+							accurately convey what keys must be used to generate the shortcut. </h3>
+						<p>For example, on most U.S. English keyboards, the percent sign <mark>"%"</mark> can be input by pressing
+							<mark>Shift+5.</mark>
+							The correct way to specify this shortcut is <mark>"Shift+5"</mark>. It is incorrect to specify <mark>"%"
+								or "Shift+%"</mark>.
+							However, note that on some international keyboards the percent sign might be an unmodified key, in which
+							case <mark>"%" and "Shift+%"</mark> could be correct on those keyboards.
+						</p>
 					</div>
-				</section>		
+				</section>
+				<section id="aria-keyshortcuts-08" data-keyshortcuts="8">
+					<h2>If the key that needs to be specified is illegal in the host language or would cause a string to be
+						terminated, authors <mark>MUST</mark>use the string escaping sequence of the host language to specify it.
+					</h2>
+					<div class="gradient-border">
+						<h3 class="gradient-border gradient-border-08">For example, the single-quote character can be encoded as
+							<mark>"&amp;#39;"</mark> in HTML.
+						</h3>
+					</div>
+				</section>
 				<section id="aria-keyshortcuts-09" data-keyshortcuts="9">
 					<h2>Aria-keyshortcuts Rules</h2>
 					<div class="gradient-border">
@@ -124,13 +259,16 @@
 						<h4>User agents MUST NOT change keyboard behavior in response to the aria-keyshortcuts attribute.</h4>									   
 					   <ul><h4>Authors MUST</h4> 
 							<li>handle scripted keyboard events to process aria-keyshortcuts.</li>
-							<li>provide a way to expose keyboard shortcuts so that all users can discover them, such as through the use of a tooltip.</li>
+							<li>provide a way to expose keyboard shortcuts so that all users can discover them, such as through the
+								use of a tooltip.</li>
 							<li>ensure that aria-keyshortcuts applied to disabled elements are unavailable.</li>
-							<li>avoid implementing shortcut keys that inhibit operating system, user agent, or assistive technology functionality.</li>
-							<li>carefully consider both which keys to assign and the contexts and conditions in which the keys are available to the user.</li>
-					   </ul>				
+							<li>avoid implementing shortcut keys that inhibit operating system, user agent, or assistive technology
+								functionality.</li>
+							<li>carefully consider both which keys to assign and the contexts and conditions in which the keys are
+								available to the user.</li>
+						</ul>
 					</div>
-				</section>												
+				</section>
 				<section id="aria-keyshortcuts-10" data-keyshortcuts="10">
 					<h2>Examples of valid keyboard shortcuts include:</h2>
 					<pre class="codestyle">
@@ -153,7 +291,48 @@
 			<!--End Leo's Section-->
 
 			<!--Jason Section aria-colindex -->
-			<section>Slide 2</section>
+			<section data-background-gradient="linear-gradient(to bottom, #1f1e1d, #A9A9A9)">
+				<section>
+					<h2>aria-colindex</h2>
+					<blockquote id="aria-colindex">The <mark>aria-colindex</mark> attribute defines an element's column index or
+						position with respect to the total number of columns within a <a
+							href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/table" ;>table</a>, <a
+							href="https://developer.mozilla.org/en-US/docs/Web/CSS/grid" ;>grid</a>, or <a
+							href="https://developer.mozilla.org/en-US/docs/Web/Accessibility/ARIA/Roles/treegrid_role" ;>treegrid.</a>
+					</blockquote>
+				</section>
+				<section>
+					<p>ARIA provides several attributes to provide information about table, grid, and treegrid structures. The
+						<mark>aria-colindex</mark> attribute defines the substructure, an element's column index or position with
+						respect to the total number of columns, within such structures.
+					</p>
+				</section>
+				<section>
+					<p>a syntactic example of aria-colindex</p>
+					<pre data-id="code-animation"><code class="hljs javascript" data-trim data-line-numbers>
+						<div role="grid" aria-colcount="6">
+							<div role="rowgroup">
+							  <div role="row">
+								<div role="columnheader" aria-colindex="1">First name</div>
+								<div role="columnheader" aria-colindex="2">Last name</div>
+								<div role="columnheader" aria-colindex="5">City</div>
+								<div role="columnheader" aria-colindex="6">Zip</div>
+							  </div>
+							</div>
+							<div role="rowgroup">
+							  <div role="row">
+								<div role="gridcell" aria-colindex="1">Debra</div>
+								<div role="gridcell" aria-colindex="2">Burks</div>
+								<div role="gridcell" aria-colindex="5">New York</div>
+								<div role="gridcell" aria-colindex="6">14127</div>
+							  </div>
+							</div>
+							…
+						  </div>											  					
+					</code>
+					</pre>
+				</section>
+			</section>
 			<!--End Jason's Section-->
 
 			<!-- Anna's Section aria-label -->
@@ -179,22 +358,17 @@
 							<strong>interactive elements</strong>: such as <span class="aria-label-highlighted">a</span>
 							(when <span class="aria-label-highlighted">href</span>
 							attribute is present),
-							<span class="aria-label-highlighted">audio</span> and <span
-								class="aria-label-highlighted">video</span>
+							<span class="aria-label-highlighted">audio</span> and <span class="aria-label-highlighted">video</span>
 							(when controls attribute is present), <span class="aria-label-highlighted">input</span>,
 							<span class="aria-label-highlighted">select</span>,
-							<span class="aria-label-highlighted">button</span>, <span
-								class="aria-label-highlighted">textarea</span>.
+							<span class="aria-label-highlighted">button</span>, <span class="aria-label-highlighted">textarea</span>.
 						</li>
 						<li>
-							<strong>implicit landmark elements</strong>: such as <span
-								class="aria-label-highlighted">header</span>, <span
-								class="aria-label-highlighted">footer</span>,
-							<span class="aria-label-highlighted">nav</span>, <span
-								class="aria-label-highlighted">main</span>, <span
+							<strong>implicit landmark elements</strong>: such as <span class="aria-label-highlighted">header</span>,
+							<span class="aria-label-highlighted">footer</span>,
+							<span class="aria-label-highlighted">nav</span>, <span class="aria-label-highlighted">main</span>, <span
 								class="aria-label-highlighted">aside</span>,
-							<span class="aria-label-highlighted">section</span>, and <span
-								class="aria-label-highlighted">form</span>.
+							<span class="aria-label-highlighted">section</span>, and <span class="aria-label-highlighted">form</span>.
 						</li>
 					</ul>
 				</section>
@@ -211,8 +385,8 @@
 					<div class="r-stack">
 						<img class="fragment fade-out" data-fragment-index="0" src="assets/aria-label-example1.png"
 							alt="code-example1">
-						<img class="fragment current-visible" data-fragment-index="0"
-							src="assets/aria-label-example2.png" alt="code-example2">
+						<img class="fragment current-visible" data-fragment-index="0" src="assets/aria-label-example2.png"
+							alt="code-example2">
 						<img class="fragment" src="assets/aria-label-example3.png" alt="code-example3">
 					</div>
 					<p> Take 3 mins and see
@@ -230,7 +404,8 @@
 			<section>
 				<section>
 					<h2>aria-details</h2>
-					<p><mark>Aria-details</mark> provides a set of information and data in a hierarchical and organized manner.</p>
+					<p><mark>Aria-details</mark> provides a set of information and data in a hierarchical and organized manner.
+					</p>
 					<p>Such information may include illustrations, external links, or any form of extended information.</p>
 				</section>
 				<section>
@@ -239,12 +414,12 @@
 					<pre>
 						<code data-line-numbers="1-2|3,7|4-6">
 							<script type="text/template"><img src="ledemoiselles.jpg"
-alt="​​Les Demoiselles dAvignon" aria-details="det">
-<details id="det">
-<p>The Les Demoiselles dAvignon is a modern art painting by
-Pablo Picasso that diverts from traditional techniques of 
-painting.</p>
-</details>
+									alt="​​Les Demoiselles dAvignon" aria-details="det">
+									<details id="det">
+									<p>The Les Demoiselles dAvignon is a modern art painting by
+									Pablo Picasso that diverts from traditional techniques of 
+									painting.</p>
+									</details>
 							</script>
 						</code>
 					</pre>
@@ -253,14 +428,17 @@ painting.</p>
 			<!--End Alex's Section-->
 
 			<!-- Meredith's Section aria-autocomplete -->
-			<section>slide 5</section>
-				<section>
-					<h1> Aria-autocomplete</h1>
-						<p><strong>The aria-autocomplete</strong> attribute indicates whether inputting text could trigger display of one or more predictions of the user's intended value for a combobox, searchbox, or textbox and specifies how predictions will be presented if they are made.</p>
-						
-						<p>The aria-autocomplete property only describes the type of predictive behavior for an input element for assistive technologies; it doesn't provide the functionality. The actual autocompletion should be provided using HTML attributes or JavaScript.
-						</p>
-				</section>
+
+			<section data-background-gradient="linear-gradient(to bottom, #00ffff, ##ffff66)">
+				<h2> Aria-autocomplete</h2>
+				<p>The aria-autocomplete attribute indicates whether inputting text could trigger display of one or more
+					predictions of the user's intended value for a combobox, searchbox, or textbox and specifies how predictions
+					will be presented if they are made.</p>
+				<p>The aria-autocomplete property only describes the type of predictive behavior for an input element for
+					assistive technologies; it doesn't provide the functionality.
+				</p>
+				<p> <a href="https://www.youtube.com/watch?v=XNjUfwDmHGc">Take 3 mins and watch</a></p>
+			</section>
 			<!--End Meredith's Section-->
 
 			<!-- Solo's Section-->
@@ -277,25 +455,37 @@ painting.</p>
 
 			<!-- Vangelis' Section aria-valuetext-->
 			<section>
-				<section> <h2>aria-valuetext</h2>
-							<p>The <mark>aria-valuetext</mark> attribute defines the human-readable text alternative of aria-valuenow for a range widget. 
-								Numbers — even percentages — aren't always user-friendly. Assistive technologies present <span class="aria-label-highlighted">aria-valuenow</span> as numeric values. </p>
+				<section>
+					<h2>aria-valuetext</h2>
+					<p>The <mark>aria-valuetext</mark> attribute defines the human-readable text alternative of aria-valuenow
+						for a range widget.
+						Numbers — even percentages — aren't always user-friendly. Assistive technologies present <span
+							class="aria-label-highlighted">aria-valuenow</span> as numeric values. </p>
 				</section>
-				<section> <p>If a progress bar is at 8%, what does that mean? <span class="aria-label-highlighted">aria-valuetext</span> 
-					provides a way of presenting the current value in a more user-friendly, 
-					human-understandable way. For example, a battery meter value might be conveyed as 
-					<span class="aria-label-highlighted">aria-valuetext="8% (34 minutes) remaining"</span>.</p>
+				<section>
+					<p>If a progress bar is at 8%, what does that mean? <span class="aria-label-highlighted">aria-valuetext</span>
+						provides a way of presenting the current value in a more user-friendly,
+						human-understandable way. For example, a battery meter value might be conveyed as
+						<span class="aria-label-highlighted">aria-valuetext="8% (34 minutes) remaining"</span>.
+					</p>
 				</section>
-				<section> <p>The <span class="aria-label-highlighted">aria-valuetext</span> attribute is used with the 
-					<span class="aria-label-highlighted">aria-valuenow</span> attribute, not instead of it, unless that value is not known.
-					<span class="aria-label-highlighted">aria-valuetext</span> is only needed when the numeric value of 
-					<span class="aria-label-highlighted">aria-valuenow</span> is not meaningful. For example, a range's values are numeric 
-					but may be used for non-numeric values, such as college class level. </p>
+				<section>
+					<p>The <span class="aria-label-highlighted">aria-valuetext</span> attribute is used with the
+						<span class="aria-label-highlighted">aria-valuenow</span> attribute, not instead of it, unless that value
+						is not known.
+						<span class="aria-label-highlighted">aria-valuetext</span> is only needed when the numeric value of
+						<span class="aria-label-highlighted">aria-valuenow</span> is not meaningful. For example, a range's values
+						are numeric
+						but may be used for non-numeric values, such as college class level.
+					</p>
 				</section>
-				<section> <p>The values of <span class="aria-label-highlighted">aria-valuenow</span> for a 4-year college could range 
-					from 1 through 4, which indicate the position of each value in the value space. In this case, the 
-					<a href="https://developer.mozilla.org/en-US/docs/Web/Accessibility/ARIA/Attributes/aria-valuetext" target="_blank">aria-valuetext</a> 
-					could be one of the strings: "first year", "sophomore", "junior", and "senior".</p>
+				<section>
+					<p>The values of <span class="aria-label-highlighted">aria-valuenow</span> for a 4-year college could range
+						from 1 through 4, which indicate the position of each value in the value space. In this case, the
+						<a href="https://developer.mozilla.org/en-US/docs/Web/Accessibility/ARIA/Attributes/aria-valuetext"
+							target="_blank">aria-valuetext</a>
+						could be one of the strings: "first year", "sophomore", "junior", and "senior".
+					</p>
 				</section>
 			</section>
 			<!--End Vangelis' Section aria-valuetext--->
@@ -305,6 +495,16 @@ painting.</p>
 				<h2>Useful resources</h2>
 				<p><a href="https://w3c.github.io/aria/#aria-keyshortcuts">Here</a> is the source link for the <mark>aria-keyshortcuts</mark></p>
 				<p><a href="https://psdtowp.net/html-codes-special-characters.html	">Here</a> is the source link for the <mark>html-entities</mark></p>
+				<ul>
+					<li><a href="https://www.youtube.com/watch?v=z8xUCzToff8">Accessibility Fundamentals with Rob Dodson</a></li>
+					<li><a href="https://www.youtube.com/playlist?list=PLNYkxOF6rcICWx0C9LVWWVqvHlYJyqw7g">A11ycasts with Rob
+							Dodson(playlist)
+						</a></li>
+					<li><a href="https://www.youtube.com/watch?v=CNoz0TXG-vk">What is WAI-ARIA?</a></li>
+					<li><a href="https://www.youtube.com/watch?v=qdB8SRhqvFc&t=898s">ARIA, Accessibility APIs and coding like you
+							give a damn! – Léonie Watson⭐⭐💫</a></li>
+					<li><a href=""></a></li>
+				</ul>
 			</section>
 		</div>
 	</div>
