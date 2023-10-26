@@ -30,7 +30,7 @@
 }
 #aria-keyshortcuts-10 code{
     color: #357ae8;
-    font-size: 0.7em;
+    font-size: 1.1em;
     padding: 14px;
     margin: 3px;
 }
@@ -241,6 +241,7 @@
     margin: 22px!important; 
     border: 0.3em solid #333!important;
     white-space: pre!important;
+    background: #191919;
 }
 
 .codestyle code.language-markup{
