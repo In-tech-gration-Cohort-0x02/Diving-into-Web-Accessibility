@@ -24,113 +24,113 @@
 	<div class="reveal">
 		<div class="slides">
 			<!--title-->
+			<section>
+				<h1>A11y &AMP; ARIA LABELS </h1>
+			</section>
+			<section>
 				<section>
-					<h1 >A11y &AMP; ARIA LABELS </h1>
+					<h2> A11y</h2>
+					<p>What is A11y </p>
+					<p>A ccessibilit y </p>
+					<p>A 11 y </p>
 				</section>
 				<section>
-					<section>
-						<h2> A11y</h2>
-						<p>What is A11y </p>
-						<p>A ccessibilit y </p>
-						<p>A 11 y </p>
-					</section>
-					<section>
-						<h2>What is web Accessibility</h2>
-						<p>Its is an idea that technology must be <mark>equally accessible</mark> to people <mark>with and without
-								disabilities</mark></p>
-						<ul>
-							<li>Accessible Navigation or semantic Html</li>
-							<li>Keyboard Accessibility (for screen reader when they use tab key to navigate)</li>
-							<li>Color Contrast (people with low vision could see)</li>
-							<!-- also while using technology  in sunshine -->
-							<li>Headings and Structure</li>
-							<li>Responsive Design</li>
-							<li>Testing and Validation</li>
-							<li>Descriptive Links</li>
-						</ul>
-					</section>
+					<h2>What is web Accessibility</h2>
+					<p>Its is an idea that technology must be <mark>equally accessible</mark> to people <mark>with and without
+							disabilities</mark></p>
+					<ul>
+						<li>Accessible Navigation or semantic Html</li>
+						<li>Keyboard Accessibility (for screen reader when they use tab key to navigate)</li>
+						<li>Color Contrast (people with low vision could see)</li>
+						<!-- also while using technology  in sunshine -->
+						<li>Headings and Structure</li>
+						<li>Responsive Design</li>
+						<li>Testing and Validation</li>
+						<li>Descriptive Links</li>
+					</ul>
+				</section>
+			</section>
+			<section>
+				<section>
+					<h2> Roles </h2>
+					<p>almost all html Built-in elements Have implicit roles</p>
+					<p>what does all mean here (all semantic elements like <mark>section</mark> <mark>main</mark>
+						<mark>h1</mark>
+						<mark>p</mark> )
+					</p>
 				</section>
 				<section>
-					<section>
-						<h2> Roles </h2>
-						<p>almost all html Built-in elements Have implicit roles</p>
-						<p>what does all mean here (all semantic elements like <mark>section</mark> <mark>main</mark>
-							<mark>h1</mark>
-							<mark>p</mark> )
-						</p>
-					</section>
-					<section>
-						<h2>semantic elements</h2>
-						<p> when we use something like <mark>
-								&lt;p&gt; </mark> Accessibility tree knows that it is paragraph tag and text will go inside it</p>
-						<p>inputs (since we have many inputs ) the `type` check box browser implicitly knows what is the purpose of
-							it
-							like its a
-							checkbox or email</p>
-				
-					</section>
-					<section>
-						<h2>Non-semantic elements</h2>
-						<p><mark>div</mark> and <mark>span</mark> (mostly used)
-							are not semantic tags and are not attractive elements </p>
-						<mark>br</mark> , <mark>i</mark> tags use for styling purposes
-						<p>keyboard doesn't recognize content inside these
-							elements</p>
-					</section>
+					<h2>semantic elements</h2>
+					<p> when we use something like <mark>
+							&lt;p&gt; </mark> Accessibility tree knows that it is paragraph tag and text will go inside it</p>
+					<p>inputs (since we have many inputs ) the `type` check box browser implicitly knows what is the purpose of
+						it
+						like its a
+						checkbox or email</p>
+
 				</section>
 				<section>
-					<section>
-						<h2>As Developer How can make our website accessible</h2>
-					</section>
-				
-					<section>
-						<p>we know browser create a DOM tree when we load a website</p>
-						<p>
-				
-							also a <mark>Accessibility Tree</mark>
-						</p>
-						<!-- need to be animated -->
-						<p>It's designed to convey the meaning and context of web content to assistive technologies, enabling them
-							to
-							provide
-							information to users with disabilities.</p>
-					</section>
-					<section>
-						<ul>
-							<li>Heading levels (h1 h2 .... h6) heading structure is (hierarchy) really important for screen readers it
-								helps someone to
-								understand importance of different sections of page</li>
-							<li> <em> best practice is to have only 1 h1 on the page and use hierarchy (heading levels should only
-									increase
-									by
-									one level)</em></li>
-							<li> main tag for main content</li>
-							<li>add roles to button</li>
-							<li>Use alt attribute for images</li>
-							<li>and avoid using non-semantic tags like div and span but </li>
-							<li>If you 'fake' these with div and ARIA, you must ensure your content are keyboard accessible. </li>
-							<li> use ARIA attribute here comes the ARIA attribute</li>
-						</ul>
-				
-					</section>
+					<h2>Non-semantic elements</h2>
+					<p><mark>div</mark> and <mark>span</mark> (mostly used)
+						are not semantic tags and are not attractive elements </p>
+					<mark>br</mark> , <mark>i</mark> tags use for styling purposes
+					<p>keyboard doesn't recognize content inside these
+						elements</p>
+				</section>
+			</section>
+			<section>
+				<section>
+					<h2>As Developer How can make our website accessible</h2>
+				</section>
+
+				<section>
+					<p>we know browser create a DOM tree when we load a website</p>
+					<p>
+
+						also a <mark>Accessibility Tree</mark>
+					</p>
+					<!-- need to be animated -->
+					<p>It's designed to convey the meaning and context of web content to assistive technologies, enabling them
+						to
+						provide
+						information to users with disabilities.</p>
 				</section>
 				<section>
-				
-					<section>
-						<h2>AIRA</h2>
-						<p>
-							ARIA — short for Accessible Rich Internet Applications — is a set of roles, states, and properties which
-							can
-							be added to
-							HTML to describe the meaning and purpose of common user interface elements that don’t have semantic tags
-							in
-							HTML
-						</p>
-						<p>ARIA can be used to enhance an HTML document by providing additional accessibility information about web
-							pages or other
-							parts of a webpage It provides</p>
-					</section>
+					<ul>
+						<li>Heading levels (h1 h2 .... h6) heading structure is (hierarchy) really important for screen readers it
+							helps someone to
+							understand importance of different sections of page</li>
+						<li> <em> best practice is to have only 1 h1 on the page and use hierarchy (heading levels should only
+								increase
+								by
+								one level)</em></li>
+						<li> main tag for main content</li>
+						<li>add roles to button</li>
+						<li>Use alt attribute for images</li>
+						<li>and avoid using non-semantic tags like div and span but </li>
+						<li>If you 'fake' these with div and ARIA, you must ensure your content are keyboard accessible. </li>
+						<li> use ARIA attribute here comes the ARIA attribute</li>
+					</ul>
+
 				</section>
+			</section>
+			<section>
+
+				<section>
+					<h2>AIRA</h2>
+					<p>
+						ARIA — short for Accessible Rich Internet Applications — is a set of roles, states, and properties which
+						can
+						be added to
+						HTML to describe the meaning and purpose of common user interface elements that don’t have semantic tags
+						in
+						HTML
+					</p>
+					<p>ARIA can be used to enhance an HTML document by providing additional accessibility information about web
+						pages or other
+						parts of a webpage It provides</p>
+				</section>
+			</section>
 			<!-- Leon's Section aria-keyshortcuts -->
 			<section id="aria-keyshortcuts">
 				<section id="aria-keyshortcuts-01" data-keyshortcuts="1">
@@ -414,12 +414,12 @@
 					<pre>
 						<code data-line-numbers="1-2|3,7|4-6">
 							<script type="text/template"><img src="ledemoiselles.jpg"
-alt="​​Les Demoiselles dAvignon" aria-details="det">
-<details id="det">
-<p>The Les Demoiselles dAvignon is a modern art painting by
-Pablo Picasso that diverts from traditional techniques of 
-painting.</p>
-</details>
+									alt="​​Les Demoiselles dAvignon" aria-details="det">
+									<details id="det">
+									<p>The Les Demoiselles dAvignon is a modern art painting by
+									Pablo Picasso that diverts from traditional techniques of 
+									painting.</p>
+									</details>
 							</script>
 						</code>
 					</pre>
@@ -434,14 +434,10 @@ painting.</p>
 				<p>The aria-autocomplete attribute indicates whether inputting text could trigger display of one or more
 					predictions of the user's intended value for a combobox, searchbox, or textbox and specifies how predictions
 					will be presented if they are made.</p>
-
 				<p>The aria-autocomplete property only describes the type of predictive behavior for an input element for
 					assistive technologies; it doesn't provide the functionality.
 				</p>
-
-
 				<p> <a href="https://www.youtube.com/watch?v=XNjUfwDmHGc">Take 3 mins and watch</a></p>
-
 			</section>
 			<!--End Meredith's Section-->
 
