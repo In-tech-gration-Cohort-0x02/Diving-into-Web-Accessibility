@@ -26,11 +26,18 @@
 				<h1>ARIA LABELS &AMP; A11y</h1>
 			</section>
 			<!-- Leon's Section aria-keyshortcuts -->
-			<section id="aria-keyshortcuts">
+			<section id="aria-keyshortcuts" class="aria-keyshortcuts"> 
 				<section id="aria-keyshortcuts-01" data-keyshortcuts="1">
 					<h2>Aria-keyshortcuts</h2>
 					<div class="gradient-border gradient-border-left">
-						<h3 class="gradient-border gradient-border-01"><mark>aria-keyshortcuts property</mark> defines keyboard shortcuts that an author has implemented to activate or give focus to an element.</h3>
+						<p class="gradient-border gradient-border-01"><mark>The aria-keyshortcuts property</mark>keyboard shortcuts that an author has implemented to activate or give focus to an element.</p>
+						<pre>
+							<code class="language-html">
+								<a id="skip-link" href="#content" aria-keyshortcuts="Alt+Shift+A">
+									Skip to content
+								</a>
+							</code>		
+						</pre>
 					</div>
 				</section>
 				<section id="aria-keyshortcuts-02" data-keyshortcuts="2">
@@ -65,7 +72,7 @@
 							   The order of the modifier keys is not otherwise significant.
 							   <mark>"Alt+Shift+T" = "Shift+Alt+T"</mark> 
 							</p>
-							<div class="specialunderline">Not valid</div>
+							<h2>Not valid</h2>
 							<p>
 								<mark>"T+Shift+Alt"</mark> is not valid because all of the modifier keys don't come first.
 								<mark>"Alt"</mark> is not valid because it doesn't include at least one non-modifier key. 
@@ -115,7 +122,7 @@
 					<div class="gradient-border">
 						<h3 class="gradient-border gradient-border-09">For example, the single-quote character can be encoded as <mark>"&amp;#39;"</mark> in HTML.</h3>
 						<h4>User agents MUST NOT change keyboard behavior in response to the aria-keyshortcuts attribute.</h4>									   
-					   <ul>Authors MUST 
+					   <ul><h4>Authors MUST</h4> 
 							<li>handle scripted keyboard events to process aria-keyshortcuts.</li>
 							<li>provide a way to expose keyboard shortcuts so that all users can discover them, such as through the use of a tooltip.</li>
 							<li>ensure that aria-keyshortcuts applied to disabled elements are unavailable.</li>
@@ -127,22 +134,20 @@
 				<section id="aria-keyshortcuts-10" data-keyshortcuts="10">
 					<h2>Examples of valid keyboard shortcuts include:</h2>
 					<pre class="codestyle">
-						<code class="language-markup">
-						 &#9193; &#9193; &#9193;    "A"
+						<code class="language-html">
+						 &#9193; &#9193; &#9193;    A
 
-						 &#9193; &#9193; &#9193;    "Shift + Space"
+						 &#9193; &#9193; &#9193;    Shift + Space
 
-						 &#9193; &#9193; &#9193;    "Control + Alt + U + ."
+						 &#9193; &#9193; &#9193;    Control + Alt + U + .
 
-						 &#9193; &#9193; &#9193;    "Control + Shift + &amp;#39; "
+						 &#9193; &#9193; &#9193;    Control + Shift + &amp;#39; 
 
-						 &#9193; &#9193; &#9193;    "Alt+Shift+P Control+F"
+						 &#9193; &#9193; &#9193;    Alt+Shift+P Control+F
 
-						 &#9193; &#9193; &#9193;    "Meta+C Meta+Shift+C"
+						 &#9193; &#9193; &#9193;    Meta+C Meta+Shift+C
 						</code>
-					</pre>
-					<p><a href="https://w3c.github.io/aria/#aria-keyshortcuts">Here</a> is the source link for the <mark>aria-keyshortcuts</mark></p>
-					<p><a href="https://psdtowp.net/html-codes-special-characters.html	">Here</a> is the source link for the <mark>html-entities</mark></p>	
+					</pre>	
 				</section>								
 			</section>
 			<!--End Leo's Section-->
@@ -298,6 +303,8 @@ painting.</p>
 			<!--useful resources-->
 			<section>
 				<h2>Useful resources</h2>
+				<p><a href="https://w3c.github.io/aria/#aria-keyshortcuts">Here</a> is the source link for the <mark>aria-keyshortcuts</mark></p>
+				<p><a href="https://psdtowp.net/html-codes-special-characters.html	">Here</a> is the source link for the <mark>html-entities</mark></p>
 			</section>
 		</div>
 	</div>
