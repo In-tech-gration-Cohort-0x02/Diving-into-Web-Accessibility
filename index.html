@@ -148,7 +148,40 @@
 			<!--End Leo's Section-->
 
 			<!--Jason Section aria-colindex -->
-			<section>Slide 2</section>
+			<section data-background-gradient="linear-gradient(to bottom, #1f1e1d, #A9A9A9)">
+				<section>
+					<h2>aria-colindex</h1>
+					<blockquote id="aria-colindex">The <mark>aria-colindex</mark> attribute defines an element's column index or position with respect to the total number of columns within a <a href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/table";>table</a>, <a href="https://developer.mozilla.org/en-US/docs/Web/CSS/grid";>grid</a>, or <a href="https://developer.mozilla.org/en-US/docs/Web/Accessibility/ARIA/Roles/treegrid_role";>treegrid.</a></blockquote>
+				</section>	
+				<section>
+						<p>ARIA provides several attributes to provide information about table, grid, and treegrid structures. The <mark>aria-colindex</mark> attribute defines the substructure, an element's column index or position with respect to the total number of columns, within such structures.</p>
+				</section>				
+				<section>
+					<p>a syntactic example of aria-colindex</p>
+					<pre data-id="code-animation"><code class="hljs javascript" data-trim data-line-numbers>
+						<div role="grid" aria-colcount="6">
+							<div role="rowgroup">
+							  <div role="row">
+								<div role="columnheader" aria-colindex="1">First name</div>
+								<div role="columnheader" aria-colindex="2">Last name</div>
+								<div role="columnheader" aria-colindex="5">City</div>
+								<div role="columnheader" aria-colindex="6">Zip</div>
+							  </div>
+							</div>
+							<div role="rowgroup">
+							  <div role="row">
+								<div role="gridcell" aria-colindex="1">Debra</div>
+								<div role="gridcell" aria-colindex="2">Burks</div>
+								<div role="gridcell" aria-colindex="5">New York</div>
+								<div role="gridcell" aria-colindex="6">14127</div>
+							  </div>
+							</div>
+							…
+						  </div>											  					
+					</code>
+					</pre>
+				</section>
+			</section>
 			<!--End Jason's Section-->
 
 			<!-- Anna's Section aria-label -->
