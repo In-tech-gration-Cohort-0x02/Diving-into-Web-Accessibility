@@ -110,5 +110,12 @@
 
 
 
+/*styling Useful Resource slide*/
 
+.div-useful-resources {
+    font-size: 80%;
+}
 
+.div-useful-resources ol a:hover {
+    color: #edd714;
+}
