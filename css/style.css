@@ -1,13 +1,14 @@
 /* ------------------------------ Start of main CSS ------------------------------------ */
 
 /*customize controls color to be more visible for the slides*/
-.reveal .controls {
-  color: aqua !important;
-}
+
+.reveal:not(.rtl) .controls[data-controls-back-arrows=faded] .navigate-left.enabled{opacity:.8}
 
 /* ------------------------------ End of main CSS ------------------------------------ */
 
+
 /* ------------------------------ Start of Leon's CSS ------------------------------------ */
+
 #aria-keyshortcuts {
   text-align: center;
   font-size: 0.7em !important;
@@ -78,6 +79,7 @@
   margin-right: 0.5rem;
   color: #1f1e1d;
 }
+  
 
 /* ------------------------------ End of Leon's CSS ------------------------------------ */
 
