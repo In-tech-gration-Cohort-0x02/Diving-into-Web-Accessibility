@@ -9,7 +9,8 @@
 
 	<link rel="stylesheet" href="dist/reset.css">
 	<link rel="stylesheet" href="dist/reveal.css">
-	<link rel="stylesheet" href="dist/theme/black.css">
+	<!-- changed black theme to custom css for reveal.js customizations-->
+	<link rel="stylesheet" href="dist/theme/custom.css">
 	<link rel="stylesheet" type="text/css" href="css/style.css">
 	<!-- prism for code styling -->
 	<!--<link rel="stylesheet" type="text/css"  href="css/prism.css">-->
@@ -19,8 +20,6 @@
 </head>
 
 <body>
-
-
 	<div class="reveal">
 		<div class="slides">
 			<!--title-->
@@ -30,10 +29,11 @@
 				<h2> group project</h2>
 				<p> cohort 02, in<strong id="tech">TECH</strong>gration </p>
 			</section>
+			<!-- web Accessibility section -->
 			<section>
 				<section>
 					<p>what is A11Y?</p>
-					<p>A ccessibilit y</p>
+					<p>A ccessibilit y </p>
 					<p>A 11 y </p>
 				</section>
 				<section>
@@ -46,13 +46,14 @@
 						<li>Color Contrast (Background and text color) </li>
 						<!--- (addressing people with vision impairments and/or using technology in sunshine) -->
 						<li>Headings and Structure</li>
-						<li>Accessible names for interactive elements</li>
+						<li>accessible names for interactive elements</li>
 						<li>Responsive Design</li>
 						<li>Descriptive Links</li>
 						<li>Alternative Text (Alt Text)</li>
 					</ul>
 				</section>
 			</section>
+			<!-- ARIA attribute Section -->
 			<section>
 				<section>
 					<h2>ARIA</h2>
@@ -259,7 +260,7 @@
 			<!--End Leo's Section-->
 
 			<!--Jason Section aria-colindex -->
-			<section data-background-gradient="linear-gradient(to bottom, #1f1e1d, #A9A9A9)">
+			<section >
 				<section>
 					<h2>aria-colindex</h2>
 					<blockquote id="aria-colindex">The <mark>aria-colindex</mark> attribute defines an element's column
@@ -307,7 +308,7 @@
 			<!--End Jason's Section-->
 
 			<!-- Anna's Section aria-label -->
-			<section data-background-gradient="linear-gradient(to bottom, #1f1e1d, #A9A9A9)">
+			<section >
 				<section>
 					<h2 class="aria-label-heading">aria-label</h2>
 					<p>The <mark>aria-label</mark> should be used to provide a text alternative to an element that has
@@ -402,8 +403,7 @@ alt="​​Les Demoiselles dAvignon" aria-details="det">
 			<!--End Alex's Section-->
 
 			<!-- Meredith's Section aria-autocomplete -->
-
-			<section data-background-gradient="linear-gradient(to bottom, #00ffff, ##ffff66)">
+			<section >
 				<h2> Aria-autocomplete</h2>
 				<p>The aria-autocomplete attribute indicates whether inputting text could trigger display of one or more
 					predictions of the user's intended value for a combobox, searchbox, or textbox and specifies how
@@ -424,9 +424,8 @@ alt="​​Les Demoiselles dAvignon" aria-details="det">
 			<!-- Mawu's Section ARIA-SORT -->
 			<section>
 				<section><br><img src="assets/aria-sort1.png"></section>
-					<section class="title">
-						ARIA-SORT:  
-						The aria-sort attribute indicates if items in a table or grid are sorted in ascending or descending order.
+					<section class="title">ARIA-SORT:  The aria-sort attribute indicates 
+						if items in a table or grid are sorted in ascending or descending order.
 					</section>
 					<section class="description">
 						If a grid or table provides sort functionality, 
@@ -437,11 +436,7 @@ alt="​​Les Demoiselles dAvignon" aria-details="det">
 					<section class="description">
 						The aria-sort attribute is only set on the currently sorted 
 						column or row. Set aria-sort="ascending" to indicate the data 
-						cells in the column or row are sorted in ascending order. 
-						If the sort order is reversed, toggle the value to aria-sort="descending". 
-						When a different column or row becomes sorted, the single aria-sort attribute 
-						is moved to the header cell for the newly sorted column or row with 
-						the appropriate value for the sort order.
+						cells in the column or row are sorted in ascending order.
 					</section>
 					<section class="description">
 						The aria-sort attribute should only be added to a single 
@@ -456,9 +451,8 @@ alt="​​Les Demoiselles dAvignon" aria-details="det">
 						assistive technologies, such as screen readers, in understanding 
 						and interacting with sortable tables.
 					</section>
-					<section class="subtitle">
-						EXAMPLES: The following table loads with the last name 
-							column sorted in ascending order.
+					<section>EXAMPLES: The following table loads with the last name 
+						column sorted in ascending order.
 					</section>
 					<section class="description"><img src="assets/aria-sort.png"></section>
 					<section class="description">
@@ -468,16 +462,9 @@ alt="​​Les Demoiselles dAvignon" aria-details="det">
 						clicks on a different header button, the aria-sort would be removed 
 						from the Last Name header to be placed on the clicked button's &lt;th&gt; parent.
 					</section>
-					<section class="description">
-						We provided instructions in the caption for assistive technology 
-						who may not see the down arrows that we would add with CSS targeting 
-						the th[aria-sort="ascending"] and th[aria-sort="descending"] selectors.
-					</section>
-		
 					<section class="subtitle">
 					  VALUES OR USAGE
 					</section>
-					
 					<section class="description">
 						<ul class="list">
 							<li>Ascending Order or Ascending (aria-sort="ascending"):
@@ -511,38 +498,105 @@ alt="​​Les Demoiselles dAvignon" aria-details="det">
 			</section>
 			<!--End Mawu's Section-->
 
-			<!-- Mary's Section aria-errormessage-->
-			<section>slide 8</section>
+			<!-- Mary's Section aria-describedby-->	
+			<section class="aria-describedby">
+				<h2>aria-describedby</h2>
+				<section>
+					<p>Using the aria-describedby property to provide a additional descriptive label for user interface (specially
+						screen readers), with more context or information about the element</p>
+				</section>
+
+				<section>
+					<h3>Syntax</h3>
+					<p>
+						The aria-describedby attribute takes as its value the ID of one or more elements that serve as the source of
+						the
+						additional description. These elements can be paragraphs, divs, spans, or other elements containing the
+						relevant
+						information.
+						Multiple IDs can be space-separated if you want to reference multiple elements.
+					</p>
+				</section>
+				<section>
+					<h3>Usage:</h3>
+					<p>
+						typically apply aria-describedby to an HTML element, indicating which other element(s) should be
+						considered as
+						providing descriptions or additional information for the element.
+					</p>
+				</section>
+
+				<section class="describedby-code-section">
+					<pre>
+					<code class="language-html">
+				  &lt;button class="close-button" aria-label="Close" aria-describedby="descriptionClose" onclick="myDialog.close()"&gt;X&lt;/button&gt;
+				  &lt;div class="description" id="descriptionClose"&gt;Closing this window will discard any information entered and return you back to the main page&lt;/div&gt;
+				</code>
+			</pre>
+				</section>
+				<section>
+					<!-- TODO styling -->
+					<h3>Example</h3>
+					<form>
+						<button aria-label="Close" class="describedby-close-btn" aria-describedby="descriptionClose"
+							onclick="myDialog.close()">X</button>
+						<span id="descriptionClose">Closing this window will discard any information entered and
+							return you back to the main page</span>
+
+						<div class="aria-describedby-email">
+							<label for="user-email">Email
+								<input type="text" id="user-email">
+							</label>
+							<small aria-describedby="user-email">We will never share your email with anyone</small>
+						</div>
+						<div>
+							<label for="user-password">Password</label>
+							<input id="user-password" type="password">
+						</div>
+						<button type="submit">Submit</button>
+					</form>
+				</section>
+			</section>
 			<!--End Mary's Section-->
 
 			<!-- Vangelis' Section aria-valuetext-->
 			<section>
-				<section data-background-gradient="linear-gradient(to bottom, #1f1e1d, #A9A9A9)">
+				<section>
 					<h2>aria-valuetext</h2>
-					<blockquote id="aria-colindex">The <mark>aria-valuetext</mark> attribute defines the human-readable text alternative of
-						aria-valuenow for a range widget. Numbers — even percentages — aren't always user-friendly. Assistive technologies present <span
-							class="aria-label-highlighted">aria-valuenow</span> as numeric values. </blockquote>
+					<blockquote id="aria-colindex">The <mark>aria-valuetext</mark> attribute defines the human-readable text
+						alternative of
+						aria-valuenow for a range widget. Numbers — even percentages — aren't always user-friendly. Assistive
+						technologies present <span class="aria-label-highlighted">aria-valuenow</span> as numeric values.
+					</blockquote>
+					<p>The <mark>aria-valuetext</mark> attribute defines the human-readable text alternative of
+						aria-valuenow
+						for a range widget.
+						Numbers — even percentages — aren't always user-friendly. Assistive technologies present <span
+							class="aria-label-highlighted">aria-valuenow</span> as numeric values. </p>
 				</section>
-				<section data-background-gradient="linear-gradient(to bottom, #1f1e1d, #A9A9A9)">
+				<section>
 					<p>If a progress bar is at 8%, what does that mean? <span class="aria-label-highlighted">aria-valuetext</span>
 						provides a way of presenting the current value in a more user-friendly,
 						human-understandable way. For example, a battery meter value might be conveyed as
 						<span class="aria-label-highlighted">aria-valuetext="8% (34 minutes) remaining"</span>.
 					</p>
 				</section>
-				<section data-background-gradient="linear-gradient(to bottom, #1f1e1d, #A9A9A9)">
+				<section>
 					<p>The <span class="aria-label-highlighted">aria-valuetext</span> attribute is used with the
-						<span class="aria-label-highlighted">aria-valuenow</span> attribute, not instead of it, unless that value is not known.
+						<span class="aria-label-highlighted">aria-valuenow</span> attribute, not instead of it, unless that value is
+						not known.
 						<span class="aria-label-highlighted">aria-valuetext</span> is only needed when the numeric value of
 						<span class="aria-label-highlighted">aria-valuenow</span> is not meaningful. For example, a range's values
-						are numeric	but may be used for non-numeric values, such as college class level.
+						are numeric but may be used for non-numeric values, such as college class level.
 					</p>
 				</section>
-				<section data-background-gradient="linear-gradient(to bottom, #1f1e1d, #A9A9A9)">
+				<section>
 					<p>The values of <span class="aria-label-highlighted">aria-valuenow</span> for a 4-year college
-						could range from 1 through 4, which indicate the position of each value in the value space. In this case, the
+						could range from 1 through 4, which indicate the position of each value in the value space. In this case,
+						the
 						<a href="https://developer.mozilla.org/en-US/docs/Web/Accessibility/ARIA/Attributes/aria-valuetext"
-						target="_blank">aria-valuetext</a> could be one of the strings: "first year", "sophomore", "junior", and "senior".
+							target="_blank">aria-valuetext</a> could be one of the strings: "first year", "sophomore", "junior", and
+						"senior".
 					</p>
 				</section>
 			</section>
