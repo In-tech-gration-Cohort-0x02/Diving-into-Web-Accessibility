@@ -433,54 +433,87 @@ alt="​​Les Demoiselles dAvignon" aria-details="det">
 
 			<!-- Mawu's Section-->
 			<section>
-				<section><br><img src="assets/aria-document-role.png"></section>
-				<section class="title">
-					ARIA Document Role
-				</section>
-				<section class="description">
-					An ARIA (Accessible Rich Internet Applications)
-					document role is a way to specify the overall structure
-					or type of a document in web content for the purpose of web accessibility.
-					ARIA is a set of attributes that can be added to HTML elements to provide
-					additional information to assistive technologies such as screen readers.
-					The document role is a specific type of ARIA role that is used to define
-					the role or type of a document within a web page.
-				</section>
-				<section class="description">
-					For example, you can use the role="document"
-					attribute to indicate that a section of your
-					web page represents a document. This can be helpful
-					for screen reader users to understand the structure
-					and purpose of content on a web page.
-				</section>
-				<section class="description">
-					Here's an example of how you might use it in HTML: <section><br><img src="assets/aria-document-role1.png">
+				<section><br><img src="assets/aria-sort1.png"></section>
+					<section class="title">ARIA-SORT:  The aria-sort attribute indicates 
+						if items in a table or grid are sorted in ascending or descending order.
 					</section>
-					In this example, the role="document" attribute is applied
-					to a div element to indicate that it represents a document.
-					This helps assistive technologies convey the structure and purpose
-					of the content to users who may have visual impairments.
-				</section>
-				<section class="description">
-					It's important to note that the ARIA document role should only be used on focusable sections within complex
-					composite widgets or applications.
-				</section>
-				<section class="subtitle">
-					Testing and Debugging
-				</section>
-				<section class="description">
-					To test and debug ARIA document roles, you can use tools like the Accessibility Inspector in Firefox or
-					Chrome's Accessibility Developer Tools. These tools allow you to inspect the accessibility tree and view the
-					roles and attributes of each element.
-				</section>
-				<section class="subtitle">
-					Summary
-				</section>
-				<section class="description">
-					In summary, the ARIA document role is a tool to improve web accessibility by describing the role and structure
-					of document-like content on a web page. It's part of a broader effort to make the web more inclusive and
-					user-friendly for everyone, including those with disabilities
-				</section>
+					<section class="description">
+						If a grid or table provides sort functionality, 
+						the aria-sort attribute should be set to either ascending 
+						or descending (or other) on the header cell element for the 
+						sorted column or row.
+					</section>
+					<section class="description">
+						The aria-sort attribute is only set on the currently sorted 
+						column or row. Set aria-sort="ascending" to indicate the data 
+						cells in the column or row are sorted in ascending order. 
+						If the sort order is reversed, toggle the value to aria-sort="descending". 
+						When a different column or row becomes sorted, the single aria-sort attribute 
+						is moved to the header cell for the newly sorted column or row with 
+						the appropriate value for the sort order.
+					</section>
+					<section class="description">
+						The aria-sort attribute should only be added to a single 
+						table or grid header at a time. The attribute is set to 
+						inform assistive technology users which column or row is sorted. 
+						It doesn't have any impact on the actual sort order.
+					</section>
+					<section class="description">
+						The aria-sort attribute is used to provide information 
+						about the current sorting state of a column in a data table. 
+						It serves as an accessibility feature that assists users of 
+						assistive technologies, such as screen readers, in understanding 
+						and interacting with sortable tables.
+					</section>
+					<section>EXAMPLES: The following table loads with the last name 
+						column sorted in ascending order.
+					</section>
+					<section class="description"><img src="assets/aria-sort.png"></section>
+					<section class="description">
+						If a user clicks on the Last Name button, aria-pressed="true" 
+						would be added to the  &lt;button&gt; element and the aria-sort value 
+						would be toggled to "descending" with JavaScript. If the user 
+						clicks on a different header button, the aria-sort would be removed 
+						from the Last Name header to be placed on the clicked button's &lt;th&gt; parent.
+					</section>
+					<section class="description">
+						We provided instructions in the caption for assistive technology 
+						who may not see the down arrows that we would add with CSS targeting 
+						the th[aria-sort="ascending"] and th[aria-sort="descending"] selectors.
+					</section>
+					<section class="subtitle">
+					  VALUES OR USAGE
+					</section>
+					<section class="description">
+						<ul class="list">
+							<li>Ascending Order or Ascending (aria-sort="ascending"):
+								This value is applied to a column header when 
+									the data in that column is sorted in ascending order 
+									(from A to Z, smallest to largest, earliest to latest).
+								</li>
+							<li>Descending Order or Descending (aria-sort="descending"):
+								This value is applied when the data in a column 
+									is sorted in descending order (from Z to A, largest 
+									to smallest, latest to earliest).
+								</li>
+								<li>Not Sorted or None (aria-sort="none"):
+									This value is used to indicate that the column is not currently sorted.
+								</li>
+							</ul>
+						</section>
+					<section class="subtitle">
+						SUMMARY
+					</section>
+					<section class="description">
+						In summary, aria-sort is a crucial ARIA attribute that enhances 
+						the accessibility of sortable tables by conveying the sorting 
+						state of table columns to users of assistive technologies. 
+						It improves understanding, navigation, and interaction with 
+						data tables, making the web more inclusive for individuals with disabilities.
+					</section>
+					<section>
+						THANKS FOR YOUR ATTENTION
+					</section>
 			</section>
 			<!--End Mawu's Section-->
 
