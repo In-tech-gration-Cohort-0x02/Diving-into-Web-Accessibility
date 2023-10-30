@@ -53,12 +53,42 @@
   color: #c2c1c1 !important;
   word-break: break-all;
 }
-#aria-keyshortcuts p {
+#aria-keyshortcuts p{
+  text-align: justify;
+}
+
+#aria-keyshortcuts-03 div{
   text-align: justify;
 }
 
 #aria-keyshortcuts pre code {
   background-color: #2b2b2b;
+  white-space: pre;
+  tab-size: 0.3;
+}
+
+#aria-keyshortcuts-04 h2{
+  text-decoration: underline;
+}
+
+#aria-keyshortcuts-05 h2 mark{
+  text-transform: initial;
+}
+
+#aria-keyshortcuts-05 ol li span,
+#aria-keyshortcuts-09 ul li span{
+  opacity: 0;
+}
+
+#code_examples{
+  visibility: hidden;
+  height: 0px;
+}
+
+#code_examples span{
+  height: 0px;
+  line-height: 0px;
+
 }
 
 #aria-keyshortcuts-05 ol,
@@ -78,6 +108,82 @@
   font-weight: bold;
   margin-right: 0.5rem;
   color: #1f1e1d;
+}
+
+#aria-keyshortcuts-09 ul li{
+  font-size: 24px;
+}
+
+#mixedcode,
+#ariakeystart,
+#ariakeyend,
+#readletters{
+  position: absolute !important; 
+  clip: rect(1px 1px 1px 1px); 
+  clip: rect(1px,1px,1px,1px); 
+}
+
+#aria-keyshortcuts button {
+  background-color: #e42832;
+  border: none;
+  padding: 15px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin: 4px 2px;
+  cursor: pointer;
+}
+
+#aria-keyshortcuts button a{ 
+  color: white;
+}
+
+#aria-keyshortcuts button.tooltip {
+  position: relative;
+  padding: 10px 15px;
+  position: relative;
+  margin: 15px;
+  text-align: center;
+}
+
+#aria-keyshortcuts button.tooltip::after {
+  background-color: #000000;
+  color: #fff;
+  display: none;
+  padding: 10px 15px;
+  position: absolute;
+  text-align: center;
+  z-index: 999;
+  content: 'here';
+  top: 0;
+  left: 50%;
+  transform: translate(-50%, calc(-100% - 10px));
+  display: block;
+}
+
+#aria-keyshortcuts button.tooltip::before {
+  background-color: #000000;
+  content: ' ';
+  display: none;
+  position: absolute;
+  width: 15px;
+  height: 15px;
+  z-index: 999;
+  display: block;
+}
+
+#aria-keyshortcuts button.tooltip.top::after {
+	content: 'here';
+	top: 0;
+	left: 50%;
+	transform: translate(-50%, calc(-100% - 10px));
+}
+
+#aria-keyshortcuts button.tooltip.top::before {
+	top: 0;
+	left: 50%;
+	transform: translate(-50%, calc(-100% - 5px)) rotate(45deg);
 }
   
 
