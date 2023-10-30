@@ -5,7 +5,9 @@
 .reveal:not(.rtl) .controls[data-controls-back-arrows=faded] .navigate-left.enabled{opacity:.8}
 
 /* ------------------------------ End of main CSS ------------------------------------ */
-
+ .a11y-list {
+  font-size: 35px;
+ }
 
 /* ------------------------------ Start of Leon's CSS ------------------------------------ */
 
@@ -159,4 +161,8 @@ button.describedby-close-btn {
 
 .div-useful-resources ol a:hover {
   color: #edd714;
+}
+
+.project-insights{
+  font-size: 35px;
 }
