@@ -5,7 +5,7 @@
 	<meta charset="utf-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
 
-	<title>A11y &amp; ARIA LABELS - presentation</title>
+	<title aria-label="ARIA presentation">A11y &amp; ARIA LABELS - presentation</title>
 
 	<link rel="stylesheet" href="dist/reset.css">
 	<link rel="stylesheet" href="dist/reveal.css">
@@ -69,23 +69,36 @@
 			</section>
 			<!-- Leon's Section aria-keyshortcuts -->
 			<section id="aria-keyshortcuts" class="aria-keyshortcuts">
-				<section id="aria-keyshortcuts-01" data-keyshortcuts="1">
-					<h2>Aria-keyshortcuts</h2>
+				<section id="aria-keyshortcuts-01" data-state="aria-keyshortcuts">
+					<div id="ariakeystart">Aria-keyshortcuts start of presentation</div>
+					<h2 aria-labelledby="ariakeystart" aria-hidden="true">Aria-keyshortcuts</h2>
 					<div class="gradient-border gradient-border-left">
 						<p class="gradient-border gradient-border-01"><mark>The aria-keyshortcuts
-								property</mark>keyboard shortcuts that an author has implemented to activate or give
+								property</mark>are keyboard shortcuts that an author has implemented to activate or give
 							focus to an element.</p>
-						<pre>
+						<pre aria-hidden="true">
 							<code class="language-html">
-								<a id="skip-link" href="#content" aria-keyshortcuts="Alt+Shift+A">
-									Skip to content
+								<a id="skip-link" href="#content" aria-keyshortcuts="Alt+Shift+A" accesskey="Alt+Shift+A">
+									&nbsp;&nbsp;Skip to content
 								</a>
 							</code>		
 						</pre>
+						<p
+							aria-labelledby="youtube-link"
+							aria-keyshortcuts="Ctrl+Shift+Enter"
+							role="link"
+							aria-selected="true"
+							>Example Controlling focus with tabindex. <mark>Ctrl+Shift+Enter</mark> to open
+							<button role="button" tabindex="-1" aria-hidden="true" title="open" class="tooltip top">
+								<a id="youtube-link" tabindex="0" href="https://www.youtube.com/watch?v=Pe0Ce1WtnUM" aria-hidden="true">
+									open
+								</a> 
+							</button>
+						</p>
 					</div>
 				</section>
-				<section id="aria-keyshortcuts-02" data-keyshortcuts="2">
-					<h2>The value of the aria-keyshortcuts attribute</h2>
+				<section id="aria-keyshortcuts-02" data-keyshortcuts="2" aria-hidden="true">
+					<h2 aria-label="The value of the aria-keyshortcuts attribute">The value of the aria-keyshortcuts attribute</h2>
 					<div class="gradient-border gradient-border-left">
 						<p class="gradient-border gradient-border-02">It is a space-separated list of keyboard shortcuts
 							that can be
@@ -94,7 +107,7 @@
 							characters
 							generated.<br /><br />
 							Each keyboard shortcut consists of one or more tokens delimited by <mark>the plus sign
-								("+")</mark>
+								<span aria-hidden="true">("+")</span></mark>
 							representing zero or more modifier keys and exactly one non-modifier key that must be
 							pressed
 							simultaneously to activate the given shortcut.
@@ -104,23 +117,24 @@
 				<section id="aria-keyshortcuts-03" data-keyshortcuts="3">
 					<h2>Authors MUST specify modifier keys exactly according to the UI Events KeyboardEvent key Values
 						spec
-						[uievents-key]</h2>
+						[uievents-key]
+					</h2>
 					<div class="gradient-border gradient-border-left">
-						<p class="gradient-border gradient-border-03">For example,
-							<mark>"Alt", "Control", "Shift", "Meta", or "AltGraph".</mark><br />
-							On Apple computers, meta corresponds to the Command key, and Alt to the Option key
+						<div class="gradient-border gradient-border-03">For example,
+							<mark>Alt, Control, Shift, Meta, or AltGraph.</mark><br />
+							On Apple computers, meta corresponds to the Command key, and Alt to the Option key.
 							The valid names for non-modifier keys are any printable character.
-							<mark>"A", "B", "1", "2", "$", "Plus"</mark> for a plus sign,"Space" for the spacebar,
+							<mark>A, B, 1, 2, <span aria-label="dollar">$</span>, Plus</mark> for a plus sign,"Space" for the spacebar,
 							or the names of any other non-modifier key specified in the UI Events KeyboardEvent key
 							Values spec
-							[uievents-key]
-							For example, <mark>"Enter", "Tab", "ArrowRight", "PageDown", "Escape", or "F1".</mark>
+							[uievents-key].
+							For example, <mark>Enter, Tab, ArrowRight, PageDown, Escape, or F1.</mark>
 							The use of "Space" for the spacebar is an exception to the UI Events KeyboardEvent key
 							Values spec
-							<mark>[uievents-key]</mark> as the space or spacebar key is encoded as <mark>' '</mark> and
+							<mark>[uievents-key]</mark> as the space or spacebar key is encoded as <div id="mixedcode">space</div><a aria-labelledby="mixedcode"><mark aria-hidden="true">' '</mark></a> and
 							would be
-							treated as a whitespace character.
-						</p>
+							treated as a white space character. 
+						</div>
 					</div>
 				</section>
 				<section id="aria-keyshortcuts-04" data-keyshortcuts="4">
@@ -131,13 +145,13 @@
 								shortcut.</p>
 							<p>that required non-modifier keys come last when they are part of a shortcut.
 								The order of the modifier keys is not otherwise significant.
-								<mark>"Alt+Shift+T" = "Shift+Alt+T"</mark>
+								<mark>Alt+Shift+T = Shift+Alt+T</mark>
 							</p>
-							<h2>Not valid</h2>
+							<h2>Not valid combinations</h2>
 							<p>
-								<mark>"T+Shift+Alt"</mark> is not valid because all of the modifier keys don't come
+								<mark>T+Shift+Alt</mark> is not valid because all of the modifier keys don't come
 								first.
-								<mark>"Alt"</mark> is not valid because it doesn't include at least one non-modifier
+								<mark>Alt</mark> is not valid because it doesn't include at least one non-modifier
 								key.
 							</p>
 						</span>
@@ -145,8 +159,8 @@
 				</section>
 				<section id="aria-keyshortcuts-05" data-keyshortcuts="5">
 					<h2>When specifying an alphabetic key, both the uppercase and lowercase variants are considered
-						equivalent:
-						<mark>"a" and "A"</mark> are the same.
+						equivalent<span area-hidden="true">:</span>
+						<span id="readletters">small a and capital a</span><span aria-labelledby="readletters"><mark aria-hidden="true">a and A</mark></span> are the same.
 					</h2>
 					<div class="gradient-border gradient-border-left">
 						<p class="gradient-border gradient-border-05">When implementing keyboard shortcuts authors
@@ -155,13 +169,13 @@
 							Keyboard designs vary significantly based on the device used and the languages supported.
 						</p>
 						<h4>
-							<bold>For example, many modifier keys are used in conjunction with other keys to: </bold>
+							<bold>For example, many modifier keys are used in conjunction with other keys to<span area-hidden="true">:</span> </bold>
 						</h4>
-						<ol>
-							<li>create common punctuation symbols</li>
-							<li>create number characters</li>
-							<li>swap keyboard sides on bilingual keyboards to switch languages</li>
-							<li>perform a number of other functions</li>
+						<ol role="list">
+							<li role="listitem"><span aria-label="one">1</span>create common punctuation symbols</li>
+							<li role="listitem"><span aria-label="two">2</span>create number characters</li>
+							<li role="listitem"><span aria-label="three">3</span>swap keyboard sides on bilingual keyboards to switch languages</li>
+							<li role="listitem"><span aria-label="four">4</span>perform a number of other functions</li>
 						</ol>
 					</div>
 				</section>
@@ -175,30 +189,30 @@
 							key generated. </h3>
 						<p>For example, in French keyboard layouts, the number characters are not available until you
 							press the
-							<mark>Control key</mark>, so a keyboard shortcut defined as <mark>"Control+2"</mark> would
+							<mark>Control key</mark>, so a keyboard shortcut defined as <mark>Control+2</mark> would
 							be ambiguous as
-							this is how one would type the <mark>"2"</mark>character on a French keyboard.
+							this is how one would type the <mark>2</mark>character on a French keyboard.
 						</p>
 					</div>
 				</section>
 				<section id="aria-keyshortcuts-07" data-keyshortcuts="7">
 					<h2>If the character used is determined by a modifier key, the author <mark>MUST</mark> specify the
 						actual key
-						used to generate the character, that is generated by the key, and not the resulting character.
+						used to generate the character, that is generated by the key, and not the resulting character
 					</h2>
 					<div class="gradient-border gradient-border-left">
 						<h3 class="gradient-border gradient-border-07">This convention enables the assistive technology
 							to
-							accurately convey what keys must be used to generate the shortcut. </h3>
-						<p>For example, on most U.S. English keyboards, the percent sign <mark>"%"</mark> can be input
+							accurately convey what keys must be used to generate the shortcut </h3>
+						<p>For example, on most US English keyboards, the percent sign <mark>%</mark> can be input
 							by pressing
-							<mark>Shift+5.</mark>
-							The correct way to specify this shortcut is <mark>"Shift+5"</mark>. It is incorrect to
-							specify <mark>"%"
-								or "Shift+%"</mark>.
+							<mark>Shift+5</mark><span aria-hidden="true">.</span>
+							The correct way to specify this shortcut is <mark>Shift+5</mark><span aria-hidden="true">.</span> It is incorrect to
+							specify <mark>%
+								or Shift+%</mark><span aria-hidden="true">.</span>
 							However, note that on some international keyboards the percent sign might be an unmodified
 							key, in which
-							case <mark>"%" and "Shift+%"</mark> could be correct on those keyboards.
+							case <mark>% and Shift+%</mark> could be correct on those keyboards.
 						</p>
 					</div>
 				</section>
@@ -211,7 +225,7 @@
 					<div class="gradient-border">
 						<h3 class="gradient-border gradient-border-08">For example, the single-quote character can be
 							encoded as
-							<mark>"&amp;#39;"</mark> in HTML.
+							<div id="mixedcode">ampersand hash 39 semi-colon</div><a aria-labelledby="mixedcode"></a> in HTML.
 						</h3>
 					</div>
 				</section>
@@ -219,29 +233,42 @@
 					<h2>Aria-keyshortcuts Rules</h2>
 					<div class="gradient-border">
 						<h3 class="gradient-border gradient-border-09">For example, the single-quote character can be
-							encoded as <mark>"&amp;#39;"</mark> in HTML.</h3>
+							encoded as <div id="mixedcode">ampersand hash 39 semi-colon</div><a aria-labelledby="amper"><mark aria-hidden="true">&amp;#39;</mark></a> in HTML.
+						</h3>
 						<h4>User agents MUST NOT change keyboard behavior in response to the aria-keyshortcuts
-							attribute.</h4>
+							attribute.
+						</h4>
 						<ul>
 							<h4>Authors MUST</h4>
-							<li>handle scripted keyboard events to process aria-keyshortcuts.</li>
-							<li>provide a way to expose keyboard shortcuts so that all users can discover them, such as
+							<li role="listitem"><span aria-label="one">1</span>handle scripted keyboard events to process aria-keyshortcuts.</li>
+							<li role="listitem"><span aria-label="one">2</span>provide a way to expose keyboard shortcuts so that all users can discover them, such as
 								through the
-								use of a tooltip.</li>
-							<li>ensure that aria-keyshortcuts applied to disabled elements are unavailable.</li>
-							<li>avoid implementing shortcut keys that inhibit operating system, user agent, or assistive
+								use of a tooltip.
+							</li>
+							<li role="listitem"><span aria-label="one">3</span>ensure that aria-keyshortcuts applied to disabled elements are unavailable.</li>
+							<li role="listitem"><span aria-label="one">4</span>avoid implementing shortcut keys that inhibit operating system, user agent, or assistive
 								technology
-								functionality.</li>
-							<li>carefully consider both which keys to assign and the contexts and conditions in which
+								functionality.
+							</li>
+							<li role="listitem"><span aria-label="one">5</span>carefully consider both which keys to assign and the contexts and conditions in which
 								the keys are
-								available to the user.</li>
+								available to the user.
+							</li>
 						</ul>
 					</div>
 				</section>
 				<section id="aria-keyshortcuts-10" data-keyshortcuts="10">
-					<h2>Examples of valid keyboard shortcuts include:</h2>
+					<h2 aria-labelledby="code_examples">Examples of valid keyboard shortcuts include:</h2>
+					<div id="code_examples">
+						<span>A</span>
+						<span>Shift + Space</span>
+						<span>Control + Alt + U + .</span>
+						<span>Control + Shift + <div id="mixedcode">ampersand hash 39 semi-colon</div><a aria-labelledby="amper"><mark aria-hidden="true">&amp;#39;</mark></a></span>
+						<span>Alt+Shift+P Control+F</span>
+						<span>Meta+C Meta+Shift+C</span>
+					</div>
 					<pre class="codestyle">
-						<code class="language-html">
+						<code class="language-html" aria-hidden="true">
 						 &#9193; &#9193; &#9193;    A
 
 						 &#9193; &#9193; &#9193;    Shift + Space
@@ -255,6 +282,10 @@
 						 &#9193; &#9193; &#9193;    Meta+C Meta+Shift+C
 						</code>
 					</pre>
+
+
+					<div id="ariakeyend">Aria-keyshortcuts end of presentation</div>
+					<span aria-labelledby="ariakeyend" aria-hidden="true"></span>	
 				</section>
 			</section>
 			<!--End Leo's Section-->
@@ -677,6 +708,12 @@ alt="​​Les Demoiselles dAvignon" aria-details="det">
 
 			// Learn about plugins: https://revealjs.com/plugins/
 			plugins: [RevealMarkdown, RevealHighlight, RevealNotes]
+		});
+
+		// Execute code each time slider appears [Leon's Slider]
+		// https://stackoverflow.com/questions/22133748/execute-function-when-certain-slide-appear-in-reveal-js
+		Reveal.addEventListener( 'aria-keyshortcuts', function() {
+			document.querySelector('[tabindex="-1"]').focus(); // autofocus button
 		});
 	</script>
 </body>
