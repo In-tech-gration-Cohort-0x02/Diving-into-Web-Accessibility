@@ -32,19 +32,17 @@
 			<!-- web Accessibility section -->
 			<section>
 				<section>
-					<h2>what is A11Y?</h2>
+					<p>what is A11Y?</p>
 					<p>A ccessibilit y </p>
 					<p>A 11 y </p>
 				</section>
 				<section>
-					<h2 class="aria-label-heading">What is web Accessibility</h2>
-					<p>Its an idea that technology must be <span class="aria-label-highlighted">equally accessible</span> to
-						people <span class="aria-label-highlighted">with and without
+					<h2 class="main-heading">What is web Accessibility</h2>
+					<p>Its an idea that technology must be <span class="main-highlighted">equally accessible</span> to people <span class="aria-label-highlighted">with and without
 							disabilities</span></p>
 					<ul class="a11y-list">
 						<li class="fragment highlight-current-green">Accessible Navigation </li>
-						<li class="fragment highlight-current-green">Keyboard Accessibility (for screen reader when using the tab
-							key to navigate)</li>
+						<li class="fragment highlight-current-green">Keyboard Accessibility (for screen reader when using the tab key to navigate)</li>
 						<li class="fragment highlight-current-green">Color Contrast (Background and text color) </li>
 						<!--- (addressing people with vision impairments and/or using technology in sunshine) -->
 						<li class="fragment highlight-current-green">Headings and Structure</li>
@@ -58,16 +56,15 @@
 			<!-- ARIA attribute Section -->
 			<section>
 				<section>
-					<h2 class="aria-label-heading">ARIA</h2>
+					<h2 class="main-heading">ARIA</h2>
 					<p>
-						ARIA — short for <span class="aria-label-highlighted"> Accessible Rich Internet Applications </span> —
-						defines a way to make web content
+						ARIA — short for <span class="main-highlighted"> Accessible Rich Internet Applications</span> — defines a way to make web content
 						and web applications more accessible to people with disabilities.
 					</p>
 					<p>ARIA can be used to enhance an HTML document by providing additional accessibility information
 						about web
 						pages </p>
-					<span class="aria-label-underline aria-label-highlighted">No ARIA is better than bad ARIA.</span>
+					<span class="main-underline main-highlighted">No ARIA is better than bad ARIA.</span>
 				</section>
 			</section>
 			<!-- Leon's Section aria-keyshortcuts -->
@@ -86,19 +83,22 @@
 								</a>
 							</code>		
 						</pre>
-						<p aria-labelledby="youtube-link" aria-keyshortcuts="Ctrl+Shift+Enter" role="link" aria-selected="true">
-							Example Controlling focus with tabindex. <mark>Ctrl+Shift+Enter</mark> to open
+						<p
+							aria-labelledby="youtube-link"
+							aria-keyshortcuts="Ctrl+Shift+Enter"
+							role="link"
+							aria-selected="true"
+							>Example Controlling focus with tabindex. <mark>Ctrl+Shift+Enter</mark> to open
 							<button role="button" tabindex="-1" aria-hidden="true" title="open" class="tooltip top">
 								<a id="youtube-link" tabindex="0" href="https://www.youtube.com/watch?v=Pe0Ce1WtnUM" aria-hidden="true">
 									open
-								</a>
+								</a> 
 							</button>
 						</p>
 					</div>
 				</section>
 				<section id="aria-keyshortcuts-02" data-keyshortcuts="2" aria-hidden="true">
-					<h2 aria-label="The value of the aria-keyshortcuts attribute">The value of the aria-keyshortcuts attribute
-					</h2>
+					<h2 aria-label="The value of the aria-keyshortcuts attribute">The value of the aria-keyshortcuts attribute</h2>
 					<div class="gradient-border gradient-border-left">
 						<p class="gradient-border gradient-border-02">It is a space-separated list of keyboard shortcuts
 							that can be
@@ -124,18 +124,16 @@
 							<mark>Alt, Control, Shift, Meta, or AltGraph.</mark><br />
 							On Apple computers, meta corresponds to the Command key, and Alt to the Option key.
 							The valid names for non-modifier keys are any printable character.
-							<mark>A, B, 1, 2, <span aria-label="dollar">$</span>, Plus</mark> for a plus sign,"Space" for the
-							spacebar,
+							<mark>A, B, 1, 2, <span aria-label="dollar">$</span>, Plus</mark> for a plus sign,"Space" for the spacebar,
 							or the names of any other non-modifier key specified in the UI Events KeyboardEvent key
 							Values spec
 							[uievents-key].
 							For example, <mark>Enter, Tab, ArrowRight, PageDown, Escape, or F1.</mark>
 							The use of "Space" for the spacebar is an exception to the UI Events KeyboardEvent key
 							Values spec
-							<mark>[uievents-key]</mark> as the space or spacebar key is encoded as <div id="mixedcode">space</div><a
-								aria-labelledby="mixedcode"><mark aria-hidden="true">' '</mark></a> and
+							<mark>[uievents-key]</mark> as the space or spacebar key is encoded as <div id="mixedcode">space</div><a aria-labelledby="mixedcode"><mark aria-hidden="true">' '</mark></a> and
 							would be
-							treated as a white space character.
+							treated as a white space character. 
 						</div>
 					</div>
 				</section>
@@ -162,8 +160,7 @@
 				<section id="aria-keyshortcuts-05" data-keyshortcuts="5">
 					<h2>When specifying an alphabetic key, both the uppercase and lowercase variants are considered
 						equivalent<span area-hidden="true">:</span>
-						<span id="readletters">small a and capital a</span><span aria-labelledby="readletters"><mark
-								aria-hidden="true">a and A</mark></span> are the same.
+						<span id="readletters">small a and capital a</span><span aria-labelledby="readletters"><mark aria-hidden="true">a and A</mark></span> are the same.
 					</h2>
 					<div class="gradient-border gradient-border-left">
 						<p class="gradient-border gradient-border-05">When implementing keyboard shortcuts authors
@@ -172,14 +169,12 @@
 							Keyboard designs vary significantly based on the device used and the languages supported.
 						</p>
 						<h4>
-							<bold>For example, many modifier keys are used in conjunction with other keys to<span
-									area-hidden="true">:</span> </bold>
+							<bold>For example, many modifier keys are used in conjunction with other keys to<span area-hidden="true">:</span> </bold>
 						</h4>
 						<ol role="list">
 							<li role="listitem"><span aria-label="one">1</span>create common punctuation symbols</li>
 							<li role="listitem"><span aria-label="two">2</span>create number characters</li>
-							<li role="listitem"><span aria-label="three">3</span>swap keyboard sides on bilingual keyboards to switch
-								languages</li>
+							<li role="listitem"><span aria-label="three">3</span>swap keyboard sides on bilingual keyboards to switch languages</li>
 							<li role="listitem"><span aria-label="four">4</span>perform a number of other functions</li>
 						</ol>
 					</div>
@@ -212,8 +207,7 @@
 						<p>For example, on most US English keyboards, the percent sign <mark>%</mark> can be input
 							by pressing
 							<mark>Shift+5</mark><span aria-hidden="true">.</span>
-							The correct way to specify this shortcut is <mark>Shift+5</mark><span aria-hidden="true">.</span> It is
-							incorrect to
+							The correct way to specify this shortcut is <mark>Shift+5</mark><span aria-hidden="true">.</span> It is incorrect to
 							specify <mark>%
 								or Shift+%</mark><span aria-hidden="true">.</span>
 							However, note that on some international keyboards the percent sign might be an unmodified
@@ -239,30 +233,24 @@
 					<h2>Aria-keyshortcuts Rules</h2>
 					<div class="gradient-border">
 						<h3 class="gradient-border gradient-border-09">For example, the single-quote character can be
-							encoded as <div id="mixedcode">ampersand hash 39 semi-colon</div><a aria-labelledby="amper"><mark
-									aria-hidden="true">&amp;#39;</mark></a> in HTML.
+							encoded as <div id="mixedcode">ampersand hash 39 semi-colon</div><a aria-labelledby="amper"><mark aria-hidden="true">&amp;#39;</mark></a> in HTML.
 						</h3>
 						<h4>User agents MUST NOT change keyboard behavior in response to the aria-keyshortcuts
 							attribute.
 						</h4>
 						<ul>
 							<h4>Authors MUST</h4>
-							<li role="listitem"><span aria-label="one">1</span>handle scripted keyboard events to process
-								aria-keyshortcuts.</li>
-							<li role="listitem"><span aria-label="one">2</span>provide a way to expose keyboard shortcuts so that all
-								users can discover them, such as
+							<li role="listitem"><span aria-label="one">1</span>handle scripted keyboard events to process aria-keyshortcuts.</li>
+							<li role="listitem"><span aria-label="one">2</span>provide a way to expose keyboard shortcuts so that all users can discover them, such as
 								through the
 								use of a tooltip.
 							</li>
-							<li role="listitem"><span aria-label="one">3</span>ensure that aria-keyshortcuts applied to disabled
-								elements are unavailable.</li>
-							<li role="listitem"><span aria-label="one">4</span>avoid implementing shortcut keys that inhibit operating
-								system, user agent, or assistive
+							<li role="listitem"><span aria-label="one">3</span>ensure that aria-keyshortcuts applied to disabled elements are unavailable.</li>
+							<li role="listitem"><span aria-label="one">4</span>avoid implementing shortcut keys that inhibit operating system, user agent, or assistive
 								technology
 								functionality.
 							</li>
-							<li role="listitem"><span aria-label="one">5</span>carefully consider both which keys to assign and the
-								contexts and conditions in which
+							<li role="listitem"><span aria-label="one">5</span>carefully consider both which keys to assign and the contexts and conditions in which
 								the keys are
 								available to the user.
 							</li>
@@ -275,8 +263,7 @@
 						<span>A</span>
 						<span>Shift + Space</span>
 						<span>Control + Alt + U + .</span>
-						<span>Control + Shift + <div id="mixedcode">ampersand hash 39 semi-colon</div><a
-								aria-labelledby="amper"><mark aria-hidden="true">&amp;#39;</mark></a></span>
+						<span>Control + Shift + <div id="mixedcode">ampersand hash 39 semi-colon</div><a aria-labelledby="amper"><mark aria-hidden="true">&amp;#39;</mark></a></span>
 						<span>Alt+Shift+P Control+F</span>
 						<span>Meta+C Meta+Shift+C</span>
 					</div>
@@ -298,7 +285,7 @@
 
 
 					<div id="ariakeyend">Aria-keyshortcuts end of presentation</div>
-					<span aria-labelledby="ariakeyend" aria-hidden="true"></span>
+					<span aria-labelledby="ariakeyend" aria-hidden="true"></span>	
 				</section>
 			</section>
 			<!--End Leo's Section-->
@@ -369,7 +356,7 @@
 				</section>
 				<section>
 					<h4 class="aria-label-heading">WHAT ELEMENTS CAN BE USED WITH ARIA-LABEL</h4>
-					<ul class="aria-label-list">
+					<!-- <ul class="aria-label-list">
 						<li>
 							<strong>interactive elements</strong>: such as <span class="aria-label-highlighted">a</span>
 							(when <span class="aria-label-highlighted">href</span>
@@ -386,7 +373,26 @@
 								class="aria-label-highlighted">aside</span>,
 							<span class="aria-label-highlighted">section</span>, and <span class="aria-label-highlighted">form</span>.
 						</li>
+					</ul> -->
+
+					<ul class="aria-label-list">
+						<li>
+							<strong>interactive elements</strong>: such as <span>a</span>
+							(when <span>href</span>
+							attribute is present),
+							<span>audio</span> and <span>video</span>
+							(when controls attribute is present), <span>input</span>,
+							<span>select</span>,
+							<span>button</span>, <span>textarea</span>.
+						</li>
+						<li>
+							<strong>implicit landmark elements</strong>: such as <span>header</span>,
+							<span>footer</span>,
+							<span>nav</span>, <span>main</span>, <span>aside</span>,
+							<span>section</span>, and <span>form</span>.
+						</li>
 					</ul>
+					
 				</section>
 				<section>
 					<h4 class="aria-label-heading">WHEN TO USE</h4>
@@ -465,17 +471,18 @@ alt="​​Les Demoiselles dAvignon" aria-details="det">
 			<section>
 				<h2>aria-checked</h2>
 				<h4>description: The aria-checked</h4>
-				<p>The aria-checked attribute indicates the current "checked" state of checkboxes, radio buttons, and other
-					widgets.
-					Note: Where possible use an HTML<input>element with type="checkbox" and type="radio" as these have built in
-					semantics and do not require ARIA attributes.
-					The mixed value is not supported on radio, menuitemradio, or switch and elements that inherits from these. The
-					value will be false if mixed is set when not supported.
-				</p>
-				<span role="checkbox" id="checkBoxInput" aria-checked="false" tabindex="0" aria-labelledby="chk15-label"></span>
-				<p> <a href="https://blog.hubspot.com/website/html-input-types">Please have a look here for more information
-					</a>
-				</p>
+				<p>The aria-checked attribute indicates the current "checked" state of checkboxes, radio buttons, and other widgets.
+					Note: Where possible use an HTML<input>element with type="checkbox" and type="radio" as these have built in semantics and do not require ARIA attributes.
+					The mixed value is not supported on radio, menuitemradio, or switch and elements that inherits from these. The value will be false if mixed is set when not supported.
+				  </p>
+				   <span
+  role="checkbox"
+  id="checkBoxInput"
+  aria-checked="false"
+  tabindex="0"
+  aria-labelledby="chk15-label"></span>
+ <p> <a href="https://blog.hubspot.com/website/html-input-types">Please have a look here for more information </a> 
+				  </p>
 			</section>
 
 			<!--End solo's Section-->
@@ -632,19 +639,9 @@ alt="​​Les Demoiselles dAvignon" aria-details="det">
 						</div>
 						<button type="submit">Submit</button>
 					</form>
+					<p>For Example with aria-describedby <a href="https://maryrichelle.github.io/Mailchimp-clone/">Click Here</a>
+					</p>
 
-
-				</section>
-				<section>
-					<h3>For Example with aria-describedby</h3>
-					<ul>
-						<li> <a href="https://maryrichelle.github.io/Mailchimp-clone/" target="_blank">Live Demo:</a> Use <a
-								href="https://chrome.google.com/webstore/detail/screen-reader/kgejglhpjiefppelpmljglcjbhoiplfn"
-								target="_blank" rel="noopener noreferrer">Screen Reader</a> and Navigate with <span class="aria-label-highlighted">Tab</span> key
-						</li>
-						<li><a href="https://github.com/MaryRichelle/Mailchimp-clone/blob/main/index.html" target="_blank"
-								rel="noopener noreferrer">Code:</a> Make sure to check "aria-describedby" in code</li>
-					</ul>
 				</section>
 			</section>
 			<!--End Mary's Section-->
@@ -654,16 +651,13 @@ alt="​​Les Demoiselles dAvignon" aria-details="det">
 				<section>
 					<h2>aria-valuetext</h2>
 					<blockquote id="aria-colindex">The <mark>aria-valuetext</mark> attribute defines the human-readable text
-						alternative of <a
-							href="https://developer.mozilla.org/en-US/docs/Web/Accessibility/ARIA/Attributes/aria-valuenow">aria-valuenow</a>
+						alternative of	<a href="https://developer.mozilla.org/en-US/docs/Web/Accessibility/ARIA/Attributes/aria-valuenow">aria-valuenow</a> 
 						for a range widget. Numbers — even percentages — aren't always user-friendly. Assistive
 						technologies present <span class="aria-label-highlighted">aria-valuenow</span> as numeric values.<br>
-						The <span class="aria-label-highlighted">aria-valuenow</span> attribute defines the current value for a
+						The <span class="aria-label-highlighted">aria-valuenow</span> attribute defines the current value for a 
 						<span class="aria-label-highlighted">range</span> widget.
+
 					</blockquote>
-				</section>
-				<section>
-					<p><img src="assets/aria-valuenow.png" alt="prism-code language html"></p>
 				</section>
 				<section>
 					<p>The <mark>aria-valuetext</mark> attribute defines the human-readable text alternative of
@@ -691,29 +685,24 @@ alt="​​Les Demoiselles dAvignon" aria-details="det">
 				<section>
 					<p>The values of <span class="aria-label-highlighted">aria-valuenow</span> for a 4-year college
 						could range from 1 through 4, which indicate the position of each value in the value space. In this case,
-						the <a href="https://developer.mozilla.org/en-US/docs/Web/Accessibility/ARIA/Attributes/aria-valuetext"
-							target="_blank">aria-valuetext</a>
-						could be one of the strings: "first year", "sophomore", "junior", and enior".
+						the	<a href="https://developer.mozilla.org/en-US/docs/Web/Accessibility/ARIA/Attributes/aria-valuetext"	target="_blank">aria-valuetext</a>
+						 could be one of the strings: "first year", "sophomore", "junior", and enior".
 					</p>
 				</section>
 				<section>
-					<p>If the numeric value is meaningful, such as a spinner with <span
-							class="aria-label-highlighted">aria-valuenow="3"</span>
-						for how many pizza slices you want to order, <span class="aria-label-highlighted">aria-valuetext</span> is
-						not needed.
+					<p>If the numeric value is meaningful, such as a spinner with <span class="aria-label-highlighted">aria-valuenow="3"</span>
+						 for how many pizza slices you want to order, <span class="aria-label-highlighted">aria-valuetext</span> is not needed. 
 					</p>
 				</section>
 				<section>
-					<p>
-						When both the <span class="aria-label-highlighted"> aria-valuetext</span> and <span
-							class="aria-label-highlighted">aria-valuenow</span>
-						are included, the <span class="aria-label-highlighted"> aria-valuetext</span> is announced. When there is no
-						aria-valuetext attribute, assistive technologies will announce the
-						<span class="aria-label-highlighted"> aria-valuenow</span> attribute for the current value.
+					<p> 						 
+						 When both the <span class="aria-label-highlighted"> aria-valuetext</span> and <span class="aria-label-highlighted">aria-valuenow</span>
+						 are included, the <span class="aria-label-highlighted"> aria-valuetext</span> is announced. When there is no aria-valuetext attribute, assistive technologies will announce the 
+						 <span class="aria-label-highlighted"> aria-valuenow</span> attribute for the current value.
 					</p>
 				</section>
 				<section>
-					<p>And this is all you need to know about the <span class="aria-label-highlighted">aria-valuetext</span>!
+					<p>And this is all you need to know about the <span class="aria-label-highlighted">aria-valuetext</span>! 
 						Or not? Feel free to ask any questions!
 					</p>
 				</section>
@@ -721,8 +710,8 @@ alt="​​Les Demoiselles dAvignon" aria-details="det">
 			<!--End Vangelis' Section aria-valuetext--->
 
 			<!--useful resources-->
-			<section data-background-gradient="linear-gradient(to bottom, #1f1e1d, #A9A9A9)">
-				<h4 class="aria-label-heading">Useful resources</h4>
+			<section>
+				<h4 class="main-heading">Useful resources</h4>
 				<div class="div-useful-resources">
 					<ol>
 						<li>
@@ -758,29 +747,21 @@ alt="​​Les Demoiselles dAvignon" aria-details="det">
 			</section>
 			<!-- Project Insights-->
 			<section>
-				<h4 class="aria-label-heading">Project Insights</h4>
+				<h4 class="main-heading">Project Insights</h4>
 				<ul class="project-insights">
 					<li><strong>What We Have Learned:</strong>
-						<ul>
-							<li class="fragment highlight-current-green">general understanding of A11y and ARIA</li>
-						</ul>
+						<ul><li class="fragment highlight-current-green">general understanding of A11y and ARIA</li></ul>
 					</li>
 					<li><strong>Challenging Aspects:</strong>
-						<ul>
-							<li class="fragment highlight-current-green">handling conflicts while working on same branch</li>
-						</ul>
-					</li>
+						<ul><li class="fragment highlight-current-green">handling conflicts while working on same branch</li></ul>
+				   </li>
 					<li><strong>What We Had Fun With:</strong>
-						<ul>
-							<li class="fragment highlight-current-green">getting to know the reveal.js tool and its capabilities</li>
-						</ul>
+						<ul><li class="fragment highlight-current-green">getting to know the reveal.js tool and its capabilities</li></ul>
 					</li>
 				</ul>
 			</section>
 
-			<section>
-				<h4><strong>THANK YOU!</strong></h4>
-			</section>
+			<section><h4><strong>THANK YOU!</strong></h4></section>
 
 		</div>
 	</div>
@@ -806,7 +787,7 @@ alt="​​Les Demoiselles dAvignon" aria-details="det">
 
 		// Execute code each time slider appears [Leon's Slider]
 		// https://stackoverflow.com/questions/22133748/execute-function-when-certain-slide-appear-in-reveal-js
-		Reveal.addEventListener('aria-keyshortcuts', function () {
+		Reveal.addEventListener( 'aria-keyshortcuts', function() {
 			document.querySelector('[tabindex="-1"]').focus(); // autofocus button
 		});
 	</script>

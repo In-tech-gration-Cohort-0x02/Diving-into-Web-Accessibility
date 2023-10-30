@@ -5,9 +5,27 @@
 .reveal:not(.rtl) .controls[data-controls-back-arrows=faded] .navigate-left.enabled{opacity:.8}
 
 /* ------------------------------ End of main CSS ------------------------------------ */
- .a11y-list {
+
+/* Styling A11y slide */
+
+.a11y-list {
   font-size: 35px;
  }
+
+.main-heading {
+  color: #c2c1c1 !important;
+}
+
+.main-highlighted {
+  color: #edd714;
+  font-weight: bold;
+} 
+ 
+.main-underline {
+  text-decoration: underline;
+}
+
+
 
 /* ------------------------------ Start of Leon's CSS ------------------------------------ */
 
@@ -191,6 +209,8 @@
 
 /* ------------------------------ End of Leon's CSS ------------------------------------ */
 
+
+
 /* ------------------------------ Start of Anna's CSS ------------------------------------ */
 .aria-label-heading {
   color: #c2c1c1 !important;
@@ -210,10 +230,17 @@
   margin: 5px 0;
 }
 
+.aria-label-list span{
+  color: #edd714;
+  font-weight: bold;
+}
+
 .aria-label-highlighted {
   color: #edd714;
   font-weight: bold;
 }
+
+
 /* ------------------------------ End of Anna's CSS ------------------------------------ */
 
 /*----  Mary's Section ------*/
@@ -269,6 +296,7 @@ button.describedby-close-btn {
   color: #edd714;
 }
 
+/* styling Project Insights slide */
 .project-insights{
   font-size: 35px;
 }
