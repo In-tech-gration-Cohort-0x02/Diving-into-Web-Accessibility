@@ -421,11 +421,17 @@ alt="​​Les Demoiselles dAvignon" aria-details="det">
 			<section>
 				<h2>aria-checked</h2>
 				<h4>description: The aria-checked</h4>
-				<p>
-					The aria-checked attribute indicates the current "checked" state of checkboxes, radio buttons, and other widgets.
-					Note: Where possible use an HTML element with type="checkbox" and type="radio" as these have built in semantics and do not require ARIA attributes.
+				<p>The aria-checked attribute indicates the current "checked" state of checkboxes, radio buttons, and other widgets.
+					Note: Where possible use an HTML<input>element with type="checkbox" and type="radio" as these have built in semantics and do not require ARIA attributes.
+					The mixed value is not supported on radio, menuitemradio, or switch and elements that inherits from these. The value will be false if mixed is set when not supported.
 				  </p>
-				  <p> <a href="https://www.youtube.com/watch?v=mwG4_qAa4AU">Please have a look here </a> 
+				   <span
+  role="checkbox"
+  id="checkBoxInput"
+  aria-checked="false"
+  tabindex="0"
+  aria-labelledby="chk15-label"></span>
+ <p> <a href="https://blog.hubspot.com/website/html-input-types">Please have a look here for more information </a> 
 				  </p>
 			</section>
 
@@ -595,9 +601,12 @@ alt="​​Les Demoiselles dAvignon" aria-details="det">
 				<section>
 					<h2>aria-valuetext</h2>
 					<blockquote id="aria-colindex">The <mark>aria-valuetext</mark> attribute defines the human-readable text
-						alternative of
-						aria-valuenow for a range widget. Numbers — even percentages — aren't always user-friendly. Assistive
-						technologies present <span class="aria-label-highlighted">aria-valuenow</span> as numeric values.
+						alternative of	<a href="https://developer.mozilla.org/en-US/docs/Web/Accessibility/ARIA/Attributes/aria-valuenow">aria-valuenow</a> 
+						for a range widget. Numbers — even percentages — aren't always user-friendly. Assistive
+						technologies present <span class="aria-label-highlighted">aria-valuenow</span> as numeric values.<br>
+						The <span class="aria-label-highlighted">aria-valuenow</span> attribute defines the current value for a 
+						<span class="aria-label-highlighted">range</span> widget.
+
 					</blockquote>
 				</section>
 				<section>
@@ -626,10 +635,25 @@ alt="​​Les Demoiselles dAvignon" aria-details="det">
 				<section>
 					<p>The values of <span class="aria-label-highlighted">aria-valuenow</span> for a 4-year college
 						could range from 1 through 4, which indicate the position of each value in the value space. In this case,
-						the
-						<a href="https://developer.mozilla.org/en-US/docs/Web/Accessibility/ARIA/Attributes/aria-valuetext"
-							target="_blank">aria-valuetext</a> could be one of the strings: "first year", "sophomore", "junior", and
-						"senior".
+						the	<a href="https://developer.mozilla.org/en-US/docs/Web/Accessibility/ARIA/Attributes/aria-valuetext"	target="_blank">aria-valuetext</a>
+						 could be one of the strings: "first year", "sophomore", "junior", and enior".
+					</p>
+				</section>
+				<section>
+					<p>If the numeric value is meaningful, such as a spinner with <span class="aria-label-highlighted">aria-valuenow="3"</span>
+						 for how many pizza slices you want to order, <span class="aria-label-highlighted">aria-valuetext</span> is not needed. 
+					</p>
+				</section>
+				<section>
+					<p> 						 
+						 When both the <span class="aria-label-highlighted"> aria-valuetext</span> and <span class="aria-label-highlighted">aria-valuenow</span>
+						 are included, the <span class="aria-label-highlighted"> aria-valuetext</span> is announced. When there is no aria-valuetext attribute, assistive technologies will announce the 
+						 <span class="aria-label-highlighted"> aria-valuenow</span> attribute for the current value.
+					</p>
+				</section>
+				<section>
+					<p>And this is all you need to know about the <span class="aria-label-highlighted">aria-valuetext</span>! 
+						Or not? Feel free to ask any questions!
 					</p>
 				</section>
 			</section>
