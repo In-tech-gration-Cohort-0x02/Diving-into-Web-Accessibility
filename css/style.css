@@ -1,114 +1,168 @@
-
 /* ------------------------------ Start of main CSS ------------------------------------ */
 
 /*customize controls color to be more visible for the slides*/
-.reveal .controls{
-    color: aqua!important;
-}
+
+.reveal:not(.rtl) .controls[data-controls-back-arrows=faded] .navigate-left.enabled{opacity:.8}
 
 /* ------------------------------ End of main CSS ------------------------------------ */
+ .a11y-list {
+  font-size: 35px;
+ }
 
 /* ------------------------------ Start of Leon's CSS ------------------------------------ */
+
 #aria-keyshortcuts {
-    text-align: center;
-    font-size: 0.7em!important;
-    display: flex!important;
-    height: auto; 
-    align-items: center;
-    justify-content: center;
-    
+  text-align: center;
+  font-size: 0.7em !important;
+  display: flex !important;
+  height: auto;
+  align-items: center;
+  justify-content: center;
 }
 
-.aria-keyshortcuts{
-    background:linear-gradient(to bottom, #1f1e1d, #A9A9A9)!important;
+.aria-keyshortcuts {
+  background: linear-gradient(to bottom, #1f1e1d, #a9a9a9) !important;
 }
 
-#aria-keyshortcuts mark{
-    margin: 8px;
-    padding-right: 6px;
-    padding-left: 6px;
-    padding-top: 2px;
-    padding-bottom: 2px;
-    border-radius: 4px;
+#aria-keyshortcuts mark {
+  margin: 8px;
+  padding-right: 6px;
+  padding-left: 6px;
+  padding-top: 2px;
+  padding-bottom: 2px;
+  border-radius: 4px;
 }
 #aria-keyshortcuts-01 .gradient-border-01 > mark {
-    margin-left: 0px;
+  margin-left: 0px;
 }
-#aria-keyshortcuts *{
-    line-height: 1.5!important;
-}
-
-#aria-keyshortcuts h3{
-    font-size: 1em!important;
-    word-break: break-word;
-    text-align: left;
+#aria-keyshortcuts * {
+  line-height: 1.5 !important;
 }
 
-#aria-keyshortcuts h4{
-    word-break: break-word;
-    text-align: left;
+#aria-keyshortcuts h3 {
+  font-size: 1em !important;
+  word-break: break-word;
+  text-align: left;
+}
+
+#aria-keyshortcuts h4 {
+  word-break: break-word;
+  text-align: left;
 }
 
 #aria-keyshortcuts h2 {
-    font-size: 1.4em!important;
-    color: #c2c1c1 !important;
-    word-break: break-all;
+  font-size: 1.4em !important;
+  color: #c2c1c1 !important;
+  word-break: break-all;
 }
-#aria-keyshortcuts p{
-    text-align: justify;
-}
-
-#aria-keyshortcuts pre code{
-    background-color: #2b2b2b;
+#aria-keyshortcuts p {
+  text-align: justify;
 }
 
-#aria-keyshortcuts-05 ol,  #aria-keyshortcuts-09 ul{
-    list-style: none!important;
-    counter-reset: my-awesome-counter;
+#aria-keyshortcuts pre code {
+  background-color: #2b2b2b;
 }
 
-#aria-keyshortcuts-05 ol li , #aria-keyshortcuts-09 ul li{
-    counter-increment: my-awesome-counter;
+#aria-keyshortcuts-05 ol,
+#aria-keyshortcuts-09 ul {
+  list-style: none !important;
+  counter-reset: my-awesome-counter;
+}
+
+#aria-keyshortcuts-05 ol li,
+#aria-keyshortcuts-09 ul li {
+  counter-increment: my-awesome-counter;
 }
 
 #aria-keyshortcuts-05 ol li::before,
-#aria-keyshortcuts-09 ul li::before{
-    content: "" counter(my-awesome-counter);
-    font-weight: bold;
-    margin-right: 0.5rem;
-    color: #1f1e1d;
+#aria-keyshortcuts-09 ul li::before {
+  content: "" counter(my-awesome-counter);
+  font-weight: bold;
+  margin-right: 0.5rem;
+  color: #1f1e1d;
 }
   
-
 
 /* ------------------------------ End of Leon's CSS ------------------------------------ */
 
 /* ------------------------------ Start of Anna's CSS ------------------------------------ */
 .aria-label-heading {
-    color: #c2c1c1 !important;
+  color: #c2c1c1 !important;
 }
 
 .aria-label-underline {
-    text-decoration: underline;
+  text-decoration: underline;
 }
 
 .aria-label-list {
-    margin: 0;
-    padding: 0;
+  margin: 0;
+  padding: 0;
 }
 
 .aria-label-list li {
-    font-size: 35px;
-    margin: 5px 0;
+  font-size: 35px;
+  margin: 5px 0;
 }
 
 .aria-label-highlighted {
-    color: #edd714;
-    font-weight: bold;
+  color: #edd714;
+  font-weight: bold;
 }
 /* ------------------------------ End of Anna's CSS ------------------------------------ */
 
+/*----  Mary's Section ------*/
+.describedby-code-section {
+  background: #000;
+}
 
+.aria-describedby-email {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+}
+.aria-describedby form {
+  width: 50vw;
+  height: 50vh;
+  margin: auto;
+  background-color: #000;
+  border: 1px solid gray;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+}
+.aria-describedby input {
+  padding: 10px;
+  width: 30rem;
+}
 
+.aria-describedby button {
+  background: #edd714;
+  width: 10rem;
+}
+button.describedby-close-btn {
+  width: 10px;
+  padding-inline: 10px;
+  background-color: tomato;
+  text-align: center;
+  border-radius: 4px;
+  align-self: flex-end;
+}
+.aria-describedby #descriptionClose {
+  font-size: 1rem;
+}
+/*----  Mary's Section End here------*/
 
+/*styling Useful Resource slide*/
 
+.div-useful-resources {
+  font-size: 80%;
+}
+
+.div-useful-resources ol a:hover {
+  color: #edd714;
+}
+
+.project-insights{
+  font-size: 35px;
+}
