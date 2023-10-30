@@ -37,34 +37,34 @@
 					<p>A 11 y </p>
 				</section>
 				<section>
-					<h2>What is web Accessibility</h2>
-					<p>Its an idea that technology must be <mark>equally accessible</mark> to people <mark>with and without
-							disabilities</mark></p>
-					<ul>
-						<li>Accessible Navigation </li>
-						<li>Keyboard Accessibility (for screen reader when using the tab key to navigate)</li>
-						<li>Color Contrast (Background and text color) </li>
+					<h2 class="aria-label-heading">What is web Accessibility</h2>
+					<p>Its an idea that technology must be <span class="aria-label-highlighted">equally accessible</span> to people <span class="aria-label-highlighted">with and without
+							disabilities</span></p>
+					<ul class="a11y-list">
+						<li class="fragment highlight-current-green">Accessible Navigation </li>
+						<li class="fragment highlight-current-green">Keyboard Accessibility (for screen reader when using the tab key to navigate)</li>
+						<li class="fragment highlight-current-green">Color Contrast (Background and text color) </li>
 						<!--- (addressing people with vision impairments and/or using technology in sunshine) -->
-						<li>Headings and Structure</li>
-						<li>accessible names for interactive elements</li>
-						<li>Responsive Design</li>
-						<li>Descriptive Links</li>
-						<li>Alternative Text (Alt Text)</li>
+						<li class="fragment highlight-current-green">Headings and Structure</li>
+						<li class="fragment highlight-current-green">Accessible names for interactive elements</li>
+						<li class="fragment highlight-current-green">Responsive Design</li>
+						<li class="fragment highlight-current-green">Descriptive Links</li>
+						<li class="fragment highlight-current-green">Alternative Text (Alt Text)</li>
 					</ul>
 				</section>
 			</section>
 			<!-- ARIA attribute Section -->
 			<section>
 				<section>
-					<h2>ARIA</h2>
+					<h2 class="aria-label-heading">ARIA</h2>
 					<p>
-						ARIA — short for <mark> Accessible Rich Internet Applications </mark> — defines a way to make web content
+						ARIA — short for <span class="aria-label-highlighted"> Accessible Rich Internet Applications </span> — defines a way to make web content
 						and web applications more accessible to people with disabilities.
 					</p>
 					<p>ARIA can be used to enhance an HTML document by providing additional accessibility information
 						about web
 						pages </p>
-					<mark>No ARIA is better than bad ARIA.</mark>
+					<span class="aria-label-underline aria-label-highlighted">No ARIA is better than bad ARIA.</span>
 				</section>
 			</section>
 			<!-- Leon's Section aria-keyshortcuts -->
@@ -291,7 +291,7 @@
 			<!--End Leo's Section-->
 
 			<!--Jason Section aria-colindex -->
-			<section >
+			<section>
 				<section>
 					<h2>aria-colindex</h2>
 					<blockquote id="aria-colindex">The <mark>aria-colindex</mark> attribute defines an element's column
@@ -339,7 +339,7 @@
 			<!--End Jason's Section-->
 
 			<!-- Anna's Section aria-label -->
-			<section >
+			<section>
 				<section>
 					<h2 class="aria-label-heading">aria-label</h2>
 					<p>The <mark>aria-label</mark> should be used to provide a text alternative to an element that has
@@ -434,7 +434,7 @@ alt="​​Les Demoiselles dAvignon" aria-details="det">
 			<!--End Alex's Section-->
 
 			<!-- Meredith's Section aria-autocomplete -->
-			<section >
+			<section>
 				<h2> Aria-autocomplete</h2>
 				<p>The aria-autocomplete attribute indicates whether inputting text could trigger display of one or more
 					predictions of the user's intended value for a combobox, searchbox, or textbox and specifies how
@@ -450,105 +450,111 @@ alt="​​Les Demoiselles dAvignon" aria-details="det">
 
 			<!-- Solo's aria Section-->
 			<section>
-				<h1>aria-checked</h1>
-				<h2>Chapter 1: The aria-checked</h2>
-				<p>
-					The aria-checked attribute indicates the current "checked" state of checkboxes, radio buttons, and other widgets.
-					Note: Where possible use an HTML element with type="checkbox" and type="radio" as these have built in semantics and do not require ARIA attributes.
+				<h2>aria-checked</h2>
+				<h4>description: The aria-checked</h4>
+				<p>The aria-checked attribute indicates the current "checked" state of checkboxes, radio buttons, and other widgets.
+					Note: Where possible use an HTML<input>element with type="checkbox" and type="radio" as these have built in semantics and do not require ARIA attributes.
+					The mixed value is not supported on radio, menuitemradio, or switch and elements that inherits from these. The value will be false if mixed is set when not supported.
 				  </p>
-				  <p> <a href="https://www.youtube.com/watch?v=0hqhAIjE_8I&t=545s">Please have a look here </a> 
+				   <span
+  role="checkbox"
+  id="checkBoxInput"
+  aria-checked="false"
+  tabindex="0"
+  aria-labelledby="chk15-label"></span>
+ <p> <a href="https://blog.hubspot.com/website/html-input-types">Please have a look here for more information </a> 
 				  </p>
 			</section>
-			
+
 			<!--End solo's Section-->
 
 			<!-- Mawu's Section Aria-sort -->
 			<section>
 				<section><br><img src="assets/aria-sort1.png"></section>
-					<section class="title">ARIA-SORT:  The aria-sort attribute indicates 
-						if items in a table or grid are sorted in ascending or descending order.
-					</section>
-					<section class="description">
-						If a grid or table provides sort functionality, 
-						the aria-sort attribute should be set to either ascending 
-						or descending (or other) on the header cell element for the 
-						sorted column or row.
-					</section>
-					<section class="description">
-						The aria-sort attribute is only set on the currently sorted 
-						column or row. Set aria-sort="ascending" to indicate the data 
-						cells in the column or row are sorted in ascending order. 
-						If the sort order is reversed, toggle the value to aria-sort="descending". 
-						When a different column or row becomes sorted, the single aria-sort attribute 
-						is moved to the header cell for the newly sorted column or row with 
-						the appropriate value for the sort order.
-					</section>
-					<section class="description">
-						The aria-sort attribute should only be added to a single 
-						table or grid header at a time. The attribute is set to 
-						inform assistive technology users which column or row is sorted. 
-						It doesn't have any impact on the actual sort order.
-					</section>
-					<section class="description">
-						The aria-sort attribute is used to provide information 
-						about the current sorting state of a column in a data table. 
-						It serves as an accessibility feature that assists users of 
-						assistive technologies, such as screen readers, in understanding 
-						and interacting with sortable tables.
-					</section>
-					<section>EXAMPLES: The following table loads with the last name 
-						column sorted in ascending order.
-					</section>
-					<section class="description"><img src="assets/aria-sort.png"></section>
-					<section class="description">
-						If a user clicks on the Last Name button, aria-pressed="true" 
-						would be added to the  &lt;button&gt; element and the aria-sort value 
-						would be toggled to "descending" with JavaScript. If the user 
-						clicks on a different header button, the aria-sort would be removed 
-						from the Last Name header to be placed on the clicked button's &lt;th&gt; parent.
-					</section>
-					<section class="description">
-						We provided instructions in the caption for assistive technology 
-						who may not see the down arrows that we would add with CSS targeting 
-						the th[aria-sort="ascending"] and th[aria-sort="descending"] selectors.
-					</section>
-					<section class="subtitle">
-					  VALUES OR USAGE
-					</section>
-					<section class="description">
-						<ul class="list">
-							<li>Ascending Order or Ascending (aria-sort="ascending"):
-								This value is applied to a column header when 
-									the data in that column is sorted in ascending order 
-									(from A to Z, smallest to largest, earliest to latest).
-								</li>
-							<li>Descending Order or Descending (aria-sort="descending"):
-								This value is applied when the data in a column 
-									is sorted in descending order (from Z to A, largest 
-									to smallest, latest to earliest).
-								</li>
-								<li>Not Sorted or None (aria-sort="none"):
-									This value is used to indicate that the column is not currently sorted.
-								</li>
-							</ul>
-						</section>
-					<section class="subtitle">
-						SUMMARY
-					</section>
-					<section class="description">
-						In summary, aria-sort is a crucial ARIA attribute that enhances 
-						the accessibility of sortable tables by conveying the sorting 
-						state of table columns to users of assistive technologies. 
-						It improves understanding, navigation, and interaction with 
-						data tables, making the web more inclusive for individuals with disabilities.
-					</section>
-					<section>
-						THANKS FOR YOUR ATTENTION
-					</section>
+				<section class="title">ARIA-SORT: The aria-sort attribute indicates
+					if items in a table or grid are sorted in ascending or descending order.
+				</section>
+				<section class="description">
+					If a grid or table provides sort functionality,
+					the aria-sort attribute should be set to either ascending
+					or descending (or other) on the header cell element for the
+					sorted column or row.
+				</section>
+				<section class="description">
+					The aria-sort attribute is only set on the currently sorted
+					column or row. Set aria-sort="ascending" to indicate the data
+					cells in the column or row are sorted in ascending order.
+					If the sort order is reversed, toggle the value to aria-sort="descending".
+					When a different column or row becomes sorted, the single aria-sort attribute
+					is moved to the header cell for the newly sorted column or row with
+					the appropriate value for the sort order.
+				</section>
+				<section class="description">
+					The aria-sort attribute should only be added to a single
+					table or grid header at a time. The attribute is set to
+					inform assistive technology users which column or row is sorted.
+					It doesn't have any impact on the actual sort order.
+				</section>
+				<section class="description">
+					The aria-sort attribute is used to provide information
+					about the current sorting state of a column in a data table.
+					It serves as an accessibility feature that assists users of
+					assistive technologies, such as screen readers, in understanding
+					and interacting with sortable tables.
+				</section>
+				<section>EXAMPLES: The following table loads with the last name
+					column sorted in ascending order.
+				</section>
+				<section class="description"><img src="assets/aria-sort.png"></section>
+				<section class="description">
+					If a user clicks on the Last Name button, aria-pressed="true"
+					would be added to the &lt;button&gt; element and the aria-sort value
+					would be toggled to "descending" with JavaScript. If the user
+					clicks on a different header button, the aria-sort would be removed
+					from the Last Name header to be placed on the clicked button's &lt;th&gt; parent.
+				</section>
+				<section class="description">
+					We provided instructions in the caption for assistive technology
+					who may not see the down arrows that we would add with CSS targeting
+					the th[aria-sort="ascending"] and th[aria-sort="descending"] selectors.
+				</section>
+				<section class="subtitle">
+					VALUES OR USAGE
+				</section>
+				<section class="description">
+					<ul class="list">
+						<li>Ascending Order or Ascending (aria-sort="ascending"):
+							This value is applied to a column header when
+							the data in that column is sorted in ascending order
+							(from A to Z, smallest to largest, earliest to latest).
+						</li>
+						<li>Descending Order or Descending (aria-sort="descending"):
+							This value is applied when the data in a column
+							is sorted in descending order (from Z to A, largest
+							to smallest, latest to earliest).
+						</li>
+						<li>Not Sorted or None (aria-sort="none"):
+							This value is used to indicate that the column is not currently sorted.
+						</li>
+					</ul>
+				</section>
+				<section class="subtitle">
+					SUMMARY
+				</section>
+				<section class="description">
+					In summary, aria-sort is a crucial ARIA attribute that enhances
+					the accessibility of sortable tables by conveying the sorting
+					state of table columns to users of assistive technologies.
+					It improves understanding, navigation, and interaction with
+					data tables, making the web more inclusive for individuals with disabilities.
+				</section>
+				<section>
+					THANKS FOR YOUR ATTENTION
+				</section>
 			</section>
 			<!--End Mawu's Section-->
 
-			<!-- Mary's Section aria-describedby-->	
+			<!-- Mary's Section aria-describedby-->
 			<section class="aria-describedby">
 				<h2>aria-describedby</h2>
 				<section>
@@ -556,6 +562,15 @@ alt="​​Les Demoiselles dAvignon" aria-details="det">
 						screen readers), with more context or information about the element</p>
 				</section>
 
+
+				<section>
+					<h3>Usage:</h3>
+					<p>
+						typically apply aria-describedby to an HTML element, indicating which other element(s) should be
+						considered as
+						providing descriptions or additional information for the element.
+					</p>
+				</section>
 				<section>
 					<h3>Syntax</h3>
 					<p>
@@ -567,29 +582,29 @@ alt="​​Les Demoiselles dAvignon" aria-details="det">
 						Multiple IDs can be space-separated if you want to reference multiple elements.
 					</p>
 				</section>
-				<section>
-					<h3>Usage:</h3>
-					<p>
-						typically apply aria-describedby to an HTML element, indicating which other element(s) should be
-						considered as
-						providing descriptions or additional information for the element.
-					</p>
-				</section>
-
 				<section class="describedby-code-section">
 					<pre>
 					<code class="language-html">
-				  &lt;button class="close-button" aria-label="Close" aria-describedby="descriptionClose" onclick="myDialog.close()"&gt;X&lt;/button&gt;
-				  &lt;div class="description" id="descriptionClose"&gt;Closing this window will discard any information entered and return you back to the main page&lt;/div&gt;
+				  &lt;button  aria-label="Close" aria-describedby="descriptionClose" &gt;X&lt;/button&gt;
+				  &lt;div id="descriptionClose"&gt;Closing this window will discard any information entered and return you back to the main page&lt;/div&gt;
 				</code>
 			</pre>
 				</section>
 				<section>
-					<!-- TODO styling -->
-					<h3>Example</h3>
+					<h3>Use cases</h3>
+					<ul>
+						<li>Complex Form Fields</li>
+						<li>Long Descriptions for images</li>
+						<li>Additional Information such as explain abbreviation</li>
+						<li>Buttons to provide extra information(functionality)</li>
+					</ul>
+				</section>
+				<section>
+					<h3>Examples</h3>
+
 					<form>
-						<button aria-label="Close" class="describedby-close-btn" aria-describedby="descriptionClose"
-							onclick="myDialog.close()">X</button>
+						<p>without aria-describedby</p>
+						<button aria-label="Close" class="describedby-close-btn">X</button>
 						<span id="descriptionClose">Closing this window will discard any information entered and
 							return you back to the main page</span>
 
@@ -597,7 +612,7 @@ alt="​​Les Demoiselles dAvignon" aria-details="det">
 							<label for="user-email">Email
 								<input type="text" id="user-email">
 							</label>
-							<small aria-describedby="user-email">We will never share your email with anyone</small>
+							<small>We will never share your email with anyone</small>
 						</div>
 						<div>
 							<label for="user-password">Password</label>
@@ -605,6 +620,9 @@ alt="​​Les Demoiselles dAvignon" aria-details="det">
 						</div>
 						<button type="submit">Submit</button>
 					</form>
+					<p>For Example with aria-describedby <a href="https://maryrichelle.github.io/Mailchimp-clone/">Click Here</a>
+					</p>
+
 				</section>
 			</section>
 			<!--End Mary's Section-->
@@ -614,10 +632,15 @@ alt="​​Les Demoiselles dAvignon" aria-details="det">
 				<section>
 					<h2>aria-valuetext</h2>
 					<blockquote id="aria-colindex">The <mark>aria-valuetext</mark> attribute defines the human-readable text
-						alternative of
-						aria-valuenow for a range widget. Numbers — even percentages — aren't always user-friendly. Assistive
-						technologies present <span class="aria-label-highlighted">aria-valuenow</span> as numeric values.
+						alternative of	<a href="https://developer.mozilla.org/en-US/docs/Web/Accessibility/ARIA/Attributes/aria-valuenow">aria-valuenow</a> 
+						for a range widget. Numbers — even percentages — aren't always user-friendly. Assistive
+						technologies present <span class="aria-label-highlighted">aria-valuenow</span> as numeric values.<br>
+						The <span class="aria-label-highlighted">aria-valuenow</span> attribute defines the current value for a 
+						<span class="aria-label-highlighted">range</span> widget.
+
 					</blockquote>
+				</section>
+				<section>
 					<p>The <mark>aria-valuetext</mark> attribute defines the human-readable text alternative of
 						aria-valuenow
 						for a range widget.
@@ -643,10 +666,25 @@ alt="​​Les Demoiselles dAvignon" aria-details="det">
 				<section>
 					<p>The values of <span class="aria-label-highlighted">aria-valuenow</span> for a 4-year college
 						could range from 1 through 4, which indicate the position of each value in the value space. In this case,
-						the
-						<a href="https://developer.mozilla.org/en-US/docs/Web/Accessibility/ARIA/Attributes/aria-valuetext"
-							target="_blank">aria-valuetext</a> could be one of the strings: "first year", "sophomore", "junior", and
-						"senior".
+						the	<a href="https://developer.mozilla.org/en-US/docs/Web/Accessibility/ARIA/Attributes/aria-valuetext"	target="_blank">aria-valuetext</a>
+						 could be one of the strings: "first year", "sophomore", "junior", and enior".
+					</p>
+				</section>
+				<section>
+					<p>If the numeric value is meaningful, such as a spinner with <span class="aria-label-highlighted">aria-valuenow="3"</span>
+						 for how many pizza slices you want to order, <span class="aria-label-highlighted">aria-valuetext</span> is not needed. 
+					</p>
+				</section>
+				<section>
+					<p> 						 
+						 When both the <span class="aria-label-highlighted"> aria-valuetext</span> and <span class="aria-label-highlighted">aria-valuenow</span>
+						 are included, the <span class="aria-label-highlighted"> aria-valuetext</span> is announced. When there is no aria-valuetext attribute, assistive technologies will announce the 
+						 <span class="aria-label-highlighted"> aria-valuenow</span> attribute for the current value.
+					</p>
+				</section>
+				<section>
+					<p>And this is all you need to know about the <span class="aria-label-highlighted">aria-valuetext</span>! 
+						Or not? Feel free to ask any questions!
 					</p>
 				</section>
 			</section>
@@ -688,6 +726,24 @@ alt="​​Les Demoiselles dAvignon" aria-details="det">
 					</ol>
 				</div>
 			</section>
+			<!-- Project Insights-->
+			<section>
+				<h4 class="aria-label-heading">Project Insights</h4>
+				<ul class="project-insights">
+					<li><strong>What We Have Learned:</strong>
+						<ul><li class="fragment highlight-current-green">general understanding of A11y and ARIA</li></ul>
+					</li>
+					<li><strong>Challenging Aspects:</strong>
+						<ul><li class="fragment highlight-current-green">handling conflicts while working on same branch</li></ul>
+				   </li>
+					<li><strong>What We Had Fun With:</strong>
+						<ul><li class="fragment highlight-current-green">getting to know the reveal.js tool and its capabilities</li></ul>
+					</li>
+				</ul>
+			</section>
+
+			<section><h4><strong>THANK YOU!</strong></h4></section>
+
 		</div>
 	</div>
 
