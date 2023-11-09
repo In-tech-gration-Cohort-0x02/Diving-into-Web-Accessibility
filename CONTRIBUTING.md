@@ -88,7 +88,7 @@ make sure to add `index.html` and other related files/images
  
 ```
 
-* after git push  check you changes online [here](https://voronaav23.github.io/Cohort-2-Group-Presentation/). 🎉
+* after git push  check you changes online [here](https://in-tech-gration-cohort-0x02.github.io/Diving-into-Web-Accessibility/). 🎉
 
  Hope this helps  
  Happy coding  
