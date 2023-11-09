@@ -537,7 +537,32 @@ alt="​​Les Demoiselles dAvignon" aria-details="det">
 				<section>EXAMPLES: The following table loads with the last name
 					column sorted in ascending order.
 				</section>
-				<section class="description"><img src="assets/aria-sort.png"></section>
+				<section class="description">
+					<pre>
+					&lt;table&gt;
+					  &lt;caption&gt;
+						Steering Committee Members
+					  &lt;/caption&gt;
+					  &lt;thead&gt;
+						&lt;tr&gt;
+						  &lt;th&gt;
+							&lt;button&gt;First Name&lt;/button&gt;
+						  &lt;/th&gt;
+						  &lt;th aria-sort="ascending"&gt;
+							&lt;button&gt;Last Name&lt;/button&gt;
+						  &lt;/th&gt;
+						  &lt;th&gt;
+							&lt;button&gt;Company&lt;/button&gt;
+						  &lt;/th&gt;
+						  &lt;th&gt;Email&lt;/th&gt;
+						&lt;/tr&gt;
+					  &lt;/thead&gt;
+					  &lt;tbody&gt;
+						…
+					  &lt;/tbody&gt;
+					&lt;/table&gt;
+				  </pre>
+				</section>
 				<section class="description">
 					If a user clicks on the Last Name button, aria-pressed="true"
 					would be added to the &lt;button&gt; element and the aria-sort value
