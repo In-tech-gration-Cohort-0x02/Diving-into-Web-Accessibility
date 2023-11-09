@@ -2,12 +2,32 @@
 
 /*customize controls color to be more visible for the slides*/
 
-.reveal:not(.rtl) .controls[data-controls-back-arrows=faded] .navigate-left.enabled{opacity:.8}
+.reveal:not(.rtl)
+  .controls[data-controls-back-arrows="faded"]
+  .navigate-left.enabled {
+  opacity: 0.8;
+}
 
 /* ------------------------------ End of main CSS ------------------------------------ */
- .a11y-list {
+
+/* Styling A11y slide */
+
+.a11y-list {
   font-size: 35px;
- }
+}
+
+.main-heading {
+  color: #c2c1c1 !important;
+}
+
+.main-highlighted {
+  color: #edd714;
+  font-weight: bold;
+}
+
+.main-underline {
+  text-decoration: underline;
+}
 
 /* ------------------------------ Start of Leon's CSS ------------------------------------ */
 
@@ -55,11 +75,11 @@
   color: #c2c1c1 !important;
   word-break: break-all;
 }
-#aria-keyshortcuts p{
+#aria-keyshortcuts p {
   text-align: justify;
 }
 
-#aria-keyshortcuts-03 div{
+#aria-keyshortcuts-03 div {
   text-align: justify;
 }
 
@@ -69,28 +89,27 @@
   tab-size: 0.3;
 }
 
-#aria-keyshortcuts-04 h2{
+#aria-keyshortcuts-04 h2 {
   text-decoration: underline;
 }
 
-#aria-keyshortcuts-05 h2 mark{
+#aria-keyshortcuts-05 h2 mark {
   text-transform: initial;
 }
 
 #aria-keyshortcuts-05 ol li span,
-#aria-keyshortcuts-09 ul li span{
+#aria-keyshortcuts-09 ul li span {
   opacity: 0;
 }
 
-#code_examples{
+#code_examples {
   visibility: hidden;
   height: 0px;
 }
 
-#code_examples span{
+#code_examples span {
   height: 0px;
   line-height: 0px;
-
 }
 
 #aria-keyshortcuts-05 ol,
@@ -112,17 +131,17 @@
   color: #1f1e1d;
 }
 
-#aria-keyshortcuts-09 ul li{
+#aria-keyshortcuts-09 ul li {
   font-size: 24px;
 }
 
 #mixedcode,
 #ariakeystart,
 #ariakeyend,
-#readletters{
-  position: absolute !important; 
-  clip: rect(1px 1px 1px 1px); 
-  clip: rect(1px,1px,1px,1px); 
+#readletters {
+  position: absolute !important;
+  clip: rect(1px 1px 1px 1px);
+  clip: rect(1px, 1px, 1px, 1px);
 }
 
 #aria-keyshortcuts button {
@@ -137,7 +156,7 @@
   cursor: pointer;
 }
 
-#aria-keyshortcuts button a{ 
+#aria-keyshortcuts button a {
   color: white;
 }
 
@@ -157,7 +176,7 @@
   position: absolute;
   text-align: center;
   z-index: 999;
-  content: 'here';
+  content: "here";
   top: 0;
   left: 50%;
   transform: translate(-50%, calc(-100% - 10px));
@@ -166,7 +185,7 @@
 
 #aria-keyshortcuts button.tooltip::before {
   background-color: #000000;
-  content: ' ';
+  content: " ";
   display: none;
   position: absolute;
   width: 15px;
@@ -176,18 +195,17 @@
 }
 
 #aria-keyshortcuts button.tooltip.top::after {
-	content: 'here';
-	top: 0;
-	left: 50%;
-	transform: translate(-50%, calc(-100% - 10px));
+  content: "here";
+  top: 0;
+  left: 50%;
+  transform: translate(-50%, calc(-100% - 10px));
 }
 
 #aria-keyshortcuts button.tooltip.top::before {
-	top: 0;
-	left: 50%;
-	transform: translate(-50%, calc(-100% - 5px)) rotate(45deg);
+  top: 0;
+  left: 50%;
+  transform: translate(-50%, calc(-100% - 5px)) rotate(45deg);
 }
-  
 
 /* ------------------------------ End of Leon's CSS ------------------------------------ */
 
@@ -210,10 +228,16 @@
   margin: 5px 0;
 }
 
+.aria-label-list span {
+  color: #edd714;
+  font-weight: bold;
+}
+
 .aria-label-highlighted {
   color: #edd714;
   font-weight: bold;
 }
+
 /* ------------------------------ End of Anna's CSS ------------------------------------ */
 
 /*----  Mary's Section ------*/
@@ -227,7 +251,7 @@
   justify-content: space-around;
 }
 .aria-describedby form {
-  width: 50vw;
+  width: 70vw;
   height: 50vh;
   margin: auto;
   background-color: #000;
@@ -235,16 +259,19 @@
   display: flex;
   flex-direction: column;
   justify-content: space-around;
-  align-items: center;
 }
 .aria-describedby input {
   padding: 10px;
-  width: 30rem;
+  width: 50%;
+  border-radius: 4px;
 }
 
-.aria-describedby button {
+.aria-describedby-submitBtn {
   background: #edd714;
   width: 10rem;
+  padding: 10px;
+  margin: 0 auto;
+  border-radius: 4px;
 }
 button.describedby-close-btn {
   width: 10px;
@@ -269,6 +296,10 @@ button.describedby-close-btn {
   color: #edd714;
 }
 
-.project-insights{
+/* styling Project Insights slide */
+.project-insights {
   font-size: 35px;
 }
+
+/* Mawu section */
+
