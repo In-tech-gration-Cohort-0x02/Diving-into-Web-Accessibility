@@ -502,15 +502,8 @@ alt="​​Les Demoiselles dAvignon" aria-details="det">
 
 			<!-- Mawu's Section Aria-sort -->
 			<section>
-				<section><br><img src="assets/aria-sort1.png"></section>
-				<section class="title">ARIA-SORT: The aria-sort attribute indicates
+				<section class="title"> <h2>ARIA-SORT:</h2> The aria-sort attribute indicates
 					if items in a table or grid are sorted in ascending or descending order.
-				</section>
-				<section class="description">
-					If a grid or table provides sort functionality,
-					the aria-sort attribute should be set to either ascending
-					or descending (or other) on the header cell element for the
-					sorted column or row.
 				</section>
 				<section class="description">
 					The aria-sort attribute is only set on the currently sorted
@@ -538,30 +531,32 @@ alt="​​Les Demoiselles dAvignon" aria-details="det">
 					column sorted in ascending order.
 				</section>
 				<section class="description">
-					<pre>
-					&lt;table&gt;
-					  &lt;caption&gt;
-						Steering Committee Members
-					  &lt;/caption&gt;
-					  &lt;thead&gt;
-						&lt;tr&gt;
-						  &lt;th&gt;
-							&lt;button&gt;First Name&lt;/button&gt;
-						  &lt;/th&gt;
-						  &lt;th aria-sort="ascending"&gt;
-							&lt;button&gt;Last Name&lt;/button&gt;
-						  &lt;/th&gt;
-						  &lt;th&gt;
-							&lt;button&gt;Company&lt;/button&gt;
-						  &lt;/th&gt;
-						  &lt;th&gt;Email&lt;/th&gt;
-						&lt;/tr&gt;
-					  &lt;/thead&gt;
-					  &lt;tbody&gt;
-						…
-					  &lt;/tbody&gt;
-					&lt;/table&gt;
-				  </pre>
+						<pre>
+						<code class="language-html">
+						&lt;table&gt;
+						  &lt;caption&gt;
+							Steering Committee Members
+						  &lt;/caption&gt;
+						  &lt;thead&gt;
+							&lt;tr&gt;
+							  &lt;th&gt;
+								&lt;button&gt;First Name&lt;/button&gt;
+							  &lt;/th&gt;
+							  &lt;th aria-sort="ascending"&gt;
+								&lt;button&gt;Last Name&lt;/button&gt;
+							  &lt;/th&gt;
+							  &lt;th&gt;
+								&lt;button&gt;Company&lt;/button&gt;
+							  &lt;/th&gt;
+							  &lt;th&gt;Email&lt;/th&gt;
+							&lt;/tr&gt;
+						  &lt;/thead&gt;
+						  &lt;tbody&gt;
+							…
+						  &lt;/tbody&gt;
+						&lt;/table&gt;
+					    </code>
+					   </pre>
 				</section>
 				<section class="description">
 					If a user clicks on the Last Name button, aria-pressed="true"
