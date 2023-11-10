@@ -502,18 +502,18 @@ alt="​​Les Demoiselles dAvignon" aria-details="det">
 
 			<!-- Mawu's Section Aria-sort -->
 			<section>
-				<section class="title">
-					<h2>ARIA-SORT:</h2> The aria-sort attribute indicates
-					if items in a table or grid are sorted in ascending or descending order.
+				<section class="title"> <h2>ARIA-SORT</h2> ARIA-SORT is part of the Accessible 
+					Rich Internet Applications (WAI-ARIA) specification, which defines a set 
+					of attributes and roles to enhance the accessibility and interoperability 
+					of web content and applications 3. ARIA-SORT is a property of the Element 
+					interface, which represents any element in the Document Object Model (DOM)
 				</section>
 				<section class="description">
-					The aria-sort attribute is only set on the currently sorted
-					column or row. Set aria-sort="ascending" to indicate the data
-					cells in the column or row are sorted in ascending order.
-					If the sort order is reversed, toggle the value to aria-sort="descending".
-					When a different column or row becomes sorted, the single aria-sort attribute
-					is moved to the header cell for the newly sorted column or row with
-					the appropriate value for the sort order.
+					ARIA-SORT indicates if items in a table or grid are sorted in ascending 
+					or descending order. It is used to provide information to assistive 
+					technologies, such as screen readers, about the current sorting state 
+					of a column or row header. ARIA-SORT can have one of the 
+					following values: ascending, descending, none, or other 
 				</section>
 				<section class="description">
 					The aria-sort attribute should only be added to a single
@@ -522,11 +522,12 @@ alt="​​Les Demoiselles dAvignon" aria-details="det">
 					It doesn't have any impact on the actual sort order.
 				</section>
 				<section class="description">
-					The aria-sort attribute is used to provide information
-					about the current sorting state of a column in a data table.
-					It serves as an accessibility feature that assists users of
-					assistive technologies, such as screen readers, in understanding
-					and interacting with sortable tables.
+					For example, if a table has a column header with ARIA-SORT=“ascending”, 
+					it means that the data cells in that column are sorted in ascending order. 
+					If the user clicks on the header to change the sort order, the value 
+					of ARIA-SORT should be toggled to “descending” with JavaScript. 
+					If the user clicks on a different header, the ARIA-SORT attribute 
+					should be moved to that header with the appropriate value 
 				</section>
 				<section>EXAMPLES: The following table loads with the last name
 					column sorted in ascending order.
