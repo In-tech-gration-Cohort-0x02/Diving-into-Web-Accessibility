@@ -33,3 +33,9 @@ You can view the presentation online [here ↗️](https://in-tech-gration-cohor
 * [Mawugbenyo Aziakonou](https://github.com/Amlima1)
 * [Vangelis Chirmpilidis](https://github.com/vagelisx)
 * [Mary Richelle](https://github.com/MaryRichelle)
+
+***
+
+### W3C validation badge
+
+![W3C Validation](https://img.shields.io/w3c-validation/default?targetUrl=https://in-tech-gration-cohort-0x02.github.io/Diving-into-Web-Accessibility/)
