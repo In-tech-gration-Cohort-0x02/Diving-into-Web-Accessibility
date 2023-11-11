@@ -1,6 +1,3 @@
-/* ------------------------------ Start of main CSS ------------------------------------ */
-
-/*customize controls color to be more visible for the slides*/
 
 .reveal:not(.rtl)
   .controls[data-controls-back-arrows="faded"]
@@ -8,9 +5,6 @@
   opacity: 0.8;
 }
 
-/* ------------------------------ End of main CSS ------------------------------------ */
-
-/* Styling A11y slide */
 
 .a11y-list {
   font-size: 35px;
@@ -29,7 +23,6 @@
   text-decoration: underline;
 }
 
-/* ------------------------------ Start of Leon's CSS ------------------------------------ */
 
 #aria-keyshortcuts {
   text-align: center;
@@ -207,9 +200,6 @@
   transform: translate(-50%, calc(-100% - 5px)) rotate(45deg);
 }
 
-/* ------------------------------ End of Leon's CSS ------------------------------------ */
-
-/* ------------------------------ Start of Anna's CSS ------------------------------------ */
 .aria-label-heading {
   color: #c2c1c1 !important;
 }
@@ -238,9 +228,6 @@
   font-weight: bold;
 }
 
-/* ------------------------------ End of Anna's CSS ------------------------------------ */
-
-/*----  Mary's Section ------*/
 .describedby-code-section {
   background: #000;
 }
@@ -284,9 +271,6 @@ button.describedby-close-btn {
 .aria-describedby #descriptionClose {
   font-size: 1rem;
 }
-/*----  Mary's Section End here------*/
-
-/*styling Useful Resource slide*/
 
 .div-useful-resources {
   font-size: 80%;
@@ -296,10 +280,8 @@ button.describedby-close-btn {
   color: #edd714;
 }
 
-/* styling Project Insights slide */
 .project-insights {
   font-size: 35px;
 }
 
-/* Mawu section */
 
