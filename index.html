@@ -9,27 +9,21 @@
 
 	<link rel="stylesheet" href="dist/reset.css">
 	<link rel="stylesheet" href="dist/reveal.css">
-	<!-- changed black theme to custom css for reveal.js customizations-->
 	<link rel="stylesheet" href="dist/theme/custom.css">
 	<link rel="stylesheet" type="text/css" href="css/style.css">
-	<!-- prism for code styling -->
-	<!--<link rel="stylesheet" type="text/css"  href="css/prism.css">-->
 
-	<!-- Theme used for syntax highlighted code -->
 	<link rel="stylesheet" href="plugin/highlight/monokai.css">
 </head>
 
 <body>
 	<div class="reveal">
 		<div class="slides">
-			<!--title-->
 			<section>
 				<h1>A11y &AMP; ARIA LABELS </h1>
 				<img src="assets/aria-logo.png" alt="web accessibility logo">
 				<h2> group project</h2>
 				<p> cohort 02, in<strong id="tech">TECH</strong>gration </p>
 			</section>
-			<!-- web Accessibility section -->
 			<section>
 				<section>
 					<h2>what is A11Y?</h2>
@@ -47,7 +41,6 @@
 						<li class="fragment highlight-current-green">Keyboard Accessibility (for screen reader when using the tab
 							key to navigate)</li>
 						<li class="fragment highlight-current-green">Color Contrast (Background and text color) </li>
-						<!--- (addressing people with vision impairments and/or using technology in sunshine) -->
 						<li class="fragment highlight-current-green">Headings and Structure</li>
 						<li class="fragment highlight-current-green">Accessible names for interactive elements</li>
 						<li class="fragment highlight-current-green">Responsive Design</li>
@@ -56,7 +49,6 @@
 					</ul>
 				</section>
 			</section>
-			<!-- ARIA attribute Section -->
 			<section>
 				<section>
 					<h2 class="main-heading">ARIA</h2>
@@ -71,7 +63,6 @@
 					<span class="main-underline main-highlighted">No ARIA is better than bad ARIA.</span>
 				</section>
 			</section>
-			<!-- Leon's Section aria-keyshortcuts -->
 			<section id="aria-keyshortcuts" class="aria-keyshortcuts">
 				<section id="aria-keyshortcuts-01" data-state="aria-keyshortcuts">
 					<div id="ariakeystart">Aria-keyshortcuts start of presentation</div>
@@ -302,9 +293,6 @@
 					<span aria-labelledby="ariakeyend" aria-hidden="true"></span>
 				</section>
 			</section>
-			<!--End Leo's Section-->
-
-			<!--Jason Section aria-colindex -->
 			<section>
 				<section>
 					<h2>aria-colindex</h2>
@@ -350,9 +338,6 @@
 					</pre>
 				</section>
 			</section>
-			<!--End Jason's Section-->
-
-			<!-- Anna's Section aria-label -->
 			<section>
 				<section>
 					<h2 class="aria-label-heading">aria-label</h2>
@@ -370,25 +355,6 @@
 				</section>
 				<section>
 					<h4 class="aria-label-heading">WHAT ELEMENTS CAN BE USED WITH ARIA-LABEL</h4>
-					<!-- <ul class="aria-label-list">
-						<li>
-							<strong>interactive elements</strong>: such as <span class="aria-label-highlighted">a</span>
-							(when <span class="aria-label-highlighted">href</span>
-							attribute is present),
-							<span class="aria-label-highlighted">audio</span> and <span class="aria-label-highlighted">video</span>
-							(when controls attribute is present), <span class="aria-label-highlighted">input</span>,
-							<span class="aria-label-highlighted">select</span>,
-							<span class="aria-label-highlighted">button</span>, <span class="aria-label-highlighted">textarea</span>.
-						</li>
-						<li>
-							<strong>implicit landmark elements</strong>: such as <span class="aria-label-highlighted">header</span>,
-							<span class="aria-label-highlighted">footer</span>,
-							<span class="aria-label-highlighted">nav</span>, <span class="aria-label-highlighted">main</span>, <span
-								class="aria-label-highlighted">aside</span>,
-							<span class="aria-label-highlighted">section</span>, and <span class="aria-label-highlighted">form</span>.
-						</li>
-					</ul> -->
-
 					<ul class="aria-label-list">
 						<li>
 							<strong>interactive elements</strong>: such as <span>a</span>
@@ -406,7 +372,6 @@
 							<span>section</span>, and <span>form</span>.
 						</li>
 					</ul>
-
 				</section>
 				<section>
 					<h4 class="aria-label-heading">WHEN TO USE</h4>
@@ -434,9 +399,6 @@
 					</p>
 				</section>
 			</section>
-			<!--End Anna's Section-->
-
-			<!-- Alex's Section aria-details -->
 			<section>
 				<section>
 					<h2>aria-details</h2>
@@ -464,9 +426,6 @@ alt="​​Les Demoiselles dAvignon" aria-details="det">
 					</pre>
 				</section>
 			</section>
-			<!--End Alex's Section-->
-
-			<!-- Meredith's Section aria-autocomplete -->
 			<section>
 				<h2> Aria-autocomplete</h2>
 				<p>The aria-autocomplete attribute indicates whether inputting text could trigger display of one or more
@@ -479,9 +438,6 @@ alt="​​Les Demoiselles dAvignon" aria-details="det">
 				</p>
 				<p> <a href="https://www.youtube.com/watch?v=XNjUfwDmHGc">Take 3 mins and watch</a></p>
 			</section>
-			<!--End Meredith's Section-->
-
-			<!-- Solo's aria Section-->
 			<section>
 				<h2>aria-checked</h2>
 				<h4>description: The aria-checked</h4>
@@ -497,10 +453,6 @@ alt="​​Les Demoiselles dAvignon" aria-details="det">
 					</a>
 				</p>
 			</section>
-
-			<!--End solo's Section-->
-
-			<!-- Mawu's Section Aria-sort -->
 			<section>
 				<section class="title"> <h2>ARIA-SORT</h2> ARIA-SORT is part of the Accessible 
 					Rich Internet Applications (WAI-ARIA) specification, which defines a set 
@@ -606,9 +558,6 @@ alt="​​Les Demoiselles dAvignon" aria-details="det">
 					THANKS FOR YOUR ATTENTION
 				</section>
 			</section>
-			<!--End Mawu's Section-->
-
-			<!-- Mary's Section aria-describedby-->
 			<section class="aria-describedby">
 				<h2>aria-describedby</h2>
 				<section>
@@ -704,9 +653,6 @@ alt="​​Les Demoiselles dAvignon" aria-details="det">
 					</ul>
 				</section>
 			</section>
-			<!--End Mary's Section-->
-
-			<!-- Vangelis' Section aria-valuetext-->
 			<section>
 				<section>
 					<h2>aria-valuetext</h2>
@@ -773,9 +719,6 @@ alt="​​Les Demoiselles dAvignon" aria-details="det">
 					</p>
 				</section>
 			</section>
-			<!--End Vangelis' Section aria-valuetext--->
-
-			<!--useful resources-->
 			<section>
 				<h4 class="main-heading">Useful resources</h4>
 				<div class="div-useful-resources">
@@ -811,7 +754,6 @@ alt="​​Les Demoiselles dAvignon" aria-details="det">
 					</ol>
 				</div>
 			</section>
-			<!-- Project Insights-->
 			<section>
 				<h4 class="main-heading">Project Insights</h4>
 				<ul class="project-insights">
@@ -832,37 +774,22 @@ alt="​​Les Demoiselles dAvignon" aria-details="det">
 					</li>
 				</ul>
 			</section>
-
 			<section>
 				<h4><strong>THANK YOU!</strong></h4>
 			</section>
-
 		</div>
 	</div>
-
 	<script src="dist/reveal.js"></script>
 	<script src="plugin/notes/notes.js"></script>
 	<script src="plugin/markdown/markdown.js"></script>
 	<script src="plugin/highlight/highlight.js"></script>
-	<!-- prism for code styling -->
-	<!--<script src="js/prism.js"></script>-->
-
-
 	<script>
-		// More info about initialization & config:
-		// - https://revealjs.com/initialization/
-		// - https://revealjs.com/config/
 		Reveal.initialize({
 			hash: true,
-
-			// Learn about plugins: https://revealjs.com/plugins/
 			plugins: [RevealMarkdown, RevealHighlight, RevealNotes]
 		});
-
-		// Execute code each time slider appears [Leon's Slider]
-		// https://stackoverflow.com/questions/22133748/execute-function-when-certain-slide-appear-in-reveal-js
 		Reveal.addEventListener('aria-keyshortcuts', function () {
-			document.querySelector('[tabindex="-1"]').focus(); // autofocus button
+			document.querySelector('[tabindex="-1"]').focus(); 
 		});
 	</script>
 </body>
