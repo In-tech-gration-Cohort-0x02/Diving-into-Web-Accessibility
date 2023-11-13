@@ -124,8 +124,8 @@
 							For example, <mark>Enter, Tab, ArrowRight, PageDown, Escape, or F1.</mark>
 							The use of "Space" for the spacebar is an exception to the UI Events KeyboardEvent key
 							Values spec
-							<mark>[uievents-key]</mark> as the space or spacebar key is encoded as <div id="mixedcode">space</div><a
-								aria-labelledby="mixedcode"><mark aria-hidden="true">' '</mark></a> and
+							<mark>[uievents-key]</mark> as the space or spacebar key is encoded as <div id="mixedcode4">space</div><a
+								aria-labelledby="mixedcode4"><mark aria-hidden="true">' '</mark></a> and
 							would be
 							treated as a white space character.
 						</div>
@@ -231,14 +231,14 @@
 					<h2>Aria-keyshortcuts Rules</h2>
 					<div class="gradient-border">
 						<h3 class="gradient-border gradient-border-09">For example, the single-quote character can be
-							encoded as <div id="mixedcode">ampersand hash 39 semi-colon</div><a aria-labelledby="amper"><mark
+							encoded as <div id="mixedcode2">ampersand hash 39 semi-colon</div><a aria-labelledby="amper"><mark
 									aria-hidden="true">&amp;#39;</mark></a> in HTML.
 						</h3>
 						<h4>User agents MUST NOT change keyboard behavior in response to the aria-keyshortcuts
 							attribute.
 						</h4>
-						<ul>
-							<h4>Authors MUST</h4>
+						<h4>Authors MUST</h4>
+						<ul>	
 							<li role="listitem"><span aria-label="one">1</span>handle scripted keyboard events to process
 								aria-keyshortcuts.</li>
 							<li role="listitem"><span aria-label="one">2</span>provide a way to expose keyboard shortcuts so that all
@@ -267,7 +267,7 @@
 						<span>A</span>
 						<span>Shift + Space</span>
 						<span>Control + Alt + U + .</span>
-						<span>Control + Shift + <div id="mixedcode">ampersand hash 39 semi-colon</div><a
+						<span>Control + Shift + <div id="mixedcode3">ampersand hash 39 semi-colon</div><a
 								aria-labelledby="amper"><mark aria-hidden="true">&amp;#39;</mark></a></span>
 						<span>Alt+Shift+P Control+F</span>
 						<span>Meta+C Meta+Shift+C</span>
@@ -315,7 +315,8 @@
 				<section>
 					<p>an example of aria-colindex</p>
 					<pre data-id="code-animation"><code class="hljs javascript" data-trim data-line-numbers>
-						<div role="grid" aria-colcount="6">
+						<script type="text/template">
+						 <div role="grid" aria-colcount="6">
 							<div role="rowgroup">
 							  <div role="row">
 								<div role="columnheader" aria-colindex="1">First name</div>
@@ -333,7 +334,8 @@
 							  </div>
 							</div>
 							…
-						  </div>											  					
+						  </div>
+						</script>											  					
 					</code>
 					</pre>
 				</section>
