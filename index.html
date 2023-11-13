@@ -453,111 +453,61 @@ alt="​​Les Demoiselles dAvignon" aria-details="det">
 					</a>
 				</p>
 			</section>
-			<section>
-				<section class="title"> <h2>ARIA-SORT</h2> ARIA-SORT is part of the Accessible 
-					Rich Internet Applications (WAI-ARIA) specification, which defines a set 
-					of attributes and roles to enhance the accessibility and interoperability 
-					of web content and applications 3. ARIA-SORT is a property of the Element 
-					interface, which represents any element in the Document Object Model (DOM)
+			<section id="ariaSortSection">
+				<section id="introSection">
+				  <h2>ARIA-SORT</h2>
+				  <p>
+					ARIA-SORT is a part of the WAI-ARIA specification, enhancing web accessibility.
+					It indicates if items in a table are sorted in ascending, descending, none, or other order.
+				  </p>
+				  <p>
+					The `aria-sort` attribute informs assistive technologies about the current sorting state
+					of a column or row header. It should be added to a single header at a time and doesn't impact
+					the actual sort order.
+				  </p>
 				</section>
-				<section class="description">
-					ARIA-SORT indicates if items in a table or grid are sorted in ascending 
-					or descending order. It is used to provide information to assistive 
-					technologies, such as screen readers, about the current sorting state 
-					of a column or row header. ARIA-SORT can have one of the 
-					following values: ascending, descending, none, or other 
+				<section id="exampleSection">
+				  <h3>Example:</h3>
+				  <pre>
+					<code id="htmlCode" class="language-html">
+					  &lt;table&gt;
+						&lt;thead&gt;
+						  &lt;tr&gt;
+							&lt;th aria-sort="ascending"&gt;Last Name&lt;/th&gt;
+						  &lt;/tr&gt;
+						&lt;/thead&gt;
+						&lt;tbody&gt;
+						  <!-- Table data goes here -->
+						&lt;/tbody&gt;
+					  &lt;/table&gt;
+					</code>
+				  </pre>
+				  <p>
+					If a user clicks on the Last Name header, the `aria-sort` value toggles between
+					"ascending" and "descending" with JavaScript. It provides information about the sorted column
+					to assistive technology users.
+				  </p>
 				</section>
-				<section class="description">
-					The aria-sort attribute should only be added to a single
-					table or grid header at a time. The attribute is set to
-					inform assistive technology users which column or row is sorted.
-					It doesn't have any impact on the actual sort order.
+				<section id="valuesSection">
+				  <h3>Values:</h3>
+				  <ul>
+					<li>Ascending (`aria-sort="ascending"`): Column sorted in ascending order.</li>
+					<li>Descending (`aria-sort="descending"`): Column sorted in descending order.</li>
+					<li>None (`aria-sort="none"`): Column not currently sorted.</li>
+				  </ul>
 				</section>
-				<section class="description">
-					For example, if a table has a column header with ARIA-SORT=“ascending”, 
-					it means that the data cells in that column are sorted in ascending order. 
-					If the user clicks on the header to change the sort order, the value 
-					of ARIA-SORT should be toggled to “descending” with JavaScript. 
-					If the user clicks on a different header, the ARIA-SORT attribute 
-					should be moved to that header with the appropriate value 
+				<section id="summarySection">
+				  <h3>Summary</h3>
+				  <p>
+					ARIA-SORT is a crucial attribute enhancing accessibility for sortable tables.
+					It communicates the sorting state to assistive technology users, improving interaction
+					and understanding of data tables.
+				  </p>
 				</section>
-				<section>EXAMPLES: The following table loads with the last name
-					column sorted in ascending order.
+				<section id="thanksSection">
+				  <p>Thanks for your attention!</p>
 				</section>
-				<section class="description">
-					<pre>
-						<code class="language-html">
-						&lt;table&gt;
-						  &lt;caption&gt;
-							Steering Committee Members
-						  &lt;/caption&gt;
-						  &lt;thead&gt;
-							&lt;tr&gt;
-							  &lt;th&gt;
-								&lt;button&gt;First Name&lt;/button&gt;
-							  &lt;/th&gt;
-							  &lt;th aria-sort="ascending"&gt;
-								&lt;button&gt;Last Name&lt;/button&gt;
-							  &lt;/th&gt;
-							  &lt;th&gt;
-								&lt;button&gt;Company&lt;/button&gt;
-							  &lt;/th&gt;
-							  &lt;th&gt;Email&lt;/th&gt;
-							&lt;/tr&gt;
-						  &lt;/thead&gt;
-						  &lt;tbody&gt;
-							…
-						  &lt;/tbody&gt;
-						&lt;/table&gt;
-					    </code>
-					   </pre>
-				</section>
-				<section class="description">
-					If a user clicks on the Last Name button, aria-pressed="true"
-					would be added to the &lt;button&gt; element and the aria-sort value
-					would be toggled to "descending" with JavaScript. If the user
-					clicks on a different header button, the aria-sort would be removed
-					from the Last Name header to be placed on the clicked button's &lt;th&gt; parent.
-				</section>
-				<section class="description">
-					We provided instructions in the caption for assistive technology
-					who may not see the down arrows that we would add with CSS targeting
-					the th[aria-sort="ascending"] and th[aria-sort="descending"] selectors.
-				</section>
-				<section class="subtitle">
-					VALUES OR USAGE
-				</section>
-				<section class="description">
-					<ul class="list">
-						<li>Ascending Order or Ascending (aria-sort="ascending"):
-							This value is applied to a column header when
-							the data in that column is sorted in ascending order
-							(from A to Z, smallest to largest, earliest to latest).
-						</li>
-						<li>Descending Order or Descending (aria-sort="descending"):
-							This value is applied when the data in a column
-							is sorted in descending order (from Z to A, largest
-							to smallest, latest to earliest).
-						</li>
-						<li>Not Sorted or None (aria-sort="none"):
-							This value is used to indicate that the column is not currently sorted.
-						</li>
-					</ul>
-				</section>
-				<section class="subtitle">
-					SUMMARY
-				</section>
-				<section class="description">
-					In summary, aria-sort is a crucial ARIA attribute that enhances
-					the accessibility of sortable tables by conveying the sorting
-					state of table columns to users of assistive technologies.
-					It improves understanding, navigation, and interaction with
-					data tables, making the web more inclusive for individuals with disabilities.
-				</section>
-				<section>
-					THANKS FOR YOUR ATTENTION
-				</section>
-			</section>
+			  </section>
 			<section class="aria-describedby">
 				<h2>aria-describedby</h2>
 				<section>

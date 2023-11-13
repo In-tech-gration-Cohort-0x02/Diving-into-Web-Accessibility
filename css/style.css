@@ -284,4 +284,20 @@ button.describedby-close-btn {
   font-size: 35px;
 }
 
-
+#introSection , 
+#exampleSection , 
+#valuesSection , 
+#summarySection, 
+#thanksSection {
+  color: gold;
+  background-color: #000000;
+}
+#valuesSection {
+  font-size: 130%;
+} 
+#summarySection {
+  font-size: 150%;
+}
+#thanksSection {
+  font-size: 250%;
+}
