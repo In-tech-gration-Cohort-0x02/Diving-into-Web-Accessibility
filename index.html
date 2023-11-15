@@ -3,9 +3,9 @@
 
 <head>
 	<meta charset="utf-8">
-	<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
-
-	<title aria-label="ARIA presentation">A11y &amp; ARIA LABELS - presentation</title>
+	<meta name="viewport" content="width=device-width">
+	<meta name="description" content="A11y and ARIA LABELS">
+	<title>A11y &amp; ARIA LABELS - presentation</title>
 
 	<link rel="stylesheet" href="dist/reset.css">
 	<link rel="stylesheet" href="dist/reveal.css">
@@ -20,12 +20,12 @@
 		<div class="slides">
 			<section>
 				<h1>A11y &AMP; ARIA LABELS </h1>
-				<img src="assets/aria-logo.png" alt="web accessibility logo">
+				<img width="200" height="200" src="assets/aria-logo.png" alt="web accessibility logo">
 				<h2> group project</h2>
 				<p> cohort 02, in<strong id="tech">TECH</strong>gration </p>
 			</section>
 			<section>
-				<h2 class="visibility-hidden" aria-hidden="true">Nested sections</h2>		
+				<h2 class="visibility-hidden" aria-hidden="true">Nested sections</h2>
 				<section>
 					<h2>what is A11Y?</h2>
 					<p>A ccessibilit y </p>
@@ -167,7 +167,7 @@
 						</p>
 						<h3>
 							For example, many modifier keys are used in conjunction with other keys to<span
-									area-hidden="true">:</span>
+								area-hidden="true">:</span>
 						</h3>
 						<ol role="list">
 							<li role="listitem"><span aria-label="one">1</span>create common punctuation symbols</li>
@@ -240,7 +240,7 @@
 							attribute.
 						</h4>
 						<h4>Authors MUST</h4>
-						<ul>	
+						<ul>
 							<li role="listitem"><span aria-label="one">1</span>handle scripted keyboard events to process
 								aria-keyshortcuts.</li>
 							<li role="listitem"><span aria-label="one">2</span>provide a way to expose keyboard shortcuts so that all
@@ -453,7 +453,8 @@ alt="​​Les Demoiselles dAvignon" aria-details="det">
 				<h4>description: The aria-checked</h4>
 				<p>The aria-checked attribute indicates the current "checked" state of checkboxes, radio buttons, and other
 					widgets.
-					Note: Where possible use an HTML &lt;input&gt; element with type="checkbox" and type="radio" as these have built in
+					Note: Where possible use an HTML &lt;input&gt; element with type="checkbox" and type="radio" as these have
+					built in
 					semantics and do not require ARIA attributes.
 					The mixed value is not supported on radio, menuitemradio, or switch and elements that inherits from these. The
 					value will be false if mixed is set when not supported.
@@ -465,20 +466,20 @@ alt="​​Les Demoiselles dAvignon" aria-details="det">
 			<section id="ariaSortSection">
 				<h2 class="visibility-hidden" aria-hidden="true">Hidden header</h2>
 				<section id="introSection">
-				  <h2>ARIA-SORT</h2>
-				  <p>
-					ARIA-SORT is a part of the WAI-ARIA specification, enhancing web accessibility.
-					It indicates if items in a table are sorted in ascending, descending, none, or other order.
-				  </p>
-				  <p>
-					The `aria-sort` attribute informs assistive technologies about the current sorting state
-					of a column or row header. It should be added to a single header at a time and doesn't impact
-					the actual sort order.
-				  </p>
+					<h2>ARIA-SORT</h2>
+					<p>
+						ARIA-SORT is a part of the WAI-ARIA specification, enhancing web accessibility.
+						It indicates if items in a table are sorted in ascending, descending, none, or other order.
+					</p>
+					<p>
+						The `aria-sort` attribute informs assistive technologies about the current sorting state
+						of a column or row header. It should be added to a single header at a time and doesn't impact
+						the actual sort order.
+					</p>
 				</section>
 				<section id="exampleSection">
-				  <h3>Example:</h3>
-				  <pre>
+					<h3>Example:</h3>
+					<pre>
 					<code id="htmlCode" class="language-html">
 					  &lt;table&gt;
 						&lt;thead&gt;
@@ -492,32 +493,32 @@ alt="​​Les Demoiselles dAvignon" aria-details="det">
 					  &lt;/table&gt;
 					</code>
 				  </pre>
-				  <p>
-					If a user clicks on the Last Name header, the `aria-sort` value toggles between
-					"ascending" and "descending" with JavaScript. It provides information about the sorted column
-					to assistive technology users.
-				  </p>
+					<p>
+						If a user clicks on the Last Name header, the `aria-sort` value toggles between
+						"ascending" and "descending" with JavaScript. It provides information about the sorted column
+						to assistive technology users.
+					</p>
 				</section>
 				<section id="valuesSection">
-				  <h3>Values:</h3>
-				  <ul>
-					<li>Ascending (`aria-sort="ascending"`): Column sorted in ascending order.</li>
-					<li>Descending (`aria-sort="descending"`): Column sorted in descending order.</li>
-					<li>None (`aria-sort="none"`): Column not currently sorted.</li>
-				  </ul>
+					<h3>Values:</h3>
+					<ul>
+						<li>Ascending (`aria-sort="ascending"`): Column sorted in ascending order.</li>
+						<li>Descending (`aria-sort="descending"`): Column sorted in descending order.</li>
+						<li>None (`aria-sort="none"`): Column not currently sorted.</li>
+					</ul>
 				</section>
 				<section id="summarySection">
-				  <h3>Summary</h3>
-				  <p>
-					ARIA-SORT is a crucial attribute enhancing accessibility for sortable tables.
-					It communicates the sorting state to assistive technology users, improving interaction
-					and understanding of data tables.
-				  </p>
+					<h3>Summary</h3>
+					<p>
+						ARIA-SORT is a crucial attribute enhancing accessibility for sortable tables.
+						It communicates the sorting state to assistive technology users, improving interaction
+						and understanding of data tables.
+					</p>
 				</section>
 				<section id="thanksSection">
-				  <h4>Thanks for your attention!</h4>
+					<h4>Thanks for your attention!</h4>
 				</section>
-			  </section>
+			</section>
 			<section class="aria-describedby">
 				<h2>aria-describedby</h2>
 				<section>
@@ -628,7 +629,8 @@ alt="​​Les Demoiselles dAvignon" aria-details="det">
 				</section>
 				<section>
 					<h2 class="visibility-hidden" aria-hidden="true">Hidden header</h2>
-					<br><img src="assets/aria-valuenow.png" alt=""></section>
+					<br><img src="assets/aria-valuenow.png" alt="">
+				</section>
 				<section>
 					<h2 class="visibility-hidden" aria-hidden="true">Hidden header</h2>
 					<p>The <mark>aria-valuetext</mark> attribute defines the human-readable text alternative of
@@ -759,7 +761,7 @@ alt="​​Les Demoiselles dAvignon" aria-details="det">
 			plugins: [RevealMarkdown, RevealHighlight, RevealNotes]
 		});
 		Reveal.addEventListener('aria-keyshortcuts', function () {
-			document.querySelector('[tabindex="-1"]').focus(); 
+			document.querySelector('[tabindex="-1"]').focus();
 		});
 	</script>
 </body>
