@@ -9,12 +9,13 @@
 
 	<link rel="stylesheet" href="dist/reset.css">
 	<link rel="stylesheet" href="dist/reveal.css">
+
 	<!-- changed black theme to custom css for reveal.js customizations-->
 	<link rel="stylesheet" href="dist/theme/custom.css">
 	<link rel="stylesheet" type="text/css" href="css/style.css">
 	<!-- prism for code styling -->
 	<!--<link rel="stylesheet" type="text/css"  href="css/prism.css">-->
-
+	
 	<!-- Theme used for syntax highlighted code -->
 	<link rel="stylesheet" href="plugin/highlight/monokai.css">
 </head>
@@ -77,7 +78,7 @@
 								property</mark>are keyboard shortcuts that an author has implemented to activate or give
 							focus to an element.</p>
 						<pre aria-hidden="true">
-							<code class="language-html">
+							<code class="language-html" data-line-numbers="1|2|3|4">
 								<a id="skip-link" href="#content" aria-keyshortcuts="Alt+Shift+A" accesskey="Alt+Shift+A">
 									&nbsp;&nbsp;Skip to content
 								</a>
@@ -257,7 +258,7 @@
 						</ul>
 					</div>
 				</section>
-				<section id="aria-keyshortcuts-10" data-keyshortcuts="10">
+				<section id="aria-keyshortcuts-10" data-keyshortcuts="10" data-state="codestyle-keyshortcuts">
 					<h2 aria-labelledby="code_examples">Examples of valid keyboard shortcuts include:</h2>
 					<div id="code_examples">
 						<span>A</span>
@@ -268,27 +269,25 @@
 						<span>Meta+C Meta+Shift+C</span>
 					</div>
 					<pre class="codestyle">
-						<code class="language-html" aria-hidden="true">
-						 &#9193; &#9193; &#9193;    A
+						<code class="language-html" aria-hidden="true" data-line-numbers="2|4|6|8|10|12">
+						 <span>&#9193; &#9193; &#9193;    A</span>
 
-						 &#9193; &#9193; &#9193;    Shift + Space
+						 <span>&#9193; &#9193; &#9193;    Shift + Space</span>
 
-						 &#9193; &#9193; &#9193;    Control + Alt + U + .
+						 <span>&#9193; &#9193; &#9193;    Control + Alt + U + .</span>
 
-						 &#9193; &#9193; &#9193;    Control + Shift + &amp;#39; 
+						 <span>&#9193; &#9193; &#9193;    Control + Shift + &#39;</span>
 
-						 &#9193; &#9193; &#9193;    Alt+Shift+P Control+F
-
-						 &#9193; &#9193; &#9193;    Meta+C Meta+Shift+C
+						 <span>&#9193; &#9193; &#9193;    Alt+Shift+P Control+F</span>
+						 
+						 <span>&#9193; &#9193; &#9193;    Meta+C Meta+Shift+C</span>
 						</code>
 					</pre>
-
-
 					<div id="ariakeyend">Aria-keyshortcuts end of presentation</div>
 					<span aria-labelledby="ariakeyend" aria-hidden="true"></span>	
 				</section>
 			</section>
-			<!--End Leo's Section-->
+			<!--End Leon's Section-->
 
 			<!--Jason Section aria-colindex -->
 			<section>
@@ -750,10 +749,7 @@ alt="​​Les Demoiselles dAvignon" aria-details="det">
 	<script src="dist/reveal.js"></script>
 	<script src="plugin/notes/notes.js"></script>
 	<script src="plugin/markdown/markdown.js"></script>
-	<script src="plugin/highlight/highlight.js"></script>
-	<!-- prism for code styling -->
-	<!--<script src="js/prism.js"></script>-->
-
+	<script src="plugin/highlight/highlightfull.js"></script>
 
 	<script>
 		// More info about initialization & config:
@@ -761,17 +757,12 @@ alt="​​Les Demoiselles dAvignon" aria-details="det">
 		// - https://revealjs.com/config/
 		Reveal.initialize({
 			hash: true,
-
+			
 			// Learn about plugins: https://revealjs.com/plugins/
-			plugins: [RevealMarkdown, RevealHighlight, RevealNotes]
-		});
-
-		// Execute code each time slider appears [Leon's Slider]
-		// https://stackoverflow.com/questions/22133748/execute-function-when-certain-slide-appear-in-reveal-js
-		Reveal.addEventListener( 'aria-keyshortcuts', function() {
-			document.querySelector('[tabindex="-1"]').focus(); // autofocus button
+			plugins: [RevealHighlight]
 		});
 	</script>
+
 </body>
 
 </html>
