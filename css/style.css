@@ -207,6 +207,89 @@
 .aria-label-underline {
   text-decoration: underline;
 }
+#aria-label code{
+    background-color: #2b2b2b;
+    white-space: pre;
+    tab-size: 0.3;
+    font-size: 0.90em;
+}
+
+.aria-label-div{
+  background-color: #e8e4e4;
+  display: flex;  
+}
+
+.aria-label-div section{
+  display: flex;
+  margin-left: 60px;
+}
+
+.aria-label-div section nav{
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      margin-top: 22px;
+     
+}
+.aria-label-div section nav button{
+  background-color: blue;
+  width: 30px;
+  height: 4px;
+  border: none;
+  margin-top: 5px;
+}
+
+#aria-label-section2{
+  flex: 1;
+}
+
+#aria-label-example-1{
+  background-color: #e8e4e4;
+  color: blue;
+  width: 20%;
+  margin-left: 300px;
+  padding: 80px;
+}
+
+#aria-label-example-2{
+  background-color: #e8e4e4;
+  width: 50%;
+  padding-bottom: 12px;
+  margin-left: 235px;
+}
+#aria-label-example-2 input{
+  border: 1px solid blue;
+  font-size: 1rem;
+  font-weight:600;
+}
+
+#aria-label-example-3{
+  display: flex;
+  flex-direction: column;
+  height: 250px;
+  width: 300px;
+  margin-left: 320px;
+}
+
+#aria-label-example-3 div:nth-child(1){
+  background-color: rgb(64, 140, 240);
+  height: 50px;
+}  
+
+#aria-label-example-3 div:nth-child(2){
+  background-color: aliceblue;
+  height: 150px;
+} 
+#aria-label-example-3 div:nth-child(3){
+  background-color: rgb(201, 226, 248);
+  height: 50px;
+  display: flex;
+  justify-content: space-around;
+  font-size: 20px;
+  text-decoration: underline 1px solid rgb(37, 37, 134);
+  padding: 5px;
+} 
 
 .aria-label-list {
   margin: 0;
