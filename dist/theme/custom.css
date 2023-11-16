@@ -359,3 +359,10 @@ section.has-light-background, section.has-light-background h1, section.has-light
     background-color: var(--r-background-color);
   }
 }
+
+/*hide tag h in nested sections - remove w3c error*/
+.visibility-hidden {
+  visibility: hidden;
+  width: 0;
+  height: 0;
+}
