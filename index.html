@@ -77,21 +77,19 @@
 							focus to an element.</p>
 						<pre aria-hidden="true">
 							<code class="language-html" data-line-numbers="1|2|3|4">
-								<a id="skip-link" href="#content" aria-keyshortcuts="Alt+Shift+A" accesskey="Alt+Shift+A">
+								<a id="skip-link" href="#content" aria-keyshortcuts="Alt+Shift+A" accesskey="A">
 									&nbsp;&nbsp;Skip to content
 								</a>
 							</code>		
 						</pre>
-						<p aria-labelledby="youtube-link" aria-keyshortcuts="Ctrl+Shift+Enter" role="link"
-							aria-selected="true">
-							Example Controlling focus with tabindex. <mark>Ctrl+Shift+Enter</mark> to open
-							<button role="button" tabindex="-1" aria-hidden="true" title="open" class="tooltip top">
-								<a id="youtube-link" tabindex="0" href="https://www.youtube.com/watch?v=Pe0Ce1WtnUM"
-									aria-hidden="true">
-									open
-								</a>
-							</button>
-						</p>
+						<div id="linkcontainer" aria-labelledby="youtube-link" aria-keyshortcuts="Ctrl+Shift+Enter">
+							Example Controlling focus with tabindex. <mark>Ctrl+Shift+Enter</mark> to
+							<form action="https://www.youtube.com/watch?v=Pe0Ce1WtnUM">
+								<button id="youtube-link" role="button" tabindex="-1" aria-hidden="true" title="open" class="tooltip top">open
+								</button>
+							</form>
+						</div>
+
 					</div>
 				</section>
 				<section id="aria-keyshortcuts-02" data-keyshortcuts="2" aria-hidden="true">
@@ -161,7 +159,7 @@
 				</section>
 				<section id="aria-keyshortcuts-05" data-keyshortcuts="5">
 					<h2>When specifying an alphabetic key, both the uppercase and lowercase variants are considered
-						equivalent<span area-hidden="true">:</span>
+						equivalent :
 						<span id="readletters">small a and capital a</span><span aria-labelledby="readletters"><mark
 								aria-hidden="true">a and A</mark></span> are the same.
 					</h2>
@@ -172,8 +170,7 @@
 							Keyboard designs vary significantly based on the device used and the languages supported.
 						</p>
 						<h3>
-							For example, many modifier keys are used in conjunction with other keys to<span
-								area-hidden="true">:</span>
+							For example, many modifier keys are used in conjunction with other keys to :
 						</h3>
 						<ol role="list">
 							<li role="listitem"><span aria-label="one">1</span>create common punctuation symbols</li>
@@ -243,7 +240,7 @@
 					<div class="gradient-border">
 						<h3 class="gradient-border gradient-border-09">For example, the single-quote character can be
 							encoded as <span id="mixedcode2">ampersand hash 39 semi-colon</span><a
-								aria-labelledby="amper"><mark aria-hidden="true">&amp;#39;</mark></a> in HTML.
+								aria-labelledby="mixedcode2"><mark aria-hidden="true">&amp;#39;</mark></a> in HTML.
 						</h3>
 						<h4>User agents MUST NOT change keyboard behavior in response to the aria-keyshortcuts
 							attribute.
@@ -284,7 +281,7 @@
 						<span>Shift + Space</span>
 						<span>Control + Alt + U + .</span>
 						<span>Control + Shift + <span id="mixedcode3">ampersand hash 39 semi-colon</span><a
-								aria-labelledby="amper"><mark aria-hidden="true">&amp;#39;</mark></a></span>
+								aria-labelledby="mixedcode3"><mark aria-hidden="true">&amp;#39;</mark></a></span>
 						<span>Alt+Shift+P Control+F</span>
 						<span>Meta+C Meta+Shift+C</span>
 					</div>
