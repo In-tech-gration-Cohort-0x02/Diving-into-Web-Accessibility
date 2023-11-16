@@ -204,6 +204,10 @@
   color: #c2c1c1 !important;
 }
 
+#aria-label-margin{
+  margin-top: 120px;
+}
+
 .aria-label-underline {
   text-decoration: underline;
 }
