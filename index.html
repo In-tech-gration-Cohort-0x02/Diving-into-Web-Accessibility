@@ -85,7 +85,7 @@
 						<div id="linkcontainer" aria-labelledby="youtube-link" aria-keyshortcuts="Ctrl+Shift+Enter">
 							Example Controlling focus with tabindex. <mark>Ctrl+Shift+Enter</mark> to
 							<form action="https://www.youtube.com/watch?v=Pe0Ce1WtnUM">
-								<button id="youtube-link" role="button" tabindex="-1" aria-hidden="true" title="open" class="tooltip top">open
+								<button id="youtube-link" role="link" tabindex="-1" aria-hidden="true" title="open" class="tooltip top">open
 								</button>
 							</form>
 						</div>
@@ -121,7 +121,7 @@
 							<mark>Alt, Control, Shift, Meta, or AltGraph.</mark><br>
 							On Apple computers, meta corresponds to the Command key, and Alt to the Option key.
 							The valid names for non-modifier keys are any printable character.
-							<mark>A, B, 1, 2, <span aria-label="dollar">$</span>, Plus</mark> for a plus sign,"Space"
+							<mark>A, B, 1, 2, <span aria-labelledby.="dollar">$</span>, Plus</mark> for a plus sign,"Space"
 							for the
 							spacebar,
 							or the names of any other non-modifier key specified in the UI Events KeyboardEvent key
@@ -172,13 +172,13 @@
 						<h3>
 							For example, many modifier keys are used in conjunction with other keys to :
 						</h3>
-						<ol role="list">
-							<li role="listitem"><span aria-label="one">1</span>create common punctuation symbols</li>
-							<li role="listitem"><span aria-label="two">2</span>create number characters</li>
-							<li role="listitem"><span aria-label="three">3</span>swap keyboard sides on bilingual
+						<ol>
+							<li><span aria-label="one">1</span>create common punctuation symbols</li>
+							<li><span aria-label="two">2</span>create number characters</li>
+							<li><span aria-label="three">3</span>swap keyboard sides on bilingual
 								keyboards to switch
 								languages</li>
-							<li role="listitem"><span aria-label="four">4</span>perform a number of other functions</li>
+							<li><span aria-label="four">4</span>perform a number of other functions</li>
 						</ol>
 					</div>
 				</section>
@@ -247,25 +247,25 @@
 						</h4>
 						<h4>Authors MUST</h4>
 						<ul>
-							<li role="listitem"><span aria-label="one">1</span>handle scripted keyboard events to
+							<li><span aria-label="one">1</span>handle scripted keyboard events to
 								process
 								aria-keyshortcuts.</li>
-							<li role="listitem"><span aria-label="one">2</span>provide a way to expose keyboard
+							<li><span aria-label="one">2</span>provide a way to expose keyboard
 								shortcuts so that all
 								users can discover them, such as
 								through the
 								use of a tooltip.
 							</li>
-							<li role="listitem"><span aria-label="one">3</span>ensure that aria-keyshortcuts applied to
+							<li><span aria-label="one">3</span>ensure that aria-keyshortcuts applied to
 								disabled
 								elements are unavailable.</li>
-							<li role="listitem"><span aria-label="one">4</span>avoid implementing shortcut keys that
+							<li><span aria-label="one">4</span>avoid implementing shortcut keys that
 								inhibit operating
 								system, user agent, or assistive
 								technology
 								functionality.
 							</li>
-							<li role="listitem"><span aria-label="one">5</span>carefully consider both which keys to
+							<li><span aria-label="one">5</span>carefully consider both which keys to
 								assign and the
 								contexts and conditions in which
 								the keys are
