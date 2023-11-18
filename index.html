@@ -24,19 +24,23 @@
 				<p> cohort 02, in<strong id="tech">TECH</strong>gration </p>
 			</section>
 			<section>
-				<div class="visibility-hidden" aria-hidden="true">Nested sections</div>
+				<h2>A11Y </h2>
 				<section>
-					<h2>what is A11Y?</h2>
+					<h3>what is A11Y</h3>
 					<p>A ccessibilit y </p>
 					<p>A 11 y </p>
 				</section>
 				<section>
-					<h2 class="main-heading">What is web Accessibility</h2>
+					<h3 class="main-heading">What is web Accessibility</h3>
 					<p>Its an idea that technology must be <span class="main-highlighted">equally accessible</span> to
 						people
 						<span class="aria-label-highlighted">with and without
 							disabilities</span>
 					</p>
+					
+				</section>
+				<section>
+					<h4>What does web accessibility Includes</h4>
 					<ul class="a11y-list">
 						<li class="fragment highlight-current-green">Accessible Navigation </li>
 						<li class="fragment highlight-current-green">Keyboard Accessibility (for screen reader when
@@ -68,9 +72,10 @@
 				</section>
 			</section>
 			<section id="aria-keyshortcuts" class="aria-keyshortcuts">
+									<h2 aria-labelledby="ariakeystart" aria-hidden="true">Aria-keyshortcuts</h2>
+
 				<section id="aria-keyshortcuts-01" data-state="aria-keyshortcuts">
-					<div id="ariakeystart">Aria-keyshortcuts start of presentation</div>
-					<h2 aria-labelledby="ariakeystart" aria-hidden="true">Aria-keyshortcuts</h2>
+					<h3 id="ariakeystart">Aria-keyshortcuts start of presentation</h3>
 					<div class="gradient-border gradient-border-left">
 						<p class="gradient-border gradient-border-01"><mark>The aria-keyshortcuts
 								property</mark>are keyboard shortcuts that an author has implemented to activate or give
@@ -94,9 +99,9 @@
 					</div>
 				</section>
 				<section id="aria-keyshortcuts-02" data-keyshortcuts="2" aria-hidden="true">
-					<h2 aria-label="The value of the aria-keyshortcuts attribute">The value of the aria-keyshortcuts
+					<h3 aria-label="The value of the aria-keyshortcuts attribute">The value of the aria-keyshortcuts
 						attribute
-					</h2>
+					</h3>
 					<div class="gradient-border gradient-border-left">
 						<p class="gradient-border gradient-border-02">It is a space-separated list of keyboard shortcuts
 							that can be
@@ -113,10 +118,10 @@
 					</div>
 				</section>
 				<section id="aria-keyshortcuts-03" data-keyshortcuts="3">
-					<h2>Authors MUST specify modifier keys exactly according to the UI Events KeyboardEvent key Values
+					<h3>Authors MUST specify modifier keys exactly according to the UI Events KeyboardEvent key Values
 						spec
 						[uievents-key]
-					</h2>
+					</h3>
 					<div class="gradient-border gradient-border-left">
 						<div class="gradient-border gradient-border-03">For example,
 							<mark>Alt, Control, Shift, Meta, or AltGraph.</mark><br>
@@ -139,7 +144,7 @@
 					</div>
 				</section>
 				<section id="aria-keyshortcuts-04" data-keyshortcuts="4">
-					<h2>Authors MUST ensure</h2>
+					<h3>Authors MUST ensure</h3>
 					<div class="gradient-border gradient-border-left">
 						<div class="gradient-border gradient-border-04">
 							<p class="specialunderline">Modifier keys come first when they are part of a keyboard
@@ -159,11 +164,11 @@
 					</div>
 				</section>
 				<section id="aria-keyshortcuts-05" data-keyshortcuts="5">
-					<h2>When specifying an alphabetic key, both the uppercase and lowercase variants are considered
+					<h3>When specifying an alphabetic key, both the uppercase and lowercase variants are considered
 						equivalent :
 						<span id="readletters">small a and capital a</span><span aria-labelledby="readletters"><mark
 								aria-hidden="true">a and A</mark></span> are the same.
-					</h2>
+					</h3>
 					<div class="gradient-border gradient-border-left">
 						<p class="gradient-border gradient-border-05">When implementing keyboard shortcuts authors
 							should consider
@@ -184,9 +189,9 @@
 					</div>
 				</section>
 				<section id="aria-keyshortcuts-06" data-keyshortcuts="6">
-					<h2>For many supported keyboards, authors can prevent conflicts by avoiding keys other than ASCII
+					<h4>For many supported keyboards, authors can prevent conflicts by avoiding keys other than ASCII
 						letters, as
-						number characters and common punctuation often require modifiers. </h2>
+						number characters and common punctuation often require modifiers. </h4>
 					<div class="gradient-border gradient-border-left">
 						<h3 class="gradient-border gradient-border-06">Here, the keyboard shortcut entered does not
 							equate to the
@@ -200,10 +205,10 @@
 					</div>
 				</section>
 				<section id="aria-keyshortcuts-07" data-keyshortcuts="7">
-					<h2>If the character used is determined by a modifier key, the author <mark>MUST</mark> specify the
+					<h3>If the character used is determined by a modifier key, the author <mark>MUST</mark> specify the
 						actual key
 						used to generate the character, that is generated by the key, and not the resulting character
-					</h2>
+					</h3>
 					<div class="gradient-border gradient-border-left">
 						<h3 class="gradient-border gradient-border-07">This convention enables the assistive technology
 							to
@@ -236,7 +241,7 @@
 					</div>
 				</section>
 				<section id="aria-keyshortcuts-09" data-keyshortcuts="9">
-					<h2>Aria-keyshortcuts Rules</h2>
+					<h3>Aria-keyshortcuts Rules</h3>
 					<div class="gradient-border">
 						<h3 class="gradient-border gradient-border-09">For example, the single-quote character can be
 							encoded as <span id="mixedcode2">ampersand hash 39 semi-colon</span><a aria-labelledby="mixedcode2"><mark
@@ -308,16 +313,16 @@
 				<div class="visibility-hidden" aria-hidden="true">Nested sections</div>
 				<section>
 					<h2>aria-colindex</h2>
-					<blockquote id="aria-colindex">The <mark>aria-colindex</mark> attribute defines an element's column
+					<div>The <mark>aria-colindex</mark> attribute defines an element's column
 						index or
 						position with respect to the total number of columns within a <a
 							href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/table">table</a>, <a
 							href="https://developer.mozilla.org/en-US/docs/Web/CSS/grid">grid</a>, or <a
 							href="https://developer.mozilla.org/en-US/docs/Web/Accessibility/ARIA/Roles/treegrid_role">treegrid.</a>
-					</blockquote>
+					</div>
 				</section>
 				<section>
-					<div class="visibility-hidden" aria-hidden="true">Hidden header</div>
+					<h2 class="visibility-hidden" aria-hidden="true">Hidden header</h2>
 					<p>ARIA provides several attributes to provide information about table, grid, and treegrid
 						structures. The
 						<mark>aria-colindex</mark> attribute defines the substructure, an element's column index or
@@ -326,8 +331,7 @@
 					</p>
 				</section>
 				<section>
-					<div class="visibility-hidden" aria-hidden="true">Hidden header</div>
-					<p>an example of aria-colindex</p>
+					<h2>an example of aria-colindex</h2>
 					<pre data-id="code-animation"><code class="hljs javascript" data-trim data-line-numbers>
 						<script type="text/template">
 						 <div role="grid" aria-colcount="6">
@@ -355,7 +359,7 @@
 				</section>
 			</section>
 			<section>
-				<div class="visibility-hidden" aria-hidden="true">Nested sections</div>
+				<h2 ></h2>
 				<section>
 					<h2 class="aria-label-heading">aria-label</h2>
 					<p>The <mark>aria-label</mark> should be used to provide a text alternative to an element that has
@@ -380,6 +384,7 @@
 							</nav>
 						</section>
 						<section id="aria-label-section2">
+							<h2></h2>
 							<pre id="aria-label" aria-hidden="true">
 									<code class="language-html" data-trim>
 										<button aria-label="menu" class="burger"></button>
@@ -496,18 +501,17 @@
 				</section>
 			</section>
 			<section>
-				<div class="visibility-hidden" aria-hidden="true">Nested sections</div>
+									<h2>aria-details</h2>
+
 				<section>
-					<h2>aria-details</h2>
-					<p><mark>Aria-details</mark> provides a set of information and data in a hierarchical and organized
+					<h6><mark>Aria-details</mark> provides a set of information and data in a hierarchical and organized
 						manner.
-					</p>
+					</h6>
 					<p>Such information may include illustrations, external links, or any form of extended information.
 					</p>
 				</section>
 				<section>
-					<div class="visibility-hidden" aria-hidden="true">Hidden header</div>
-					<p>extended information that describes</p>
+					<h6>extended information that describes</h6>
 					<p>the illustration from the artworks presented</p>
 					<pre>
 						<code data-line-numbers="1-2|4,8|5-7">
@@ -556,21 +560,19 @@
 				</p>
 			</section>
 			<section id="ariaSortSection">
-				<div class="visibility-hidden" aria-hidden="true">Hidden header</div>
+				<h2>ARIA-SORT</h2>
 				<section id="introSection">
-					<h2>ARIA-SORT</h2>
+					<h4>What is ARIA-SORT</h4>
 					<p>
 						ARIA-SORT is a part of the WAI-ARIA specification, enhancing web accessibility.
 						It indicates if items in a table are sorted in ascending, descending, none, or other order.
-					</p>
-					<p>
 						The `aria-sort` attribute informs assistive technologies about the current sorting state
 						of a column or row header. It should be added to a single header at a time and doesn't impact
 						the actual sort order.
 					</p>
 				</section>
 				<section id="exampleSection">
-					<h3>Example:</h3>
+					<h4>Example:</h4>
 					<pre>
 					<code id="htmlCode" class="language-html">
 					  &lt;table&gt;

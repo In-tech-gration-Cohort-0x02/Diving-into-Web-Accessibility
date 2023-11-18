@@ -33,9 +33,9 @@
   justify-content: center;
 }
 
-.aria-keyshortcuts {
+/* .aria-keyshortcuts {
   background: linear-gradient(to bottom, #1f1e1d, #a9a9a9) !important;
-}
+} */
 
 #aria-keyshortcuts mark {
   margin: 8px;
