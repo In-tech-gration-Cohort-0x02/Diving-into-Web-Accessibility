@@ -18,6 +18,7 @@
 
 .background-pattern{
   background: #000000 url(../assets/subtle-grey.png) repeat!important;
+  background-image: unset;
 }
 
 mark{
