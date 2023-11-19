@@ -29,10 +29,13 @@
 #home-page#section p strong{
   color: #f39d25;
 }
+
 #home-page#section img{
   width:200px;
   height:200px;
+  transform:rotate(-30deg);
 }  
+
 mark{
   color: yellow;
   background: #000000 url(../assets/subtle-grey.png) repeat;
