@@ -16,6 +16,10 @@
   ) !important;
 }
 
+.reveal .slide-background:first-child{
+  background: #000000 url(../assets/subtle-grey.png) repeat;
+}
+
 mark{
   color: yellow;
   background: #000000 url(../assets/subtle-grey.png) repeat;
