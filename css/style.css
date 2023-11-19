@@ -1,3 +1,20 @@
+.reveal .slide-background {
+  background-image: linear-gradient(
+    to right top,
+    #2b2b2b,
+    #313131,
+    #383838,
+    #3e3e3e,
+    #454545,
+    #444444,
+    #444444,
+    #434343,
+    #3b3b3b,
+    #333333,
+    #2b2b2b,
+    #242424
+  ) !important;
+}
 
 .reveal:not(.rtl)
   .controls[data-controls-back-arrows="faded"]
