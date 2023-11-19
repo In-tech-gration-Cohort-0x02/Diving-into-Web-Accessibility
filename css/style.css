@@ -1,4 +1,4 @@
-.background-pattern{
+.reveal .slide-background.background-pattern{
   background: #000000 url(../assets/subtle-grey.png) repeat!important;
   background-image: none!important;
 }
