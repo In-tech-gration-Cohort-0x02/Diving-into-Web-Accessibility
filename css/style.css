@@ -16,6 +16,17 @@
   ) !important;
 }
 
+mark{
+  background-image: linear-gradient(0deg, #1e5520 0%, #0e2b0f 100%);
+  filter: drop-shadow(0 2px 2px hsla(145, 100%, 20%, 1));
+  padding-right: 19px;
+  padding-left: 19px;
+px
+;
+    padding-top: 0px;
+    padding-bottom: 0px;
+}
+
 .reveal:not(.rtl)
   .controls[data-controls-back-arrows="faded"]
   .navigate-left.enabled {
