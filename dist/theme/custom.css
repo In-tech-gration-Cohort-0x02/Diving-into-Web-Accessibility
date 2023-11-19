@@ -13,7 +13,21 @@ section.has-light-background, section.has-light-background h1, section.has-light
  *********************************************/
 :root {
   --r-background-color: #191919;
-  --r-background-image : linear-gradient(to bottom, #1f1e1d, #A9A9A9); /* new css attribute for background-image */
+  --r-background-image :  background-image: linear-gradient(
+    to right top,
+    #2b2b2b,
+    #313131,
+    #383838,
+    #3e3e3e,
+    #454545,
+    #444444,
+    #444444,
+    #434343,
+    #3b3b3b,
+    #333333,
+    #2b2b2b,
+    #242424
+  ) !important; /* new css attribute for background-image */
   --r-main-font: Source Sans Pro, Helvetica, sans-serif;
   --r-main-font-size: 42px;
   --r-main-color: #fff;
