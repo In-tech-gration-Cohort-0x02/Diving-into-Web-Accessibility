@@ -17,7 +17,7 @@
 }
 
 .background-pattern{
-  background: #000000 url(../assets/subtle-grey.png) repeat;
+  background: #000000 url(../assets/subtle-grey.png) repeat!important;
 }
 
 mark{
