@@ -20,16 +20,16 @@
   background-image: linear-gradient(0deg, rgba(0,0,0,0.49),rgba(0,0,0,0.49)), url(../assets/subtle-grey.png)!important;
 }
 
-.reveal section[data-state="home-background"]{
+section#home-page[data-state="home-background"]{
   color:black;
 }
-.reveal #home-page#section p{
+section#home-page p{
   color: rgb(75, 85, 99);
   background: white;
   font-weight: 600;
 }
 
-.reveal #home-page#section p strong{
+section#home-page p strong{
   color: #f39d25;
 }
 
