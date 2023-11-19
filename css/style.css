@@ -16,7 +16,7 @@
   ) !important;
 }
 
-.reveal .slides section:first-child{
+. background-pattern{
   background: #000000 url(../assets/subtle-grey.png) repeat;
 }
 
