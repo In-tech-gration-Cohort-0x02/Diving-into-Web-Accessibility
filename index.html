@@ -902,7 +902,7 @@
 			document.querySelector('[tabindex="-1"]').focus();
 		});
 		Reveal.addEventListener('home-background', function () {
-		    var imageUrl = '../assets/subtle-grey.png';
+		    document.querySelector('.reveal .slide-background').removeAttribute("background-image");
 		    document.querySelector('.reveal .slide-background').classList.add('background-pattern');
 	        });
 	</script>
