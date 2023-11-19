@@ -17,7 +17,7 @@
 <body>
 	<div class="reveal">
 		<div class="slides">
-			<section data-background="home-background">
+			<section data-state="home-background">
 				<h1>A11y &AMP; ARIA LABELS </h1>
 				<img width="200" height="200" src="assets/aria-logo.png" alt="web accessibility logo">
 				<h2> group project</h2>
@@ -900,6 +900,16 @@
 		});
 		Reveal.addEventListener('aria-keyshortcuts', function () {
 			document.querySelector('[tabindex="-1"]').focus();
+		});
+		Reveal.addEventListener('home-background', function () {
+			// JavaScript (your-custom-script.js)
+    // Define the image URL
+    var imageUrl = '../assets/subtle-grey.png';
+
+    // Get the element with class 'reveal' and apply the background
+    var revealElement = document.querySelector('.reveal');
+    revealElement.style.background = '#000000 url(' + imageUrl + ') repeat !important';
+
 		});
 	</script>
 
