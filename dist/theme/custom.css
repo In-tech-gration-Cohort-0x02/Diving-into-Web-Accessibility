@@ -46,7 +46,7 @@ section.has-light-background, section.has-light-background h1, section.has-light
   --r-heading3-size: 1.3em;
   --r-heading4-size: 1em;
   --r-code-font: monospace;
-  --r-link-color: #191919; /* changed color of controls for better contrast and accessibility */
+  --r-link-color: #FFFFFF; /* changed color of controls for better contrast and accessibility */
   --r-link-color-dark: #068de9;
   --r-link-color-hover: #8dcffc;
   --r-selection-background-color: rgba(66, 175, 250, 0.75);
