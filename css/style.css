@@ -33,7 +33,7 @@ section#home-page p strong{
   color: #f39d25;
 }
 
-section#home-pageimg{
+section#home-page img{
   width:200px;
   height:200px;
   transform:rotate(-30deg);
