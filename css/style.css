@@ -44,7 +44,11 @@ section#home-page p{
 }
 
 section#home-page p strong{
+  display: inline-flex;
+  align-items: center;
   color: #f39d25;
+  transform: scaleY(1.3);
+  padding-top: -37px;
 }
 
 section#home-page img{
