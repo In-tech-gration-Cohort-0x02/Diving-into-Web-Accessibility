@@ -3,11 +3,11 @@
 }
 
 .background-pattern{
-  background: #000000 url(../assets/subtle-grey.png) repeat;
-    padding-right: 19px;
-    padding-left: 19px;
-    padding-top: 0px;
-    padding-bottom: 0px;
+  background: #000000 url(../assets/subtle-grey.png) repeat!important;
+  padding-right: 19px!important;
+  padding-left: 19px!important;
+  padding-top: 0px!important;
+  padding-bottom: 0px!important;
 }
 
 .text-shadow-orange-white{
