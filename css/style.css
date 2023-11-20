@@ -1,15 +1,15 @@
 .orange-color{
-  color: #f39d25;
+  color: #f39d25!important;
 }
 
 .text-shadow-orange-white{
-  text-shadow: -4px 3px 0 #f19c33, -14px 7px 0 #0a0e27;
-  -webkit-text-stroke: 1px #000000;
+  text-shadow: -4px 3px 0 #f19c33, -14px 7px 0 #0a0e27!important;
+  -webkit-text-stroke: 1px #000000!important;
 }
 
 .text-shadow-white-orange{
-  text-shadow: -4px 3px 0 #ffffff, -14px 7px 0 #0a0e27;
-  -webkit-text-stroke: 1px #000000;
+  text-shadow: -4px 3px 0 #ffffff, -14px 7px 0 #0a0e27!important;
+  -webkit-text-stroke: 1px #000000!important;
 }
 
 .reveal .slide-background {
