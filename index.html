@@ -72,26 +72,26 @@
 				</section>
 			</section>
 			<section id="aria-keyshortcuts" class="aria-keyshortcuts">
-									<h2 aria-labelledby="ariakeystart" aria-hidden="true">Aria-keyshortcuts</h2>
-
 				<section id="aria-keyshortcuts-01" data-state="aria-keyshortcuts">
-					<h3 id="ariakeystart">Aria-keyshortcuts start of presentation</h3>
+					<div id="ariakeystart">Aria-keyshortcuts start of presentation</div>
+					<h2 aria-labelledby="ariakeystart" aria-hidden="true">Aria-keyshortcuts</h2>
 					<div class="gradient-border gradient-border-left">
-						<p class="gradient-border gradient-border-01"><mark>The aria-keyshortcuts
-								property</mark>are keyboard shortcuts that an author has implemented to activate or give
+						<div class="gradient-border gradient-border-01">
+							<span class="classy blue"><mark>The aria-keyshortcuts property</mark></span>
+							<p>They are keyboard shortcuts that an author has implemented to activate or give
 							focus to an element.</p>
+						</div>
 						<pre aria-hidden="true">
-							<code class="language-html" data-line-numbers="1|2|3|4">
+							<code class="language-html" data-line-numbers="0|2|3|4">
 								<a id="skip-link" href="#content" aria-keyshortcuts="Alt+Shift+A" accesskey="A">
 									&nbsp;&nbsp;Skip to content
 								</a>
 							</code>		
 						</pre>
 						<div id="linkcontainer" aria-labelledby="youtube-link" aria-keyshortcuts="Ctrl+Shift+Enter">
-							Example Controlling focus with tabindex. <mark>Ctrl+Shift+Enter</mark> to
+							Example Controlling focus with tabindex. <span class="classy blue"><mark>Ctrl+Shift+Enter</mark></span> to
 							<form action="https://www.youtube.com/watch?v=Pe0Ce1WtnUM">
-								<button id="youtube-link" role="link" tabindex="-1" aria-hidden="true" title="open"
-									class="tooltip top">open
+								<button id="youtube-link" role="link" tabindex="-1" aria-hidden="true" title="open" class="tooltip top">open
 								</button>
 							</form>
 						</div>
@@ -99,85 +99,110 @@
 					</div>
 				</section>
 				<section id="aria-keyshortcuts-02" data-keyshortcuts="2" aria-hidden="true">
-					<h3 aria-label="The value of the aria-keyshortcuts attribute">The value of the aria-keyshortcuts
+					<h2 aria-label="The value of the aria-keyshortcuts attribute">The value of the aria-keyshortcuts
 						attribute
-					</h3>
+					</h2>
 					<div class="gradient-border gradient-border-left">
-						<p class="gradient-border gradient-border-02">It is a space-separated list of keyboard shortcuts
-							that can be
-							pressed to activate a command or textbox widget.<br><br>
-							The keys defined in the shortcuts represent the physical keys pressed and not the actual
-							characters
-							generated.<br><br>
-							Each keyboard shortcut consists of one or more tokens delimited by <mark>the plus sign
-								<span aria-hidden="true">("+")</span></mark>
-							representing zero or more modifier keys and exactly one non-modifier key that must be
-							pressed
-							simultaneously to activate the given shortcut.
-						</p>
+						<div class="gradient-border gradient-border-02">
+							<p>It is a space-separated list of keyboard shortcuts that can bepressed to activate a command or textbox widget.
+						   </p>
+							<p>
+								The keys defined in the shortcuts represent the physical keys pressed and not the actual
+								charactersgenerated.<br><br>
+							</p>
+							<p>
+								Each keyboard shortcut consists of one or more tokens delimited by 
+								<span class="classy blue">
+									<mark>the plus sign<span aria-hidden="true">("+")</span></mark>
+								</span>
+							</p>
+							<p>
+								representing zero or more modifier keys and exactly one non-modifier key that must be
+								pressed
+								simultaneously to activate the given shortcut.
+							</p>
+						</div>
 					</div>
 				</section>
 				<section id="aria-keyshortcuts-03" data-keyshortcuts="3">
-					<h3>Authors MUST specify modifier keys exactly according to the UI Events KeyboardEvent key Values
-						spec
-						[uievents-key]
-					</h3>
+					<h2>Authors MUST specify</h2>
+					<p>
+						modifier keys exactly according to the UI Events KeyboardEvent key Values
+						   spec
+						   [uievents-key]
+				   </p>
 					<div class="gradient-border gradient-border-left">
-						<div class="gradient-border gradient-border-03">For example,
-							<mark>Alt, Control, Shift, Meta, or AltGraph.</mark><br>
-							On Apple computers, meta corresponds to the Command key, and Alt to the Option key.
-							The valid names for non-modifier keys are any printable character.
-							<mark>A, B, 1, 2, <span aria-labelledby.="dollar">$</span>, Plus</mark> for a plus sign,"Space"
-							for the
-							spacebar,
-							or the names of any other non-modifier key specified in the UI Events KeyboardEvent key
+						<div class="gradient-border gradient-border-03">
+							<div class="aria-keyshortcuts-flex">
+								<h3>For example</h3>
+								<span><span class="classy blue"><mark>Alt, Control, Shift, Meta, or AltGraph.</mark></span></span><br>
+							</div>
+							<p id="dollar">
+								On Apple computers, meta corresponds to the Command key, and Alt to the Option key.
+								The valid names for non-modifier keys are any printable character.
+								<span class="classy blue"><mark>A, B, 1, 2, $, Plus</mark></span>
+							</p>
+							<p>
+								for a plus sign,"Space"
+								for the
+								spacebar,
+								or the names of any other non-modifier key specified in the UI Events KeyboardEvent key
+								Values spec
+								[uievents-key].
+							</p>
+							<div class="aria-keyshortcuts-flex">
+								<h3>For example</h3>
+								<span><span class="classy blue"><mark>Enter, Tab, ArrowRight, PageDown, Escape, or F1.</mark></span></span>
+							</div>
+							<p>The use of "Space" for the spacebar is an exception to the UI Events KeyboardEvent key
 							Values spec
-							[uievents-key].
-							For example, <mark>Enter, Tab, ArrowRight, PageDown, Escape, or F1.</mark>
-							The use of "Space" for the spacebar is an exception to the UI Events KeyboardEvent key
-							Values spec
-							<mark>[uievents-key]</mark> as the space or spacebar key is encoded as <div id="mixedcode4">
-								space</div><a aria-labelledby="mixedcode4"><mark aria-hidden="true">' '</mark></a> and
-							would be
-							treated as a white space character.
+							<span class="classy blue"><mark>[uievents-key]</mark></span> as the space or spacebar key is encoded as
+							<span id="mixedcode4">space</span>and would be treated as a white space character.
+							<a aria-labelledby="mixedcode4">
+								<span class="classy blue">
+									<mark aria-hidden="true">' '</mark>
+								</span>							
+							</a>
+							</p>
 						</div>
 					</div>
 				</section>
 				<section id="aria-keyshortcuts-04" data-keyshortcuts="4">
-					<h3>Authors MUST ensure</h3>
+					<h2>Authors MUST ensure</h2>
 					<div class="gradient-border gradient-border-left">
 						<div class="gradient-border gradient-border-04">
 							<p class="specialunderline">Modifier keys come first when they are part of a keyboard
 								shortcut.</p>
 							<p>that required non-modifier keys come last when they are part of a shortcut.
 								The order of the modifier keys is not otherwise significant.
-								<mark>Alt+Shift+T = Shift+Alt+T</mark>
+								<span class="classy blue"><mark>Alt+Shift+T = Shift+Alt+T</mark></span>
 							</p>
 							<h2>Not valid combinations</h2>
 							<p>
-								<mark>T+Shift+Alt</mark> is not valid because all of the modifier keys don't come
+								<span class="classy blue"><mark>T+Shift+Alt</mark></span> is not valid because all of the modifier keys don't come
 								first.
-								<mark>Alt</mark> is not valid because it doesn't include at least one non-modifier
+								<span class="classy blue"><mark>Alt</mark></span> is not valid because it doesn't include at least one non-modifier
 								key.
 							</p>
 						</div>
 					</div>
 				</section>
 				<section id="aria-keyshortcuts-05" data-keyshortcuts="5">
-					<h3>When specifying an alphabetic key, both the uppercase and lowercase variants are considered
-						equivalent :
-						<span id="readletters">small a and capital a</span><span aria-labelledby="readletters"><mark
-								aria-hidden="true">a and A</mark></span> are the same.
-					</h3>
+					<h2>When specifying an alphabetic key</h2>
+					<p>both the uppercase and lowercase variants are considered equivalent :
+						<span id="readletters">small a and capital a</span><span class="classy blue" aria-labelledby="readletters"><mark
+						aria-hidden="true">a and A</mark></span> are the same.
+					</p>
 					<div class="gradient-border gradient-border-left">
 						<p class="gradient-border gradient-border-05">When implementing keyboard shortcuts authors
 							should consider
 							the keyboards they intend to support to avoid unintended results.
 							Keyboard designs vary significantly based on the device used and the languages supported.
 						</p>
-						<h3>
-							For example, many modifier keys are used in conjunction with other keys to :
-						</h3>
+						<div class="aria-keyshortcuts-flex">
+							<h3>For example</h3>
+							<p>many modifier keys are used in conjunction with other keys to :</p>
+						</div>
 						<ol>
 							<li><span aria-label="one">1</span>create common punctuation symbols</li>
 							<li><span aria-label="two">2</span>create number characters</li>
@@ -189,67 +214,95 @@
 					</div>
 				</section>
 				<section id="aria-keyshortcuts-06" data-keyshortcuts="6">
-					<h4>For many supported keyboards, authors can prevent conflicts by avoiding keys other than ASCII
+					<h2>For many supported keyboards, authors can prevent conflicts</h2>
+					<p>by avoiding keys other than ASCII
 						letters, as
-						number characters and common punctuation often require modifiers. </h4>
+						number characters and common punctuation often require modifiers.</p>
 					<div class="gradient-border gradient-border-left">
-						<h3 class="gradient-border gradient-border-06">Here, the keyboard shortcut entered does not
-							equate to the
-							key generated. </h3>
+						<div class="aria-keyshortcuts-flex">
+							<h3 class="gradient-border gradient-border-06">The keyboard shortcut</h3>
+							<p>entered does not equate to the key generated.</p>
+						</div>
 						<p>For example, in French keyboard layouts, the number characters are not available until you
 							press the
-							<mark>Control key</mark>, so a keyboard shortcut defined as <mark>Control+2</mark> would
+							<span class="classy blue"><mark>Control key</mark></span>, so a keyboard shortcut defined as <span class="classy blue"><mark>Control+2</mark></span> would
 							be ambiguous as
-							this is how one would type the <mark>2</mark>character on a French keyboard.
+							this is how one would type the <span class="classy blue"><mark>2</mark></span>character on a French keyboard.
 						</p>
 					</div>
 				</section>
 				<section id="aria-keyshortcuts-07" data-keyshortcuts="7">
-					<h3>If the character used is determined by a modifier key, the author <mark>MUST</mark> specify the
+					<h2>If the character used is determined</h2>
+					<p>by a modifier key, the author <span class="classy blue"><mark>MUST</mark></span> specify the
 						actual key
 						used to generate the character, that is generated by the key, and not the resulting character
-					</h3>
+					</p>
 					<div class="gradient-border gradient-border-left">
-						<h3 class="gradient-border gradient-border-07">This convention enables the assistive technology
-							to
-							accurately convey what keys must be used to generate the shortcut </h3>
-						<p>For example, on most US English keyboards, the percent sign <mark>%</mark> can be input
-							by pressing
-							<mark>Shift+5</mark><span aria-hidden="true">.</span>
-							The correct way to specify this shortcut is <mark>Shift+5</mark><span aria-hidden="true">.</span> It is
-							incorrect to
-							specify <mark>%
-								or Shift+%</mark><span aria-hidden="true">.</span>
-							However, note that on some international keyboards the percent sign might be an unmodified
+						<div class="aria-keyshortcuts-flex">
+							<h3 class="gradient-border gradient-border-07">This convention</h3>
+							<p>enables the assistive technology
+								to
+								accurately convey what keys must be used to generate the shortcut</p>
+						</div>
+						<p>For example, on most US English keyboards, the percent sign <span class="classy blue"><mark>%</mark></span> can be input
+							by </p>
+							<p>pressing<span class="classy blue"><mark>Shift+5</mark></span><span aria-hidden="true">.</span>
+							The correct way to specify this shortcut is <span class="classy blue"><mark>Shift+5</mark></span><span
+								aria-hidden="true">.</span> It is
+							incorrect</p> 
+							<p>to
+							specify <span class="classy blue"><mark>%
+								or Shift+%</mark></span><span aria-hidden="true">.</span>
+							However, note that on some international keyboards the </p>
+							<p>percent sign might be an unmodified
 							key, in which
-							case <mark>% and Shift+%</mark> could be correct on those keyboards.
-						</p>
+							case <span class="classy blue"><mark>% and Shift+%</mark></span> could be correct</p>
+							<p>on those keyboards.</p>
+					
 					</div>
 				</section>
 				<section id="aria-keyshortcuts-08" data-keyshortcuts="8">
-					<h2>If the key that needs to be specified is illegal in the host language or would cause a string to
+					<h2>If the key that needs to be specified</h2>
+					<p>
+						is illegal in the host language or would cause a string to
 						be
-						terminated, authors <mark>MUST</mark>use the string escaping sequence of the host language to
+						terminated, authors <span class="classy blue"><mark>MUST</mark></span>use the string escaping sequence of the host language to
 						specify it.
-					</h2>
+					</p>
 					<div class="gradient-border">
-						<h3 class="gradient-border gradient-border-08">For example, the single-quote character can be
-							encoded as
-							<span id="mixedcode">ampersand hash 39 semi-colon</span><a aria-labelledby="mixedcode"></a>
+						<div class="aria-keyshortcuts-flex">
+							<h3 class="gradient-border gradient-border-08">For example</h3>
+							<p>The single-quote character can be
+								encoded as
+								<span id="mixedcode">ampersand hash 39 semi-colon</span><a aria-labelledby="mixedcode"></a>
 							in HTML.
-						</h3>
+							</p>
+						</div>
 					</div>
 				</section>
 				<section id="aria-keyshortcuts-09" data-keyshortcuts="9">
-					<h3>Aria-keyshortcuts Rules</h3>
+					<h2>Aria-keyshortcuts Rules</h2>
 					<div class="gradient-border">
-						<h3 class="gradient-border gradient-border-09">For example, the single-quote character can be
-							encoded as <span id="mixedcode2">ampersand hash 39 semi-colon</span><a aria-labelledby="mixedcode2"><mark
-									aria-hidden="true">&amp;#39;</mark></a> in HTML.
-						</h3>
-						<h4>User agents MUST NOT change keyboard behavior in response to the aria-keyshortcuts
-							attribute.
-						</h4>
+						<div class="aria-keyshortcuts-container">
+							<div class="aria-keyshortcuts-flex">
+								<h3 class="gradient-border gradient-border-09">For example</h3>
+								<p>
+								The single-quote character can be
+									encoded as <span id="mixedcode2">ampersand hash 39 semi-colon</span>
+									<a
+									aria-labelledby="mixedcode2">
+									<span class="classy blue">
+										<mark aria-hidden="true">&amp;#39;</mark>
+									</span>
+								</a> in HTML.
+								</p>
+							</div>
+							<div class="aria-keyshortcuts-flex">
+								<h4>User agents</h4>	
+								<p>MUST NOT change keyboard behavior in response to the aria-keyshortcuts
+									attribute.</p>
+							</div>
+						</div>
 						<h4>Authors MUST</h4>
 						<ul>
 							<li><span aria-label="one">1</span>handle scripted keyboard events to
@@ -280,13 +333,16 @@
 					</div>
 				</section>
 				<section id="aria-keyshortcuts-10" data-keyshortcuts="10" data-state="codestyle-keyshortcuts">
-					<h2 aria-labelledby="code_examples">Examples of valid keyboard shortcuts include:</h2>
+					<h2 aria-labelledby="code_examples">Examples of valid keyboard shortcuts</h2>
 					<div id="code_examples">
 						<span>A</span>
 						<span>Shift + Space</span>
 						<span>Control + Alt + U + .</span>
-						<span>Control + Shift + <span id="mixedcode3">ampersand hash 39 semi-colon</span><a
-								aria-labelledby="mixedcode3"><mark aria-hidden="true">&amp;#39;</mark></a></span>
+						<p>Control + Shift + <span id="mixedcode3">ampersand hash 39 semi-colon</span>
+						<a href="#" aria-labelledby="mixedcode3">
+							<mark aria-hidden="true">&amp;#39;</mark> 
+						</a>
+						</p>
 						<span>Alt+Shift+P Control+F</span>
 						<span>Meta+C Meta+Shift+C</span>
 					</div>
