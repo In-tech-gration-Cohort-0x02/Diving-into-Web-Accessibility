@@ -148,9 +148,14 @@ mark{
 }
 
 #aria-keyshortcuts h3 {
-  font-size: 1em !important;
   word-break: normal;
-  text-align: left;
+  text-align: center;
+  background: #000000 url(https://www.transparenttextures.com/patterns/subtle-grey.png) repeat;
+  padding: 5px;
+  border: 5px solid black;
+  width: max-content;
+  position: relative;
+  color: #ffffff; 
 }
 
 #aria-keyshortcuts h4 {
@@ -178,8 +183,8 @@ mark{
   font-weight: 600;
   padding: 10px;
   box-sizing: border-box;
-  font-size: 1.3rem;
   word-spacing: 4px;
+  background: #211e1e;
 }
 
 #aria-keyshortcuts-03 div {
@@ -220,6 +225,10 @@ mark{
   flex-direction: column;
 }
 
+#aria-keyshortcuts-08 .aria-keyshortcuts-flex {
+  justify-content: flex-start;
+}
+
 #aria-keyshortcuts-05 ol,
 #aria-keyshortcuts-09 ul {
   list-style: none !important;
@@ -230,7 +239,8 @@ mark{
 #aria-keyshortcuts-09 ul li {
   counter-increment: my-awesome-counter;
   font-weight: 600;
-  text-decoration: black underline;
+  text-decoration: #f39d25 underline;
+  margin: 5px;
 }
 
 #aria-keyshortcuts-05 ol li::before,
@@ -239,6 +249,8 @@ mark{
   font-weight: bold;
   margin-right: 0.5rem;
   color: #1f1e1d;
+  background: white;
+  padding: 5px;
 }
 
 #aria-keyshortcuts-09 ul li {
