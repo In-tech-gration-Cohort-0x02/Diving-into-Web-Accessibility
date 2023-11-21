@@ -50,6 +50,7 @@
 section#home-page[data-state="home-background"]{
   color:black;
 }
+
 section#home-page p{
   color: rgb(75, 85, 99);
   background: white;
@@ -61,7 +62,7 @@ section#home-page p strong{
   align-items: center;
   color: #f39d25;
   transform: scaleY(1.3);
-  padding-top: -37px;
+  margin-top: -37px;
 }
 
 section#home-page img{
@@ -85,7 +86,6 @@ mark{
   opacity: 0.8;
 }
 
-
 .a11y-list {
   font-size: 35px;
 }
@@ -102,7 +102,6 @@ mark{
 .main-underline {
   text-decoration: underline;
 }
-
 
 #aria-keyshortcuts {
   text-align: center;
@@ -131,6 +130,7 @@ mark{
   align-items: center;
   min-width: 100%;
 }
+
 #aria-keyshortcuts mark {
   margin: 8px;
   padding-right: 6px;
@@ -149,7 +149,7 @@ mark{
 
 #aria-keyshortcuts h3 {
   font-size: 1em !important;
-  word-break: break-word;
+  word-break: normal;
   text-align: left;
 }
 
@@ -170,10 +170,16 @@ mark{
   color: #fff;
   padding: 25px;
   position: relative;
-  border: 5px solid black;
+  border: 5px solid #171515;
 }
+
 #aria-keyshortcuts p {
   text-align: justify;
+  font-weight: 600;
+  padding: 10px;
+  box-sizing: border-box;
+  font-size: 1.3rem;
+  word-spacing: 4px;
 }
 
 #aria-keyshortcuts-03 div {
@@ -182,8 +188,8 @@ mark{
 
 #aria-keyshortcuts pre code {
   background-color: #2b2b2b;
-  white-space: pre;
-  tab-size: 0.3;
+  white-space: inherit;
+  tab-size: 1;
 }
 
 #aria-keyshortcuts-04 h2 {
@@ -209,6 +215,11 @@ mark{
   line-height: 0px;
 }
 
+#aria-keyshortcuts-05 ol {
+  display: flex;
+  flex-direction: column;
+}
+
 #aria-keyshortcuts-05 ol,
 #aria-keyshortcuts-09 ul {
   list-style: none !important;
@@ -218,6 +229,8 @@ mark{
 #aria-keyshortcuts-05 ol li,
 #aria-keyshortcuts-09 ul li {
   counter-increment: my-awesome-counter;
+  font-weight: 600;
+  text-decoration: black underline;
 }
 
 #aria-keyshortcuts-05 ol li::before,
@@ -237,8 +250,7 @@ mark{
 #ariakeyend,
 #readletters {
   position: absolute !important;
-  clip: rect(1px 1px 1px 1px);
-  clip: rect(1px, 1px, 1px, 1px);
+  clip-path: inset(10px 20px 30px 40px);
 }
 
 #aria-keyshortcuts button {
@@ -304,6 +316,53 @@ mark{
   transform: translate(-50%, calc(-100% - 5px)) rotate(45deg);
 }
 
+#mixedcode4 {
+  color: black;
+}
+
+#aria-keyshortcuts pre code .hljs-ln-numbers {
+  opacity: 1 !important;
+}
+
+#aria-keyshortcuts pre code .hljs-tag,
+#aria-keyshortcuts pre code .hljs-keyword,
+#aria-keyshortcuts pre code .hljs-selector-tag,
+#aria-keyshortcuts pre code .hljs-literal,
+#aria-keyshortcuts pre code .hljs-strong,
+#aria-keyshortcuts pre code .hljs-name {
+  color: #a6e22e !important;
+}
+
+#aria-keyshortcuts pre code .hljs-string,
+#aria-keyshortcuts pre code .hljs-bullet,
+#aria-keyshortcuts pre code .hljs-subst,
+#aria-keyshortcuts pre code .hljs-title,
+#aria-keyshortcuts pre code .hljs-section,
+#aria-keyshortcuts pre code .hljs-emphasis,
+#aria-keyshortcuts pre code .hljs-type,
+#aria-keyshortcuts pre code .hljs-built_in,
+#aria-keyshortcuts pre code .hljs-builtin-name,
+#aria-keyshortcuts pre code .hljs-selector-attr,
+#aria-keyshortcuts pre code .hljs-selector-pseudo,
+#aria-keyshortcuts pre code .hljs-addition,
+#aria-keyshortcuts pre code .hljs-variable,
+#aria-keyshortcuts pre code .hljs-template-tag,
+#aria-keyshortcuts pre code .hljs-template-variable {
+  color: #c6b8ff !important;
+}
+
+#aria-keyshortcuts pre code.fragment > * {
+  color: #ffffff !important;
+}
+
+#aria-keyshortcuts pre code tr:not(.highlight-line) {
+  opacity: 1 !important;
+}
+
+#aria-keyshortcuts pre code tr.highlight-line {
+  box-shadow: 0 0 20px rgb(214 239 253);
+}
+
 .aria-label-heading {
   color: #c2c1c1 !important;
 }
@@ -315,11 +374,12 @@ mark{
 .aria-label-underline {
   text-decoration: underline;
 }
+
 #aria-label code{
-    background-color: #2b2b2b;
-    white-space: pre;
-    tab-size: 0.3;
-    font-size: 0.90em;
+  background-color: #2b2b2b;
+  white-space: pre;
+  tab-size: 1;
+  font-size: 0.90em;
 }
 
 .aria-label-div{
@@ -333,11 +393,11 @@ mark{
 }
 
 .aria-label-div section nav{
-      display: flex;
-      flex-direction: column;
-      align-items: center;
-      justify-content: center;
-      margin-top: 22px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin-top: 22px;
      
 }
 .aria-label-div section nav button{
@@ -366,6 +426,7 @@ mark{
   padding-bottom: 12px;
   margin-left: 235px;
 }
+
 #aria-label-example-2 input{
   border: 1px solid blue;
   font-size: 1rem;
@@ -389,6 +450,7 @@ mark{
   background-color: aliceblue;
   height: 150px;
 } 
+
 #aria-label-example-3 div:nth-child(3){
   background-color: rgb(201, 226, 248);
   height: 50px;
@@ -428,6 +490,7 @@ mark{
   flex-direction: column;
   justify-content: space-around;
 }
+
 .aria-describedby form {
   width: 70vw;
   height: 50vh;
@@ -438,6 +501,7 @@ mark{
   flex-direction: column;
   justify-content: space-around;
 }
+
 .aria-describedby input {
   padding: 10px;
   width: 50%;
@@ -451,6 +515,7 @@ mark{
   margin: 0 auto;
   border-radius: 4px;
 }
+
 button.describedby-close-btn {
   width: 10px;
   padding-inline: 10px;
@@ -459,6 +524,7 @@ button.describedby-close-btn {
   border-radius: 4px;
   align-self: flex-end;
 }
+
 .aria-describedby #descriptionClose {
   font-size: 1rem;
 }
@@ -475,13 +541,14 @@ button.describedby-close-btn {
   font-size: 35px;
 }
 
-
 #valuesSection {
   font-size: 130%;
 } 
+
 #summarySection {
   font-size: 150%;
 }
+
 #thanksSection {
   font-size: 250%;
 }
