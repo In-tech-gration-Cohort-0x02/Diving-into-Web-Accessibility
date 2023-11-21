@@ -160,7 +160,7 @@ mark{
 
 #aria-keyshortcuts h4 {
   word-break: normal;
-  background-color: transparent;
+  background: #000000 url(https://www.transparenttextures.com/patterns/subtle-grey.png) repeat;
   padding: 5px;
   border: 5px solid black;
   width: max-content;
@@ -246,7 +246,7 @@ mark{
   counter-increment: my-awesome-counter;
   font-weight: 600;
   text-decoration: #f39d25 underline;
-  margin: 5px;
+  margin: 15px;
 }
 
 #aria-keyshortcuts-05 ol li::before,
@@ -260,7 +260,7 @@ mark{
 }
 
 #aria-keyshortcuts-09 ul li {
-  font-size: 24px;
+  font-size: 20px;
 }
 
 #mixedcode,
