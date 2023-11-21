@@ -180,11 +180,13 @@ mark{
 
 #aria-keyshortcuts p {
   text-align: justify;
+  color: #000000 !important;
   font-weight: 600;
+  background: #d5effe;
   padding: 10px;
   box-sizing: border-box;
+  font-size: 1.3rem;
   word-spacing: 4px;
-  background: #211e1e;
 }
 
 #aria-keyshortcuts-03 div {
@@ -270,13 +272,14 @@ mark{
 }
 
 #aria-keyshortcuts button {
-  background-color: #e42832;
+  background-color: #5b35f1;
+  color: #fff;
   border: none;
   padding: 15px 32px;
   text-align: center;
   text-decoration: none;
   display: inline-block;
-  font-size: 16px;
+  font-size: 24px;
   margin: 4px 2px;
   cursor: pointer;
 }
