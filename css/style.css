@@ -20,6 +20,11 @@
   -webkit-text-stroke: 1px #000000!important;
 }
 
+.box-shadow{
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  border: 1px solid rgba(0, 0, 0, 0.2);
+}
+
 .reveal .slide-background {
   background-image: linear-gradient(
     to right top,
@@ -101,28 +106,43 @@ mark{
 
 #aria-keyshortcuts {
   text-align: center;
-  font-size: 0.7em !important;
+  font-size: 1.5rem !important;
   display: flex !important;
   height: auto;
   align-items: center;
   justify-content: center;
 }
 
-/* .aria-keyshortcuts {
-  background: linear-gradient(to bottom, #1f1e1d, #a9a9a9) !important;
-} */
+#aria-keyshortcuts > section {
+  margin: 0 auto;
+  padding: 25px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  border: 1px solid rgba(0, 0, 0, 0.2);
+}
 
+.aria-keyshortcuts-container > *,
+.aria-keyshortcuts-flex > * {
+  margin: 5px !important;
+}
+
+.aria-keyshortcuts-flex {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-width: 100%;
+}
 #aria-keyshortcuts mark {
   margin: 8px;
   padding-right: 6px;
   padding-left: 6px;
   padding-top: 2px;
   padding-bottom: 2px;
-  border-radius: 4px;
 }
+
 #aria-keyshortcuts-01 .gradient-border-01 > mark {
   margin-left: 0px;
 }
+
 #aria-keyshortcuts * {
   line-height: 1.5 !important;
 }
@@ -134,14 +154,23 @@ mark{
 }
 
 #aria-keyshortcuts h4 {
-  word-break: break-word;
-  text-align: left;
+  word-break: normal;
+  background-color: transparent;
+  padding: 5px;
+  border: 5px solid black;
+  width: max-content;
+  text-align: center;
+  margin: 0 auto;
 }
 
 #aria-keyshortcuts h2 {
-  font-size: 1.4em !important;
-  color: #c2c1c1 !important;
-  word-break: break-all;
+  word-break: normal;
+  background: #000000
+  url(https://www.transparenttextures.com/patterns/subtle-grey.png) repeat;
+  color: #fff;
+  padding: 25px;
+  position: relative;
+  border: 5px solid black;
 }
 #aria-keyshortcuts p {
   text-align: justify;
