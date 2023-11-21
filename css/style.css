@@ -164,6 +164,8 @@ mark{
   padding: 5px;
   border: 5px solid black;
   width: max-content;
+  max-width: 20%;
+  min-width: 20%;
   text-align: center;
   margin: 0 auto;
 }
