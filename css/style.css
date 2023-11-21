@@ -152,7 +152,7 @@ mark{
   text-align: center;
   background: #000000 url(https://www.transparenttextures.com/patterns/subtle-grey.png) repeat;
   padding: 5px;
-  border: 5px solid black;
+  border: 5px solid #171515;
   width: max-content;
   position: relative;
   color: #ffffff; 
@@ -173,7 +173,7 @@ mark{
   background: #000000
   url(https://www.transparenttextures.com/patterns/subtle-grey.png) repeat;
   color: #fff;
-  padding: 25px;
+  padding: 5px;
   position: relative;
   border: 5px solid #171515;
 }
@@ -189,6 +189,10 @@ mark{
 
 #aria-keyshortcuts-03 div {
   text-align: justify;
+}
+
+#aria-keyshortcuts pre{
+  font-size: 1.3rem!important;
 }
 
 #aria-keyshortcuts pre code {
