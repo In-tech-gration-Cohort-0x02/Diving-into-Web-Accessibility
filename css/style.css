@@ -184,11 +184,13 @@ mark{
   text-align: justify;
   color: #000000 !important;
   font-weight: 600;
-  background: #d5effe;
+  background: white;
   padding: 10px;
   box-sizing: border-box;
   font-size: 1.3rem;
   word-spacing: 4px;
+  border: 2px solid #171515;
+  box-shadow: 0 0 32px rgba(0, 0, 0, 0.3);
 }
 
 #aria-keyshortcuts-03 div {
