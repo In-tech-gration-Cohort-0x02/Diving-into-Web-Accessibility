@@ -220,6 +220,10 @@ mark{
   opacity: 0;
 }
 
+#aria-keyshortcuts-07 > div.gradient-border.gradient-border-left > p:last-child{
+  width: max-content;
+}
+
 #code_examples {
   visibility: hidden;
   height: 0px;
